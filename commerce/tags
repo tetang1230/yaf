@@ -1,0 +1,935 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+APPLICATION_PATH	public/index.php	/^define('APPLICATION_PATH', dirname(dirname(__FILE__)));$/;"	d
+ActModel	application/models/Act.php	/^class ActModel{$/;"	c
+AdminModel	application/models/Admin.php	/^class AdminModel$/;"	c
+BACK	application/controllers/Back.php	/^define('BACK', 2);$/;"	d
+BackController	application/controllers/Back.php	/^class BackController extends Yaf_Controller_Abstract {$/;"	c
+BackTools	application/library/BackTools.php	/^class BackTools{$/;"	c
+BaseAction	application/actions/BaseAction.php	/^abstract class BaseAction extends Yaf_Action_Abstract$/;"	c
+Bootstrap	application/Bootstrap.php	/^class Bootstrap extends Yaf_Bootstrap_Abstract{$/;"	c
+C_GENDER_NAME	application/controllers/U.php	/^define('C_GENDER_NAME', 'gender');$/;"	d
+CaseModel	application/models/Case.php	/^class CaseModel{$/;"	c
+Crm	application/library/Crm.php	/^class Crm$/;"	c
+CurlTools	application/library/CurlTools.php	/^class CurlTools$/;"	c
+DB	application/library/DB.php	/^class DB$/;"	c
+ErrorController	application/controllers/Error.php	/^class ErrorController extends Yaf_Controller_Abstract {$/;"	c
+FController	application/controllers/F.php	/^class FController extends Yaf_Controller_Abstract$/;"	c
+Html	application/library/Html.php	/^class Html$/;"	c
+IScroll	public/static/js/lib/iscroll-lite.js	/^function IScroll (el, options) {$/;"	c
+IScroll._end	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll._execEvent	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll._init	public/static/js/lib/iscroll-lite.js	/^	version: '5.1.3',$/;"	m
+IScroll._initEvents	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll._move	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll._resize	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll._start	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll._transitionEnd	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll._transitionTime	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll._transitionTimingFunction	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll._translate	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll.destroy	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll.disable	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll.enable	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll.getComputedPosition	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll.off	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll.on	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll.options.bounce	public/static/js/lib/iscroll-lite.js	/^		momentum: true,$/;"	p
+IScroll.options.bounceEasing	public/static/js/lib/iscroll-lite.js	/^		bounceTime: 600,$/;"	p
+IScroll.options.bounceTime	public/static/js/lib/iscroll-lite.js	/^		bounce: true,$/;"	p
+IScroll.options.directionLockThreshold	public/static/js/lib/iscroll-lite.js	/^		scrollY: true,$/;"	p
+IScroll.options.momentum	public/static/js/lib/iscroll-lite.js	/^		directionLockThreshold: 5,$/;"	p
+IScroll.options.preventDefault	public/static/js/lib/iscroll-lite.js	/^		bounceEasing: '',$/;"	p
+IScroll.options.preventDefaultException	public/static/js/lib/iscroll-lite.js	/^		preventDefault: true,$/;"	p
+IScroll.options.scrollY	public/static/js/lib/iscroll-lite.js	/^		startY: 0,$/;"	p
+IScroll.options.startX	public/static/js/lib/iscroll-lite.js	/^	this.options = {$/;"	p
+IScroll.options.startY	public/static/js/lib/iscroll-lite.js	/^		startX: 0,$/;"	p
+IScroll.refresh	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll.resetPosition	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll.scrollBy	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll.scrollTo	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll.scrollToElement	public/static/js/lib/iscroll-lite.js	/^	},$/;"	m
+IScroll.version	public/static/js/lib/iscroll-lite.js	/^IScroll.prototype = {$/;"	p
+IndexController	application/controllers/Index.php	/^class IndexController extends Yaf_Controller_Abstract {$/;"	c
+LogModel	application/models/Log.php	/^class LogModel$/;"	c
+M.getPoint	public/static/js/u/show_map.js	/^}$/;"	f
+M.init	public/static/js/u/show_map.js	/^};$/;"	f
+M.ipLocation	public/static/js/u/show_map.js	/^}$/;"	f
+M.lon_lat.latitude	public/static/js/u/show_map.js	/^    longitude: 0,$/;"	p
+M.lon_lat.longitude	public/static/js/u/show_map.js	/^M.lon_lat = {$/;"	p
+PicModel	application/models/Pic.php	/^class PicModel$/;"	c
+SampleModel	application/models/Sample.php	/^class SampleModel {$/;"	c
+SamplePlugin	application/plugins/Sample.php	/^class SamplePlugin extends Yaf_Plugin_Abstract {$/;"	c
+ShopModel	application/models/Shop.php	/^class ShopModel{$/;"	c
+UController	application/controllers/U.php	/^class UController extends Yaf_Controller_Abstract$/;"	c
+U_STATIC_VERSION	application/controllers/U.php	/^define('U_STATIC_VERSION', 201412181750);$/;"	d
+UserModel	application/models/User.php	/^class UserModel$/;"	c
+Util	application/library/Util.php	/^class Util$/;"	c
+Yaf_Action_Abstract	yaf.php	/^abstract class Yaf_Action_Abstract extends Yaf_Controller_Abstract$/;"	c
+Yaf_Application	yaf.php	/^final class Yaf_Application$/;"	c
+Yaf_Bootstrap_Abstract	yaf.php	/^abstract class Yaf_Bootstrap_Abstract {}$/;"	c
+Yaf_Config_Abstract	yaf.php	/^abstract class Yaf_Config_Abstract$/;"	c
+Yaf_Config_Ini	yaf.php	/^class Yaf_Config_Ini extends Yaf_Config_Abstract implements Iterator, Traversable, ArrayAccess, Countable$/;"	c
+Yaf_Config_Simple	yaf.php	/^class Yaf_Config_Simple extends Yaf_Config_Abstract implements Iterator, Traversable, ArrayAccess, Countable$/;"	c
+Yaf_Controller_Abstract	yaf.php	/^abstract class Yaf_Controller_Abstract$/;"	c
+Yaf_Dispatcher	yaf.php	/^final class Yaf_Dispatcher$/;"	c
+Yaf_Exception	yaf.php	/^class Yaf_Exception extends Exception {}$/;"	c
+Yaf_Exception_DispatchFailed	yaf.php	/^class Yaf_Exception_DispatchFailed extends Yaf_Exception {}$/;"	c
+Yaf_Exception_LoadFailed	yaf.php	/^class Yaf_Exception_LoadFailed extends Yaf_Exception {}$/;"	c
+Yaf_Exception_LoadFailed_Action	yaf.php	/^class Yaf_Exception_LoadFailed_Action extends Yaf_Exception_LoadFailed {}$/;"	c
+Yaf_Exception_LoadFailed_Controller	yaf.php	/^class Yaf_Exception_LoadFailed_Controller extends Yaf_Exception_LoadFailed {}$/;"	c
+Yaf_Exception_LoadFailed_Module	yaf.php	/^class Yaf_Exception_LoadFailed_Module extends Yaf_Exception_LoadFailed {}$/;"	c
+Yaf_Exception_LoadFailed_View	yaf.php	/^class Yaf_Exception_LoadFailed_View extends Yaf_Exception_LoadFailed {}$/;"	c
+Yaf_Exception_RouterFailed	yaf.php	/^class Yaf_Exception_RouterFailed extends Yaf_Exception {}$/;"	c
+Yaf_Exception_StartupError	yaf.php	/^class Yaf_Exception_StartupError extends Yaf_Exception {}$/;"	c
+Yaf_Exception_TypeError	yaf.php	/^class Yaf_Exception_TypeError extends Yaf_Exception {}$/;"	c
+Yaf_Loader	yaf.php	/^class Yaf_Loader$/;"	c
+Yaf_Plugin_Abstract	yaf.php	/^class Yaf_Plugin_Abstract$/;"	c
+Yaf_Registry	yaf.php	/^class Yaf_Registry$/;"	c
+Yaf_Request_Abstract	yaf.php	/^class Yaf_Request_Abstract$/;"	c
+Yaf_Request_Http	yaf.php	/^class Yaf_Request_Http extends Yaf_Request_Abstract$/;"	c
+Yaf_Request_Simple	yaf.php	/^class Yaf_Request_Simple extends Yaf_Request_Abstract$/;"	c
+Yaf_Response_Abstract	yaf.php	/^class Yaf_Response_Abstract$/;"	c
+Yaf_Route_Interface	yaf.php	/^interface Yaf_Route_Interface$/;"	i
+Yaf_Route_Map	yaf.php	/^class Yaf_Route_Map implements Yaf_Route_Interface$/;"	c
+Yaf_Route_Regex	yaf.php	/^class Yaf_Route_Regex implements Yaf_Route_Interface$/;"	c
+Yaf_Route_Rewrite	yaf.php	/^class Yaf_Route_Rewrite implements Yaf_Route_Interface$/;"	c
+Yaf_Route_Simple	yaf.php	/^class Yaf_Route_Simple implements Yaf_Route_Interface$/;"	c
+Yaf_Route_Static	yaf.php	/^class Yaf_Route_Static extends Yaf_Router$/;"	c
+Yaf_Route_Supervar	yaf.php	/^class Yaf_Route_Supervar implements Yaf_Route_Interface$/;"	c
+Yaf_Router	yaf.php	/^class Yaf_Router$/;"	c
+Yaf_Session	yaf.php	/^class Yaf_Session implements Iterator, Traversable, ArrayAccess, Countable$/;"	c
+Yaf_View_Interface	yaf.php	/^interface Yaf_View_Interface$/;"	i
+Yaf_View_Simple	yaf.php	/^class Yaf_View_Simple implements Yaf_View_Interface$/;"	c
+__clone	yaf.php	/^    final private function __clone() {}$/;"	f
+__clone	yaf.php	/^    private function __clone() {}$/;"	f
+__construct	application/library/CurlTools.php	/^    public function __construct($setopt = array())$/;"	f
+__construct	application/models/Sample.php	/^    public function __construct() {$/;"	f
+__construct	yaf.php	/^    final private function __construct() {}$/;"	f
+__construct	yaf.php	/^    public function __construct($config, $envrion = null) {}$/;"	f
+__construct	yaf.php	/^    public function __construct($config_file, $section = null) {}$/;"	f
+__construct	yaf.php	/^    public function __construct($controller_prefer = false, $delimiter = '') {}$/;"	f
+__construct	yaf.php	/^    public function __construct($match, array $route, array $map = null, array $verify = null) {}$/;"	f
+__construct	yaf.php	/^    public function __construct($match, array $route, array $verify = null) {}$/;"	f
+__construct	yaf.php	/^    public function __construct($module_name, $controller_name, $action_name) {}$/;"	f
+__construct	yaf.php	/^    public function __construct($supervar_name) {}$/;"	f
+__construct	yaf.php	/^    public function __construct($tempalte_dir, array $options = null) {}$/;"	f
+__construct	yaf.php	/^    public function __construct() {}$/;"	f
+__destruct	application/library/CurlTools.php	/^    public function __destruct()$/;"	f
+__destruct	yaf.php	/^    public function __destruct() {}$/;"	f
+__get	yaf.php	/^    public function __get($name) {}$/;"	f
+__isset	yaf.php	/^    public function __isset($name) {}$/;"	f
+__set	yaf.php	/^    public function __set($name, $value) {}$/;"	f
+__sleep	yaf.php	/^    private function __sleep() {}$/;"	f
+__toString	yaf.php	/^    private function __toString() {}$/;"	f
+__unset	yaf.php	/^    public function __unset($name) {}$/;"	f
+__wakeup	yaf.php	/^    private function __wakeup() {}$/;"	f
+_app	yaf.php	/^    protected static $_app;$/;"	v
+_auto_render	yaf.php	/^    protected $_auto_render;$/;"	v
+_base_uri	yaf.php	/^    protected $_base_uri;$/;"	v
+_body	yaf.php	/^    protected $_body;$/;"	v
+_config	yaf.php	/^    protected $_config;$/;"	v
+_controller	yaf.php	/^    protected $_controller;$/;"	v
+_ctl_router	yaf.php	/^    protected $_ctl_router;$/;"	v
+_current	yaf.php	/^    protected $_current;$/;"	v
+_db	application/library/DB.php	/^    private static $_db = null;$/;"	v
+_default	yaf.php	/^    protected $_default;$/;"	v
+_default_action	yaf.php	/^    protected $_default_action;$/;"	v
+_default_controller	yaf.php	/^    protected $_default_controller;$/;"	v
+_default_module	yaf.php	/^    protected $_default_module;$/;"	v
+_delimeter	yaf.php	/^    protected $_delimeter;$/;"	v
+_entries	yaf.php	/^    protected $_entries;$/;"	v
+_environ	yaf.php	/^    protected $_environ;$/;"	v
+_exception	yaf.php	/^    protected $_exception;$/;"	v
+_global_library	yaf.php	/^    protected $_global_library;$/;"	v
+_header	yaf.php	/^    protected $_header;$/;"	v
+_initBaseAction	application/Bootstrap.php	/^    public function _initBaseAction(Yaf_Dispatcher $dispatcher)$/;"	f
+_initConfig	application/Bootstrap.php	/^    public function _initConfig() {$/;"	f
+_initPlugin	application/Bootstrap.php	/^	public function _initPlugin(Yaf_Dispatcher $dispatcher) {$/;"	f
+_initRoute	application/Bootstrap.php	/^	public function _initRoute(Yaf_Dispatcher $dispatcher) {$/;"	f
+_initView	application/Bootstrap.php	/^	public function _initView(Yaf_Dispatcher $dispatcher){$/;"	f
+_instance	yaf.php	/^    protected static $_instance;$/;"	v
+_instance	yaf.php	/^    static $_instance;$/;"	v
+_instantly_flush	yaf.php	/^    protected $_instantly_flush;$/;"	v
+_invoke_args	yaf.php	/^    protected $_invoke_args;$/;"	v
+_library	yaf.php	/^    protected $_library;$/;"	v
+_local_ns	yaf.php	/^    protected $_local_ns;$/;"	v
+_maps	yaf.php	/^    protected $_maps;$/;"	v
+_module	yaf.php	/^    protected $_module;$/;"	v
+_modules	yaf.php	/^    protected $_modules;$/;"	v
+_name	yaf.php	/^    protected $_name;$/;"	v
+_parseUrl	application/library/CurlTools.php	/^    private function _parseUrl($url,$params)$/;"	f
+_parsmEncode	application/library/CurlTools.php	/^    private function _parsmEncode($params, $isRetStr = true)$/;"	f
+_plugins	yaf.php	/^    protected $_plugins;$/;"	v
+_readonly	yaf.php	/^    protected $_readonly;$/;"	v
+_request	application/library/CurlTools.php	/^    private function _request($method, $url, $params = array(), $uploadFile = array(), $referer = '')$/;"	f
+_request	yaf.php	/^    protected $_request;$/;"	v
+_response	yaf.php	/^    protected $_response;$/;"	v
+_return_response	yaf.php	/^    protected $_return_response;$/;"	v
+_route	yaf.php	/^    protected $_route;$/;"	v
+_router	yaf.php	/^    protected $_router;$/;"	v
+_routes	yaf.php	/^    protected $_routes;$/;"	v
+_running	yaf.php	/^    protected $_running;$/;"	v
+_self.Bind	public/static/js/back/uploadPreview.min.js	/^var uploadPreview = function(setting) { var _self = this; _self.IsNull = function(value) { if (value == undefined || value == null || value == "" || value.length == 0) { return true }; return false; }; _self.DefautlSetting = { UpBtn: "", DivShow: "", ImgShow: "", Width: 100, Height: 100, ImgType: ["gif", "jpeg", "jpg", "bmp", "png"], ErrMsg: "选择文件错误,图片类型必须是(gif,jpeg,jpg,bmp,png)中的一种", callback: function() { } }; _self.Setting = { UpBtn: _self.IsNull(setting.UpBtn) ? _self.DefautlSetting.UpBtn : setting.UpBtn, DivShow: _self.IsNull(setting.DivShow) ? _self.DefautlSetting.DivShow : setting.DivShow, ImgShow: _self.IsNull(setting.ImgShow) ? _self.DefautlSetting.ImgShow : setting.ImgShow, Width: _self.IsNull(setting.Width) ? _self.DefautlSetting.Width : setting.Width, Height: _self.IsNull(setting.Height) ? _self.DefautlSetting.Height : setting.Height, ImgType: _self.IsNull(setting.ImgType) ? _self.DefautlSetting.ImgType : setting.ImgType, ErrMsg: _self.IsNull(setting.ErrMsg) ? _self.DefautlSetting.ErrMsg : setting.ErrMsg, callback: _self.IsNull(setting.callback) ? _self.DefautlSetting.callback : setting.callback }; _self.getObjectURL = function(file) { var url = null; if (window.createObjectURL != undefined) { url = window.createObjectURL(file); } else if (window.URL != undefined) { url = window.URL.createObjectURL(file); } else if (window.webkitURL != undefined) { url = window.webkitURL.createObjectURL(file); }; return url; }; _self.Bind = function() { document.getElementById(_self.Setting.UpBtn).onchange = function() { if (this.value) { if (!RegExp("\\.(" + _self.Setting.ImgType.join("|") + ")$", "i").test(this.value.toLowerCase())) { alert(_self.Setting.ErrMsg); this.value = ""; return false }; if (navigator.userAgent.indexOf("MSIE") > -1) { try { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); } catch (e) { var div = document.getElementById(_self.Setting.DivShow); this.select(); top.parent.document.body.focus(); var src = document.selection.createRange().text; document.selection.empty(); document.getElementById(_self.Setting.ImgShow).style.display = "none"; div.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)"; div.style.width = _self.Setting.Width + "px"; div.style.height = _self.Setting.Height + "px"; div.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = src; } } else { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); }; _self.Setting.callback(); } } }; _self.Bind(); }/;"	f
+_self.DefautlSetting.DivShow	public/static/js/back/uploadPreview.min.js	/^var uploadPreview = function(setting) { var _self = this; _self.IsNull = function(value) { if (value == undefined || value == null || value == "" || value.length == 0) { return true }; return false; }; _self.DefautlSetting = { UpBtn: "", DivShow: "", ImgShow: "", Width: 100, Height: 100, ImgType: ["gif", "jpeg", "jpg", "bmp", "png"], ErrMsg: "选择文件错误,图片类型必须是(gif,jpeg,jpg,bmp,png)中的一种", callback: function() { } }; _self.Setting = { UpBtn: _self.IsNull(setting.UpBtn) ? _self.DefautlSetting.UpBtn : setting.UpBtn, DivShow: _self.IsNull(setting.DivShow) ? _self.DefautlSetting.DivShow : setting.DivShow, ImgShow: _self.IsNull(setting.ImgShow) ? _self.DefautlSetting.ImgShow : setting.ImgShow, Width: _self.IsNull(setting.Width) ? _self.DefautlSetting.Width : setting.Width, Height: _self.IsNull(setting.Height) ? _self.DefautlSetting.Height : setting.Height, ImgType: _self.IsNull(setting.ImgType) ? _self.DefautlSetting.ImgType : setting.ImgType, ErrMsg: _self.IsNull(setting.ErrMsg) ? _self.DefautlSetting.ErrMsg : setting.ErrMsg, callback: _self.IsNull(setting.callback) ? _self.DefautlSetting.callback : setting.callback }; _self.getObjectURL = function(file) { var url = null; if (window.createObjectURL != undefined) { url = window.createObjectURL(file); } else if (window.URL != undefined) { url = window.URL.createObjectURL(file); } else if (window.webkitURL != undefined) { url = window.webkitURL.createObjectURL(file); }; return url; }; _self.Bind = function() { document.getElementById(_self.Setting.UpBtn).onchange = function() { if (this.value) { if (!RegExp("\\.(" + _self.Setting.ImgType.join("|") + ")$", "i").test(this.value.toLowerCase())) { alert(_self.Setting.ErrMsg); this.value = ""; return false }; if (navigator.userAgent.indexOf("MSIE") > -1) { try { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); } catch (e) { var div = document.getElementById(_self.Setting.DivShow); this.select(); top.parent.document.body.focus(); var src = document.selection.createRange().text; document.selection.empty(); document.getElementById(_self.Setting.ImgShow).style.display = "none"; div.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)"; div.style.width = _self.Setting.Width + "px"; div.style.height = _self.Setting.Height + "px"; div.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = src; } } else { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); }; _self.Setting.callback(); } } }; _self.Bind(); }/;"	p
+_self.DefautlSetting.Height	public/static/js/back/uploadPreview.min.js	/^var uploadPreview = function(setting) { var _self = this; _self.IsNull = function(value) { if (value == undefined || value == null || value == "" || value.length == 0) { return true }; return false; }; _self.DefautlSetting = { UpBtn: "", DivShow: "", ImgShow: "", Width: 100, Height: 100, ImgType: ["gif", "jpeg", "jpg", "bmp", "png"], ErrMsg: "选择文件错误,图片类型必须是(gif,jpeg,jpg,bmp,png)中的一种", callback: function() { } }; _self.Setting = { UpBtn: _self.IsNull(setting.UpBtn) ? _self.DefautlSetting.UpBtn : setting.UpBtn, DivShow: _self.IsNull(setting.DivShow) ? _self.DefautlSetting.DivShow : setting.DivShow, ImgShow: _self.IsNull(setting.ImgShow) ? _self.DefautlSetting.ImgShow : setting.ImgShow, Width: _self.IsNull(setting.Width) ? _self.DefautlSetting.Width : setting.Width, Height: _self.IsNull(setting.Height) ? _self.DefautlSetting.Height : setting.Height, ImgType: _self.IsNull(setting.ImgType) ? _self.DefautlSetting.ImgType : setting.ImgType, ErrMsg: _self.IsNull(setting.ErrMsg) ? _self.DefautlSetting.ErrMsg : setting.ErrMsg, callback: _self.IsNull(setting.callback) ? _self.DefautlSetting.callback : setting.callback }; _self.getObjectURL = function(file) { var url = null; if (window.createObjectURL != undefined) { url = window.createObjectURL(file); } else if (window.URL != undefined) { url = window.URL.createObjectURL(file); } else if (window.webkitURL != undefined) { url = window.webkitURL.createObjectURL(file); }; return url; }; _self.Bind = function() { document.getElementById(_self.Setting.UpBtn).onchange = function() { if (this.value) { if (!RegExp("\\.(" + _self.Setting.ImgType.join("|") + ")$", "i").test(this.value.toLowerCase())) { alert(_self.Setting.ErrMsg); this.value = ""; return false }; if (navigator.userAgent.indexOf("MSIE") > -1) { try { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); } catch (e) { var div = document.getElementById(_self.Setting.DivShow); this.select(); top.parent.document.body.focus(); var src = document.selection.createRange().text; document.selection.empty(); document.getElementById(_self.Setting.ImgShow).style.display = "none"; div.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)"; div.style.width = _self.Setting.Width + "px"; div.style.height = _self.Setting.Height + "px"; div.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = src; } } else { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); }; _self.Setting.callback(); } } }; _self.Bind(); }/;"	p
+_self.DefautlSetting.ImgShow	public/static/js/back/uploadPreview.min.js	/^var uploadPreview = function(setting) { var _self = this; _self.IsNull = function(value) { if (value == undefined || value == null || value == "" || value.length == 0) { return true }; return false; }; _self.DefautlSetting = { UpBtn: "", DivShow: "", ImgShow: "", Width: 100, Height: 100, ImgType: ["gif", "jpeg", "jpg", "bmp", "png"], ErrMsg: "选择文件错误,图片类型必须是(gif,jpeg,jpg,bmp,png)中的一种", callback: function() { } }; _self.Setting = { UpBtn: _self.IsNull(setting.UpBtn) ? _self.DefautlSetting.UpBtn : setting.UpBtn, DivShow: _self.IsNull(setting.DivShow) ? _self.DefautlSetting.DivShow : setting.DivShow, ImgShow: _self.IsNull(setting.ImgShow) ? _self.DefautlSetting.ImgShow : setting.ImgShow, Width: _self.IsNull(setting.Width) ? _self.DefautlSetting.Width : setting.Width, Height: _self.IsNull(setting.Height) ? _self.DefautlSetting.Height : setting.Height, ImgType: _self.IsNull(setting.ImgType) ? _self.DefautlSetting.ImgType : setting.ImgType, ErrMsg: _self.IsNull(setting.ErrMsg) ? _self.DefautlSetting.ErrMsg : setting.ErrMsg, callback: _self.IsNull(setting.callback) ? _self.DefautlSetting.callback : setting.callback }; _self.getObjectURL = function(file) { var url = null; if (window.createObjectURL != undefined) { url = window.createObjectURL(file); } else if (window.URL != undefined) { url = window.URL.createObjectURL(file); } else if (window.webkitURL != undefined) { url = window.webkitURL.createObjectURL(file); }; return url; }; _self.Bind = function() { document.getElementById(_self.Setting.UpBtn).onchange = function() { if (this.value) { if (!RegExp("\\.(" + _self.Setting.ImgType.join("|") + ")$", "i").test(this.value.toLowerCase())) { alert(_self.Setting.ErrMsg); this.value = ""; return false }; if (navigator.userAgent.indexOf("MSIE") > -1) { try { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); } catch (e) { var div = document.getElementById(_self.Setting.DivShow); this.select(); top.parent.document.body.focus(); var src = document.selection.createRange().text; document.selection.empty(); document.getElementById(_self.Setting.ImgShow).style.display = "none"; div.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)"; div.style.width = _self.Setting.Width + "px"; div.style.height = _self.Setting.Height + "px"; div.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = src; } } else { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); }; _self.Setting.callback(); } } }; _self.Bind(); }/;"	p
+_self.DefautlSetting.ImgType	public/static/js/back/uploadPreview.min.js	/^var uploadPreview = function(setting) { var _self = this; _self.IsNull = function(value) { if (value == undefined || value == null || value == "" || value.length == 0) { return true }; return false; }; _self.DefautlSetting = { UpBtn: "", DivShow: "", ImgShow: "", Width: 100, Height: 100, ImgType: ["gif", "jpeg", "jpg", "bmp", "png"], ErrMsg: "选择文件错误,图片类型必须是(gif,jpeg,jpg,bmp,png)中的一种", callback: function() { } }; _self.Setting = { UpBtn: _self.IsNull(setting.UpBtn) ? _self.DefautlSetting.UpBtn : setting.UpBtn, DivShow: _self.IsNull(setting.DivShow) ? _self.DefautlSetting.DivShow : setting.DivShow, ImgShow: _self.IsNull(setting.ImgShow) ? _self.DefautlSetting.ImgShow : setting.ImgShow, Width: _self.IsNull(setting.Width) ? _self.DefautlSetting.Width : setting.Width, Height: _self.IsNull(setting.Height) ? _self.DefautlSetting.Height : setting.Height, ImgType: _self.IsNull(setting.ImgType) ? _self.DefautlSetting.ImgType : setting.ImgType, ErrMsg: _self.IsNull(setting.ErrMsg) ? _self.DefautlSetting.ErrMsg : setting.ErrMsg, callback: _self.IsNull(setting.callback) ? _self.DefautlSetting.callback : setting.callback }; _self.getObjectURL = function(file) { var url = null; if (window.createObjectURL != undefined) { url = window.createObjectURL(file); } else if (window.URL != undefined) { url = window.URL.createObjectURL(file); } else if (window.webkitURL != undefined) { url = window.webkitURL.createObjectURL(file); }; return url; }; _self.Bind = function() { document.getElementById(_self.Setting.UpBtn).onchange = function() { if (this.value) { if (!RegExp("\\.(" + _self.Setting.ImgType.join("|") + ")$", "i").test(this.value.toLowerCase())) { alert(_self.Setting.ErrMsg); this.value = ""; return false }; if (navigator.userAgent.indexOf("MSIE") > -1) { try { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); } catch (e) { var div = document.getElementById(_self.Setting.DivShow); this.select(); top.parent.document.body.focus(); var src = document.selection.createRange().text; document.selection.empty(); document.getElementById(_self.Setting.ImgShow).style.display = "none"; div.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)"; div.style.width = _self.Setting.Width + "px"; div.style.height = _self.Setting.Height + "px"; div.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = src; } } else { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); }; _self.Setting.callback(); } } }; _self.Bind(); }/;"	p
+_self.DefautlSetting.UpBtn	public/static/js/back/uploadPreview.min.js	/^var uploadPreview = function(setting) { var _self = this; _self.IsNull = function(value) { if (value == undefined || value == null || value == "" || value.length == 0) { return true }; return false; }; _self.DefautlSetting = { UpBtn: "", DivShow: "", ImgShow: "", Width: 100, Height: 100, ImgType: ["gif", "jpeg", "jpg", "bmp", "png"], ErrMsg: "选择文件错误,图片类型必须是(gif,jpeg,jpg,bmp,png)中的一种", callback: function() { } }; _self.Setting = { UpBtn: _self.IsNull(setting.UpBtn) ? _self.DefautlSetting.UpBtn : setting.UpBtn, DivShow: _self.IsNull(setting.DivShow) ? _self.DefautlSetting.DivShow : setting.DivShow, ImgShow: _self.IsNull(setting.ImgShow) ? _self.DefautlSetting.ImgShow : setting.ImgShow, Width: _self.IsNull(setting.Width) ? _self.DefautlSetting.Width : setting.Width, Height: _self.IsNull(setting.Height) ? _self.DefautlSetting.Height : setting.Height, ImgType: _self.IsNull(setting.ImgType) ? _self.DefautlSetting.ImgType : setting.ImgType, ErrMsg: _self.IsNull(setting.ErrMsg) ? _self.DefautlSetting.ErrMsg : setting.ErrMsg, callback: _self.IsNull(setting.callback) ? _self.DefautlSetting.callback : setting.callback }; _self.getObjectURL = function(file) { var url = null; if (window.createObjectURL != undefined) { url = window.createObjectURL(file); } else if (window.URL != undefined) { url = window.URL.createObjectURL(file); } else if (window.webkitURL != undefined) { url = window.webkitURL.createObjectURL(file); }; return url; }; _self.Bind = function() { document.getElementById(_self.Setting.UpBtn).onchange = function() { if (this.value) { if (!RegExp("\\.(" + _self.Setting.ImgType.join("|") + ")$", "i").test(this.value.toLowerCase())) { alert(_self.Setting.ErrMsg); this.value = ""; return false }; if (navigator.userAgent.indexOf("MSIE") > -1) { try { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); } catch (e) { var div = document.getElementById(_self.Setting.DivShow); this.select(); top.parent.document.body.focus(); var src = document.selection.createRange().text; document.selection.empty(); document.getElementById(_self.Setting.ImgShow).style.display = "none"; div.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)"; div.style.width = _self.Setting.Width + "px"; div.style.height = _self.Setting.Height + "px"; div.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = src; } } else { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); }; _self.Setting.callback(); } } }; _self.Bind(); }/;"	p
+_self.DefautlSetting.Width	public/static/js/back/uploadPreview.min.js	/^var uploadPreview = function(setting) { var _self = this; _self.IsNull = function(value) { if (value == undefined || value == null || value == "" || value.length == 0) { return true }; return false; }; _self.DefautlSetting = { UpBtn: "", DivShow: "", ImgShow: "", Width: 100, Height: 100, ImgType: ["gif", "jpeg", "jpg", "bmp", "png"], ErrMsg: "选择文件错误,图片类型必须是(gif,jpeg,jpg,bmp,png)中的一种", callback: function() { } }; _self.Setting = { UpBtn: _self.IsNull(setting.UpBtn) ? _self.DefautlSetting.UpBtn : setting.UpBtn, DivShow: _self.IsNull(setting.DivShow) ? _self.DefautlSetting.DivShow : setting.DivShow, ImgShow: _self.IsNull(setting.ImgShow) ? _self.DefautlSetting.ImgShow : setting.ImgShow, Width: _self.IsNull(setting.Width) ? _self.DefautlSetting.Width : setting.Width, Height: _self.IsNull(setting.Height) ? _self.DefautlSetting.Height : setting.Height, ImgType: _self.IsNull(setting.ImgType) ? _self.DefautlSetting.ImgType : setting.ImgType, ErrMsg: _self.IsNull(setting.ErrMsg) ? _self.DefautlSetting.ErrMsg : setting.ErrMsg, callback: _self.IsNull(setting.callback) ? _self.DefautlSetting.callback : setting.callback }; _self.getObjectURL = function(file) { var url = null; if (window.createObjectURL != undefined) { url = window.createObjectURL(file); } else if (window.URL != undefined) { url = window.URL.createObjectURL(file); } else if (window.webkitURL != undefined) { url = window.webkitURL.createObjectURL(file); }; return url; }; _self.Bind = function() { document.getElementById(_self.Setting.UpBtn).onchange = function() { if (this.value) { if (!RegExp("\\.(" + _self.Setting.ImgType.join("|") + ")$", "i").test(this.value.toLowerCase())) { alert(_self.Setting.ErrMsg); this.value = ""; return false }; if (navigator.userAgent.indexOf("MSIE") > -1) { try { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); } catch (e) { var div = document.getElementById(_self.Setting.DivShow); this.select(); top.parent.document.body.focus(); var src = document.selection.createRange().text; document.selection.empty(); document.getElementById(_self.Setting.ImgShow).style.display = "none"; div.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)"; div.style.width = _self.Setting.Width + "px"; div.style.height = _self.Setting.Height + "px"; div.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = src; } } else { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); }; _self.Setting.callback(); } } }; _self.Bind(); }/;"	p
+_self.IsNull	public/static/js/back/uploadPreview.min.js	/^var uploadPreview = function(setting) { var _self = this; _self.IsNull = function(value) { if (value == undefined || value == null || value == "" || value.length == 0) { return true }; return false; }; _self.DefautlSetting = { UpBtn: "", DivShow: "", ImgShow: "", Width: 100, Height: 100, ImgType: ["gif", "jpeg", "jpg", "bmp", "png"], ErrMsg: "选择文件错误,图片类型必须是(gif,jpeg,jpg,bmp,png)中的一种", callback: function() { } }; _self.Setting = { UpBtn: _self.IsNull(setting.UpBtn) ? _self.DefautlSetting.UpBtn : setting.UpBtn, DivShow: _self.IsNull(setting.DivShow) ? _self.DefautlSetting.DivShow : setting.DivShow, ImgShow: _self.IsNull(setting.ImgShow) ? _self.DefautlSetting.ImgShow : setting.ImgShow, Width: _self.IsNull(setting.Width) ? _self.DefautlSetting.Width : setting.Width, Height: _self.IsNull(setting.Height) ? _self.DefautlSetting.Height : setting.Height, ImgType: _self.IsNull(setting.ImgType) ? _self.DefautlSetting.ImgType : setting.ImgType, ErrMsg: _self.IsNull(setting.ErrMsg) ? _self.DefautlSetting.ErrMsg : setting.ErrMsg, callback: _self.IsNull(setting.callback) ? _self.DefautlSetting.callback : setting.callback }; _self.getObjectURL = function(file) { var url = null; if (window.createObjectURL != undefined) { url = window.createObjectURL(file); } else if (window.URL != undefined) { url = window.URL.createObjectURL(file); } else if (window.webkitURL != undefined) { url = window.webkitURL.createObjectURL(file); }; return url; }; _self.Bind = function() { document.getElementById(_self.Setting.UpBtn).onchange = function() { if (this.value) { if (!RegExp("\\.(" + _self.Setting.ImgType.join("|") + ")$", "i").test(this.value.toLowerCase())) { alert(_self.Setting.ErrMsg); this.value = ""; return false }; if (navigator.userAgent.indexOf("MSIE") > -1) { try { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); } catch (e) { var div = document.getElementById(_self.Setting.DivShow); this.select(); top.parent.document.body.focus(); var src = document.selection.createRange().text; document.selection.empty(); document.getElementById(_self.Setting.ImgShow).style.display = "none"; div.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)"; div.style.width = _self.Setting.Width + "px"; div.style.height = _self.Setting.Height + "px"; div.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = src; } } else { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); }; _self.Setting.callback(); } } }; _self.Bind(); }/;"	f
+_self.Setting.UpBtn	public/static/js/back/uploadPreview.min.js	/^var uploadPreview = function(setting) { var _self = this; _self.IsNull = function(value) { if (value == undefined || value == null || value == "" || value.length == 0) { return true }; return false; }; _self.DefautlSetting = { UpBtn: "", DivShow: "", ImgShow: "", Width: 100, Height: 100, ImgType: ["gif", "jpeg", "jpg", "bmp", "png"], ErrMsg: "选择文件错误,图片类型必须是(gif,jpeg,jpg,bmp,png)中的一种", callback: function() { } }; _self.Setting = { UpBtn: _self.IsNull(setting.UpBtn) ? _self.DefautlSetting.UpBtn : setting.UpBtn, DivShow: _self.IsNull(setting.DivShow) ? _self.DefautlSetting.DivShow : setting.DivShow, ImgShow: _self.IsNull(setting.ImgShow) ? _self.DefautlSetting.ImgShow : setting.ImgShow, Width: _self.IsNull(setting.Width) ? _self.DefautlSetting.Width : setting.Width, Height: _self.IsNull(setting.Height) ? _self.DefautlSetting.Height : setting.Height, ImgType: _self.IsNull(setting.ImgType) ? _self.DefautlSetting.ImgType : setting.ImgType, ErrMsg: _self.IsNull(setting.ErrMsg) ? _self.DefautlSetting.ErrMsg : setting.ErrMsg, callback: _self.IsNull(setting.callback) ? _self.DefautlSetting.callback : setting.callback }; _self.getObjectURL = function(file) { var url = null; if (window.createObjectURL != undefined) { url = window.createObjectURL(file); } else if (window.URL != undefined) { url = window.URL.createObjectURL(file); } else if (window.webkitURL != undefined) { url = window.webkitURL.createObjectURL(file); }; return url; }; _self.Bind = function() { document.getElementById(_self.Setting.UpBtn).onchange = function() { if (this.value) { if (!RegExp("\\.(" + _self.Setting.ImgType.join("|") + ")$", "i").test(this.value.toLowerCase())) { alert(_self.Setting.ErrMsg); this.value = ""; return false }; if (navigator.userAgent.indexOf("MSIE") > -1) { try { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); } catch (e) { var div = document.getElementById(_self.Setting.DivShow); this.select(); top.parent.document.body.focus(); var src = document.selection.createRange().text; document.selection.empty(); document.getElementById(_self.Setting.ImgShow).style.display = "none"; div.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)"; div.style.width = _self.Setting.Width + "px"; div.style.height = _self.Setting.Height + "px"; div.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = src; } } else { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); }; _self.Setting.callback(); } } }; _self.Bind(); }/;"	p
+_self.getObjectURL	public/static/js/back/uploadPreview.min.js	/^var uploadPreview = function(setting) { var _self = this; _self.IsNull = function(value) { if (value == undefined || value == null || value == "" || value.length == 0) { return true }; return false; }; _self.DefautlSetting = { UpBtn: "", DivShow: "", ImgShow: "", Width: 100, Height: 100, ImgType: ["gif", "jpeg", "jpg", "bmp", "png"], ErrMsg: "选择文件错误,图片类型必须是(gif,jpeg,jpg,bmp,png)中的一种", callback: function() { } }; _self.Setting = { UpBtn: _self.IsNull(setting.UpBtn) ? _self.DefautlSetting.UpBtn : setting.UpBtn, DivShow: _self.IsNull(setting.DivShow) ? _self.DefautlSetting.DivShow : setting.DivShow, ImgShow: _self.IsNull(setting.ImgShow) ? _self.DefautlSetting.ImgShow : setting.ImgShow, Width: _self.IsNull(setting.Width) ? _self.DefautlSetting.Width : setting.Width, Height: _self.IsNull(setting.Height) ? _self.DefautlSetting.Height : setting.Height, ImgType: _self.IsNull(setting.ImgType) ? _self.DefautlSetting.ImgType : setting.ImgType, ErrMsg: _self.IsNull(setting.ErrMsg) ? _self.DefautlSetting.ErrMsg : setting.ErrMsg, callback: _self.IsNull(setting.callback) ? _self.DefautlSetting.callback : setting.callback }; _self.getObjectURL = function(file) { var url = null; if (window.createObjectURL != undefined) { url = window.createObjectURL(file); } else if (window.URL != undefined) { url = window.URL.createObjectURL(file); } else if (window.webkitURL != undefined) { url = window.webkitURL.createObjectURL(file); }; return url; }; _self.Bind = function() { document.getElementById(_self.Setting.UpBtn).onchange = function() { if (this.value) { if (!RegExp("\\.(" + _self.Setting.ImgType.join("|") + ")$", "i").test(this.value.toLowerCase())) { alert(_self.Setting.ErrMsg); this.value = ""; return false }; if (navigator.userAgent.indexOf("MSIE") > -1) { try { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); } catch (e) { var div = document.getElementById(_self.Setting.DivShow); this.select(); top.parent.document.body.focus(); var src = document.selection.createRange().text; document.selection.empty(); document.getElementById(_self.Setting.ImgShow).style.display = "none"; div.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)"; div.style.width = _self.Setting.Width + "px"; div.style.height = _self.Setting.Height + "px"; div.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = src; } } else { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); }; _self.Setting.callback(); } } }; _self.Bind(); }/;"	f
+_sendheader	yaf.php	/^    protected $_sendheader;$/;"	v
+_session	yaf.php	/^    protected $_session;$/;"	v
+_started	yaf.php	/^    protected $_started;$/;"	v
+_tpl_dir	yaf.php	/^    protected $_tpl_dir;$/;"	v
+_tpl_vars	yaf.php	/^    protected $_tpl_vars;$/;"	v
+_var_name	yaf.php	/^    protected $_var_name;$/;"	v
+_verify	yaf.php	/^    protected $_verify;$/;"	v
+_view	yaf.php	/^    protected $_view;$/;"	v
+actAction	application/actions/back/act/act.php	/^class actAction extends BaseAction$/;"	c
+actInfo	application/actions/back/act/ajaxact.php	/^        $actInfo = ActModel::getActDetail($id);$/;"	v
+act_pic	application/models/Shop.php	/^            $act_pic = PicModel::getHash($data['id'], PicModel::PICACTONE);$/;"	v
+action	yaf.php	/^    protected $action;$/;"	v
+action	yaf.php	/^    public $action;$/;"	v
+actions	application/controllers/Back.php	/^	public $actions = array($/;"	v
+actions	application/controllers/Index.php	/^    public $actions = array($/;"	v
+actions	application/controllers/U.php	/^    public $actions = array($/;"	v
+actions	yaf.php	/^    public $actions;$/;"	v
+acts	application/actions/back/act/act.php	/^            $acts = ActModel::getActsByGroupId($groupId);$/;"	v
+acts	application/actions/back/act/act.php	/^            $acts= ActModel::getActs();$/;"	v
+addAct	application/models/Act.php	/^    public static function addAct($data){$/;"	f
+addCase	application/models/Case.php	/^    public static function addCase($data){$/;"	f
+addConfig	yaf.php	/^    public function addConfig(Yaf_Config_Abstract $config) {}$/;"	f
+addPic	application/models/Pic.php	/^   public static function addPic($data){$/;"	f
+addRoute	yaf.php	/^    public function addRoute($name, Yaf_Route_Interface $route) {}$/;"	f
+addShop	application/models/Shop.php	/^    public static function addShop($data){$/;"	f
+addUser	application/models/User.php	/^    public static function addUser($data){$/;"	f
+adduserAction	application/actions/back/user/adduser.php	/^class adduserAction extends BaseAction$/;"	c
+admin_conf	application/models/Admin.php	/^    private static $admin_conf = array($/;"	v
+afterExecute	application/actions/BaseAction.php	/^    protected function afterExecute()$/;"	f
+aid	application/actions/back/act/ajaxaddact.php	/^        $aid = ActModel::addAct($data);$/;"	v
+aid	application/actions/back/case/ajaxaddcase.php	/^        $aid = CaseModel::addCase($data);$/;"	v
+aid	application/actions/back/shop/ajaxaddshop.php	/^        $aid = ShopModel::addShop($data);$/;"	v
+aid	application/actions/back/user/adduser.php	/^        $aid = UserModel::addUser($postData);$/;"	v
+ajaxFileUpload	public/static/js/back/common.js	/^function ajaxFileUpload(url, postParams, fileIds)$/;"	f
+ajaxactAction	application/actions/back/act/ajaxact.php	/^class ajaxactAction extends BaseAction$/;"	c
+ajaxaddactAction	application/actions/back/act/ajaxaddact.php	/^class ajaxaddactAction extends BaseAction$/;"	c
+ajaxaddcaseAction	application/actions/back/case/ajaxaddcase.php	/^class ajaxaddcaseAction extends BaseAction$/;"	c
+ajaxaddshopAction	application/actions/back/shop/ajaxaddshop.php	/^class ajaxaddshopAction extends BaseAction$/;"	c
+ajaxcaseAction	application/actions/back/case/ajaxcase.php	/^class ajaxcaseAction extends BaseAction$/;"	c
+ajaxdeleteactAction	application/actions/back/act/ajaxdeleteact.php	/^class ajaxdeleteactAction extends BaseAction$/;"	c
+ajaxdeletecaseAction	application/actions/back/case/ajaxdeletecase.php	/^class ajaxdeletecaseAction extends BaseAction$/;"	c
+ajaxdeleteshopAction	application/actions/back/shop/ajaxdeleteshop.php	/^class ajaxdeleteshopAction extends BaseAction$/;"	c
+ajaxdeleteuserAction	application/actions/back/user/ajaxdeleteuser.php	/^class ajaxdeleteuserAction extends BaseAction$/;"	c
+ajaxshopAction	application/actions/back/shop/ajaxshop.php	/^class ajaxshopAction extends BaseAction$/;"	c
+ajaxupdateactAction	application/actions/back/act/ajaxupdateact.php	/^class ajaxupdateactAction extends BaseAction$/;"	c
+ajaxupdatecaseAction	application/actions/back/case/ajaxupdatecase.php	/^class ajaxupdatecaseAction extends BaseAction {$/;"	c
+ajaxupdateshopAction	application/actions/back/shop/ajaxupdateshop.php	/^class ajaxupdateshopAction extends BaseAction$/;"	c
+ajaxupdateuserAction	application/actions/back/user/ajaxupdateuser.php	/^class ajaxupdateuserAction extends BaseAction$/;"	c
+ajaxuserAction	application/actions/back/user/ajaxuser.php	/^class ajaxuserAction extends BaseAction$/;"	c
+api	application/library/Crm.php	/^        $api = self::ALL_CITY . self::buildQuery($req);$/;"	v
+api	application/library/Crm.php	/^        $api = self::QUERY_CLUE . self::buildQuery($condition);$/;"	v
+api	application/library/Crm.php	/^        $api = self::SAVE_CLUE . self::buildQuery($clue);$/;"	v
+api	application/library/Crm.php	/^        $api = self::SERVICE_API . self::buildQuery($req);$/;"	v
+app	yaf.php	/^    public static function app() {}$/;"	f
+appDb	application/models/User.php	/^    private static $appDb = null;$/;"	v
+appendBody	yaf.php	/^    public function appendBody() {}$/;"	f
+application	public/index.php	/^$application = new Yaf_Application( APPLICATION_PATH . "\/conf\/application.ini");$/;"	v
+arr	application/actions/back/crm/crmshop.php	/^            $arr = crm::getShopBaseInfo();$/;"	v
+arr	application/actions/back/crm/crmshop.php	/^            $arr = crm::getShopBaseInfoByCityId($city);$/;"	v
+arrConfig	application/Bootstrap.php	/^		$arrConfig = Yaf_Application::app()->getConfig();$/;"	v
+assign	application/actions/BaseAction.php	/^    public function assign($key, $value)$/;"	f
+assign	yaf.php	/^    public function assign($name, $value = null) {}$/;"	f
+assign	yaf.php	/^    public function assign($name, $value = null);$/;"	f
+assignRef	yaf.php	/^    public function assignRef($name, &$value) {}$/;"	f
+auth	application/models/Admin.php	/^    public static function auth()$/;"	f
+autoRender	yaf.php	/^    public function autoRender($flag) {}$/;"	f
+autoload	yaf.php	/^    public function autoload() {}$/;"	f
+base_detail	application/actions/u/storeDetail.php	/^        $base_detail = array();$/;"	v
+base_detail	application/actions/u/viewMap.php	/^        $base_detail = array();$/;"	v
+base_info	application/actions/u/store.php	/^        $base_info = Crm::getShopBaseInfo();$/;"	v
+base_info	application/actions/u/storeDetail.php	/^        $base_info = Crm::getShopBaseInfoByCityId($store_detail['cityCode']);$/;"	v
+base_info	application/actions/u/viewMap.php	/^        $base_info = Crm::getShopBaseInfoByCityId($store_detail['cityCode']);$/;"	v
+beforeExecute	application/actions/BaseAction.php	/^    protected function beforeExecute()$/;"	f
+big_pic	application/models/User.php	/^        $big_pic   = PicModel::getHash($uid, PicModel::PICUSERBIG);$/;"	v
+blk	application/library/Util.php	/^        $blk = substr($str, 0, 512);$/;"	v
+bootstrap	yaf.php	/^    public function bootstrap(Yaf_Bootstrap_Abstract $bootstrap = null) {}$/;"	f
+bootstrap	yaf.php	/^    public function bootstrap(Yaf_Bootstrap_Abstract $bootstrap = null) {}$/;"	v
+buildQuery	application/library/Crm.php	/^    private static function buildQuery($query)$/;"	f
+c	public/static/js/lib/jquery.cookie-1.4.1.min.js	/^!function(a){"function"==typeof define&&define.amd?define(["jquery"],a):"object"==typeof exports?a(require("jquery")):a(jQuery)}(function(a){function b(a){return h.raw?a:encodeURIComponent(a)}function c(a){return h.raw?a:decodeURIComponent(a)}function d(a){return b(h.json?JSON.stringify(a):String(a))}function e(a){0===a.indexOf('"')&&(a=a.slice(1,-1).replace(\/\\\\"\/g,'"').replace(\/\\\\\\\\\/g,"\\\\"));try{return a=decodeURIComponent(a.replace(g," ")),h.json?JSON.parse(a):a}catch(b){}}function f(b,c){var d=h.raw?b:e(b);return a.isFunction(c)?c(d):d}var g=\/\\+\/g,h=a.cookie=function(e,g,i){if(void 0!==g&&!a.isFunction(g)){if(i=a.extend({},h.defaults,i),"number"==typeof i.expires){var j=i.expires,k=i.expires=new Date;k.setTime(+k+864e5*j)}return document.cookie=[b(e),"=",d(g),i.expires?"; expires="+i.expires.toUTCString():"",i.path?"; path="+i.path:"",i.domain?"; domain="+i.domain:"",i.secure?"; secure":""].join("")}for(var l=e?void 0:{},m=document.cookie?document.cookie.split("; "):[],n=0,o=m.length;o>n;n++){var p=m[n].split("="),q=c(p.shift()),r=p.join("=");if(e&&e===q){l=f(r,g);break}e||void 0===(r=f(r))||(l[q]=r)}return l};h.defaults={},a.removeCookie=function(b,c){return void 0===a.cookie(b)?!1:(a.cookie(b,"",a.extend({},c,{expires:-1})),!a.cookie(b))}});/;"	f
+case	application/models/Case.php	/^        $case = DB::get($sql);$/;"	v
+caseAction	application/actions/back/case/case.php	/^class caseAction extends BaseAction$/;"	c
+caseInfo	application/actions/back/case/ajaxcase.php	/^        $caseInfo = CaseModel::getCaseDetail($id);$/;"	v
+cases	application/actions/back/case/case.php	/^            $cases = CaseModel::getCasesByGroupId($groupId);$/;"	v
+cases	application/actions/back/case/case.php	/^            $cases= CaseModel::getCases();$/;"	v
+catchException	yaf.php	/^    public function catchException($flag) {}$/;"	f
+ch	application/library/CurlTools.php	/^        $this->ch = curl_init();     \/\/ 初始化$/;"	v
+ch	application/library/CurlTools.php	/^    private $ch = null;$/;"	v
+checked	application/library/BackTools.php	/^    public static function optionCreate($data, $checked = false){$/;"	v
+children	application/actions/BaseAction.php	/^        $children = UserModel::getChildren();$/;"	v
+children	application/models/User.php	/^    private static $children = array($/;"	v
+childrenOptions	application/actions/back/user/member.php	/^        $childrenOptions = UserModel::getChildrenOptions();$/;"	v
+city	application/actions/back/crm/crmshop.php	/^            $city = DB::escape($_GET['city']);$/;"	v
+cityOptions	application/actions/BaseAction.php	/^            $cityOptions = "<option value='-1'>请选择<\/option>";$/;"	v
+city_code	application/actions/BaseAction.php	/^        $city_code = isset($_COOKIE['city_code']) ? DB::escape($_COOKIE['city_code']) : '';$/;"	v
+city_code	application/models/Shop.php	/^        $city_code = isset($_COOKIE['city_code']) ? DB::escape($_COOKIE['city_code']) : 0;$/;"	v
+city_code	application/models/User.php	/^        $city_code = isset($_COOKIE['city_code']) ? DB::escape($_COOKIE['city_code']) : 0;$/;"	v
+city_map	application/actions/BaseAction.php	/^        $city_map = Crm::getCityMap();$/;"	v
+city_map	application/actions/BaseAction.php	/^        $this->city_map = $city_map;$/;"	v
+city_map	application/actions/BaseAction.php	/^    protected $city_map = array();$/;"	v
+clear	yaf.php	/^    public function clear($name) {}$/;"	f
+clearBody	yaf.php	/^    public function clearBody() {}$/;"	f
+clearFormValues	public/static/js/back/common.js	/^function clearFormValues(obj){$/;"	f
+clearHeaders	yaf.php	/^    public function clearHeaders() {}$/;"	f
+clearLastError	yaf.php	/^    public function clearLastError() {}$/;"	f
+clearLocalNamespace	yaf.php	/^    public function clearLocalNamespace() {}$/;"	f
+clue	application/actions/u/queryClue.php	/^            $clue = $_POST;$/;"	v
+clue	application/actions/u/saveClue.php	/^            $clue = $_POST;$/;"	v
+clue	application/library/Crm.php	/^            $clue = $json['groups'];$/;"	v
+clue	application/library/Crm.php	/^            $clue = self::MAGIC;$/;"	v
+clue	application/library/Crm.php	/^        $clue = array();$/;"	v
+clue.query	public/static/js/u/common.js	/^var clue = {};$/;"	f
+clue.save	public/static/js/u/common.js	/^}$/;"	f
+cnt	application/views/back/act.phtml	/^                                    $cnt = 1;$/;"	v
+cnt	application/views/back/case.phtml	/^                                    $cnt = 1;$/;"	v
+cnt	application/views/back/member.phtml	/^                                    $cnt = 1;$/;"	v
+cnt	application/views/back/shop.phtml	/^                                    $cnt = 1;$/;"	v
+conf	application/library/DB.php	/^            $conf = Yaf_Registry::get('config')->mysql->commerce->master->toArray();$/;"	v
+config	yaf.php	/^    protected $config;$/;"	v
+controller	yaf.php	/^    final public function forward($module, $controller = null, $action = null, $parameters = null) {}$/;"	v
+controller	yaf.php	/^    protected $controller;$/;"	v
+controller	yaf.php	/^    public $controller;$/;"	v
+cookfile	application/library/CurlTools.php	/^        \/\/    $cookfile = tempnam(sys_get_temp_dir(), 'cuk');$/;"	v
+count	yaf.php	/^    public function count() {}$/;"	f
+createPager	application/library/Html.php	/^    public static function createPager($page, $page_size, $total)$/;"	f
+crm.build_store	public/static/js/u/common.js	/^var crm = {};$/;"	f
+crmcityAction	application/actions/back/crm/crmcity.php	/^class crmcityAction extends BaseAction$/;"	c
+crmshopAction	application/actions/back/crm/crmshop.php	/^class crmshopAction extends BaseAction$/;"	c
+ct	application/library/Crm.php	/^        $ct  = new CurlTools();$/;"	v
+ct	application/library/Crm.php	/^        $ct = new CurlTools();$/;"	v
+ctObj	application/actions/index/debug.php	/^        $ctObj = new CurlTools();$/;"	v
+current	application/views/u/nav_footer.phtml	/^$current = ' style="color:#ed6c00;"';$/;"	v
+current	yaf.php	/^    public function current() {}$/;"	f
+current_city_data	application/actions/BaseAction.php	/^                    $current_city_data = array($/;"	v
+current_city_data	application/actions/BaseAction.php	/^        $current_city_data = array($/;"	v
+current_controller	application/actions/BaseAction.php	/^        $current_controller = strtolower($this->getRequest()->getControllerName());$/;"	v
+d	public/static/js/lib/jquery.cookie-1.4.1.min.js	/^!function(a){"function"==typeof define&&define.amd?define(["jquery"],a):"object"==typeof exports?a(require("jquery")):a(jQuery)}(function(a){function b(a){return h.raw?a:encodeURIComponent(a)}function c(a){return h.raw?a:decodeURIComponent(a)}function d(a){return b(h.json?JSON.stringify(a):String(a))}function e(a){0===a.indexOf('"')&&(a=a.slice(1,-1).replace(\/\\\\"\/g,'"').replace(\/\\\\\\\\\/g,"\\\\"));try{return a=decodeURIComponent(a.replace(g," ")),h.json?JSON.parse(a):a}catch(b){}}function f(b,c){var d=h.raw?b:e(b);return a.isFunction(c)?c(d):d}var g=\/\\+\/g,h=a.cookie=function(e,g,i){if(void 0!==g&&!a.isFunction(g)){if(i=a.extend({},h.defaults,i),"number"==typeof i.expires){var j=i.expires,k=i.expires=new Date;k.setTime(+k+864e5*j)}return document.cookie=[b(e),"=",d(g),i.expires?"; expires="+i.expires.toUTCString():"",i.path?"; path="+i.path:"",i.domain?"; domain="+i.domain:"",i.secure?"; secure":""].join("")}for(var l=e?void 0:{},m=document.cookie?document.cookie.split("; "):[],n=0,o=m.length;o>n;n++){var p=m[n].split("="),q=c(p.shift()),r=p.join("=");if(e&&e===q){l=f(r,g);break}e||void 0===(r=f(r))||(l[q]=r)}return l};h.defaults={},a.removeCookie=function(b,c){return void 0===a.cookie(b)?!1:(a.cookie(b,"",a.extend({},c,{expires:-1})),!a.cookie(b))}});/;"	f
+data	application/actions/back/act/ajaxaddact.php	/^        $data = $fileData = array();$/;"	v
+data	application/actions/back/act/ajaxdeleteact.php	/^            $data = array($/;"	v
+data	application/actions/back/act/ajaxupdateact.php	/^        $data = array();$/;"	v
+data	application/actions/back/case/ajaxaddcase.php	/^        $data = $fileData = array();$/;"	v
+data	application/actions/back/case/ajaxdeletecase.php	/^            $data = array($/;"	v
+data	application/actions/back/case/ajaxupdatecase.php	/^        $data = array ();$/;"	v
+data	application/actions/back/shop/ajaxaddshop.php	/^        $data = $fileData = array();$/;"	v
+data	application/actions/back/shop/ajaxdeleteshop.php	/^            $data = array($/;"	v
+data	application/actions/back/shop/ajaxupdateshop.php	/^        $data = array();$/;"	v
+data	application/actions/back/user/ajaxdeleteuser.php	/^            $data = array($/;"	v
+data	application/actions/back/user/ajaxupdateuser.php	/^            $data = array();$/;"	v
+data	application/models/Act.php	/^        $data = $res->fetch();$/;"	v
+data	application/models/Act.php	/^        $data = DB::get($sql);$/;"	v
+data	application/models/Act.php	/^        $data = DB::getAll($sql);$/;"	v
+data	application/models/Case.php	/^        $data = $res->fetch();$/;"	v
+data	application/models/Case.php	/^        $data = DB::get($sql);$/;"	v
+data	application/models/Case.php	/^        $data = DB::getAll($sql);$/;"	v
+data	application/models/Shop.php	/^        $data = $res->fetch();$/;"	v
+data	application/models/Shop.php	/^        $data = $res->fetchAll();$/;"	v
+data	application/models/Shop.php	/^        $data = DB::get($sql);$/;"	v
+data	application/models/User.php	/^        $data = $res->fetch();$/;"	v
+data	application/models/User.php	/^        $data = DB::get($sql);$/;"	v
+data	application/models/User.php	/^        $data = DB::getAll($sql);$/;"	v
+db	application/library/DB.php	/^            $db = new PDO($dsn, $conf['username'], $conf['password']);$/;"	v
+db	application/library/DB.php	/^        $db = self::getDb();$/;"	v
+db_res	application/actions/u/queryClue.php	/^            $db_res = DB::get($sql);$/;"	v
+db_res	application/actions/u/saveClue.php	/^            $db_res = DB::get($sql);$/;"	v
+debugAction	application/actions/index/debug.php	/^class debugAction extends BaseAction$/;"	c
+default	application/actions/BaseAction.php	/^    public function getRequestParam($name, $default = '')$/;"	v
+default	yaf.php	/^    public function getEnv($name, $default = null) {}$/;"	v
+default	yaf.php	/^    public function getParam($name, $default = null) {}$/;"	v
+default	yaf.php	/^    public function getServer($name, $default = null) {}$/;"	v
+del	yaf.php	/^    public function del($name) {}$/;"	f
+del	yaf.php	/^    public static function del($name) {}$/;"	f
+deleteAct	application/models/Act.php	/^    public static function deleteAct($data, $id){$/;"	f
+deleteCase	application/models/Case.php	/^    public static function deleteCase($data, $id){$/;"	f
+deleteShop	application/models/Shop.php	/^    public static function deleteShop($data, $id){$/;"	f
+deleteUser	application/models/User.php	/^    public static function deleteUser($data, $id){$/;"	f
+delimiter	yaf.php	/^    public function __construct($controller_prefer = false, $delimiter = '') {}$/;"	v
+disableView	yaf.php	/^    public function disableView() {}$/;"	f
+dispatch	yaf.php	/^    public function dispatch(Yaf_Request_Abstract $request) {}$/;"	f
+dispatchLoopShutdown	application/plugins/Sample.php	/^	public function dispatchLoopShutdown(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {$/;"	f
+dispatchLoopShutdown	yaf.php	/^    public function dispatchLoopShutdown(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {}$/;"	f
+dispatchLoopStartup	application/plugins/Sample.php	/^	public function dispatchLoopStartup(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {$/;"	f
+dispatchLoopStartup	yaf.php	/^    public function dispatchLoopStartup(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {}$/;"	f
+dispatched	yaf.php	/^    protected $dispatched;$/;"	v
+dispatcher	yaf.php	/^    protected $dispatcher;$/;"	v
+display	application/actions/BaseAction.php	/^    public function display($tpl, array $parameters = NULL)$/;"	f
+display	yaf.php	/^    final protected function display($tpl, array $parameters = null) {}$/;"	f
+display	yaf.php	/^    public function display($tpl, array $tpl_vars = null) {}$/;"	f
+display	yaf.php	/^    public function display($tpl, array $tpl_vars = null);$/;"	f
+document.getElementById	public/static/js/back/uploadPreview.min.js	/^var uploadPreview = function(setting) { var _self = this; _self.IsNull = function(value) { if (value == undefined || value == null || value == "" || value.length == 0) { return true }; return false; }; _self.DefautlSetting = { UpBtn: "", DivShow: "", ImgShow: "", Width: 100, Height: 100, ImgType: ["gif", "jpeg", "jpg", "bmp", "png"], ErrMsg: "选择文件错误,图片类型必须是(gif,jpeg,jpg,bmp,png)中的一种", callback: function() { } }; _self.Setting = { UpBtn: _self.IsNull(setting.UpBtn) ? _self.DefautlSetting.UpBtn : setting.UpBtn, DivShow: _self.IsNull(setting.DivShow) ? _self.DefautlSetting.DivShow : setting.DivShow, ImgShow: _self.IsNull(setting.ImgShow) ? _self.DefautlSetting.ImgShow : setting.ImgShow, Width: _self.IsNull(setting.Width) ? _self.DefautlSetting.Width : setting.Width, Height: _self.IsNull(setting.Height) ? _self.DefautlSetting.Height : setting.Height, ImgType: _self.IsNull(setting.ImgType) ? _self.DefautlSetting.ImgType : setting.ImgType, ErrMsg: _self.IsNull(setting.ErrMsg) ? _self.DefautlSetting.ErrMsg : setting.ErrMsg, callback: _self.IsNull(setting.callback) ? _self.DefautlSetting.callback : setting.callback }; _self.getObjectURL = function(file) { var url = null; if (window.createObjectURL != undefined) { url = window.createObjectURL(file); } else if (window.URL != undefined) { url = window.URL.createObjectURL(file); } else if (window.webkitURL != undefined) { url = window.webkitURL.createObjectURL(file); }; return url; }; _self.Bind = function() { document.getElementById(_self.Setting.UpBtn).onchange = function() { if (this.value) { if (!RegExp("\\.(" + _self.Setting.ImgType.join("|") + ")$", "i").test(this.value.toLowerCase())) { alert(_self.Setting.ErrMsg); this.value = ""; return false }; if (navigator.userAgent.indexOf("MSIE") > -1) { try { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); } catch (e) { var div = document.getElementById(_self.Setting.DivShow); this.select(); top.parent.document.body.focus(); var src = document.selection.createRange().text; document.selection.empty(); document.getElementById(_self.Setting.ImgShow).style.display = "none"; div.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)"; div.style.width = _self.Setting.Width + "px"; div.style.height = _self.Setting.Height + "px"; div.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = src; } } else { document.getElementById(_self.Setting.ImgShow).src = _self.getObjectURL(this.files[0]); }; _self.Setting.callback(); } } }; _self.Bind(); }/;"	f
+dsn	application/library/DB.php	/^            $dsn  = "mysql:dbname={$conf['database']};host={$conf['hostname']};port={$conf['port']}";$/;"	v
+education	application/actions/BaseAction.php	/^        $education = UserModel::getEducation();$/;"	v
+education	application/models/User.php	/^    private static $education = array($/;"	v
+educationOptions	application/actions/back/user/member.php	/^        $educationOptions = UserModel::getEducationOptions();$/;"	v
+enableView	yaf.php	/^    public function enableView() {}$/;"	f
+end	application/library/Html.php	/^            $end   = $page + $fix_size;$/;"	v
+end	application/library/Html.php	/^            $end   = $page_count + 1;$/;"	v
+end	application/library/Html.php	/^        $end   = 11;$/;"	v
+environ	yaf.php	/^    public function environ() {}$/;"	f
+envrion	yaf.php	/^    public function __construct($config, $envrion = null) {}$/;"	v
+errno	application/library/CurlTools.php	/^    public function errno()$/;"	f
+error	application/library/CurlTools.php	/^    public function error()$/;"	f
+errorAction	application/controllers/Error.php	/^	public function errorAction($exception) {$/;"	f
+escape	application/library/DB.php	/^    public static function escape($str)$/;"	f
+execute	application/actions/BaseAction.php	/^    public function execute($arg = null)$/;"	f
+execute	yaf.php	/^    abstract public function execute($arg = null);$/;"	f
+execute	yaf.php	/^    public function execute(callable $entry) {}$/;"	f
+ext	application/views/u/viewmap.phtml	/^$ext = array($/;"	v
+ext_css	application/views/u/viewmap.phtml	/^$ext_css = array($/;"	v
+ext_js	application/views/u/viewmap.phtml	/^$ext_js = array($/;"	v
+field	application/library/DB.php	/^        foreach ($save_data as $field => $value)$/;"	v
+field	application/models/Pic.php	/^        foreach ($data as $field => $value)$/;"	v
+fieldStr	application/library/CurlTools.php	/^        $fieldStr = $this->_parsmEncode($params);$/;"	v
+fieldStr	application/library/CurlTools.php	/^        $fieldStr = '';$/;"	v
+fileData	application/actions/back/act/ajaxupdateact.php	/^        $fileData = array();$/;"	v
+fileData	application/actions/back/case/ajaxupdatecase.php	/^        $fileData = array ();$/;"	v
+fileData	application/actions/back/shop/ajaxupdateshop.php	/^        $fileData = array();$/;"	v
+fileData	application/actions/back/user/ajaxupdateuser.php	/^            $fileData = array();$/;"	v
+finalArr	public/static/js/u/show_map.js	/^var finalArr = [];$/;"	v
+fix_size	application/library/Html.php	/^        $fix_size = 5;$/;"	v
+flushInstantly	yaf.php	/^    public function flushInstantly($flag) {}$/;"	f
+formParams	public/static/js/back/common.js	/^function formParams(obj){                                                                                                                    $/;"	f
+forward	yaf.php	/^    final public function forward($module, $controller = null, $action = null, $parameters = null) {}$/;"	f
+gender	application/actions/BaseAction.php	/^        $gender = UserModel::getGender();$/;"	v
+gender	application/actions/u/gentleman.php	/^        $gender = 0;$/;"	v
+gender	application/actions/u/index.php	/^        $gender = 1;$/;"	v
+gender	application/models/User.php	/^    private static $gender = array($/;"	v
+gentlemanAction	application/actions/u/gentleman.php	/^class gentlemanAction extends BaseAction$/;"	c
+gentlemanDetailAction	application/actions/u/gentlemanDetail.php	/^class gentlemanDetailAction extends BaseAction$/;"	c
+get	application/controllers/Index.php	/^		$get = $this->getRequest()->getQuery("get", "default value");$/;"	v
+get	application/library/CurlTools.php	/^    public function get($url, $params = array(), $referer = '')$/;"	f
+get	application/library/DB.php	/^    public static function get($sql)$/;"	f
+get	yaf.php	/^    public function get($name, $value) {}$/;"	f
+get	yaf.php	/^    public function get() {}$/;"	f
+get	yaf.php	/^    public static function get($name) {}$/;"	f
+getActByGroupId	application/models/Act.php	/^    public static function getActByGroupId($gid)$/;"	f
+getActDetail	application/models/Act.php	/^    public static function getActDetail($id){$/;"	f
+getActionName	yaf.php	/^    public function getActionName() {}$/;"	f
+getActs	application/models/Act.php	/^    public static function getActs(){$/;"	f
+getActsByGroupId	application/models/Act.php	/^    public static function getActsByGroupId($groupId){$/;"	f
+getAddress	public/static/js/u/show_map.js	/^function getAddress(lng, lat, initView){$/;"	f
+getAll	application/library/DB.php	/^    public static function getAll($sql)$/;"	f
+getAllActTotal	application/models/Act.php	/^    public static function getAllActTotal(){$/;"	f
+getAllCaseTotal	application/models/Case.php	/^    public static function getAllCaseTotal(){$/;"	f
+getAllShopTotal	application/models/Shop.php	/^    public static function getAllShopTotal(){$/;"	f
+getAllUsersByGenderTotal	application/models/User.php	/^    public static function getAllUsersByGenderTotal($gender){$/;"	f
+getAllUsersTotal	application/models/User.php	/^    public static function getAllUsersTotal(){$/;"	f
+getAppDirectory	yaf.php	/^    public function getAppDirectory() {}$/;"	f
+getApplication	yaf.php	/^    public function getApplication() {}$/;"	f
+getBaseUri	yaf.php	/^    public function getBaseUri() {}$/;"	f
+getBody	yaf.php	/^    public function getBody() {}$/;"	f
+getCaseByGroupId	application/models/Case.php	/^    public static function getCaseByGroupId($sid, $gid)$/;"	f
+getCaseDetail	application/models/Case.php	/^    public static function getCaseDetail($id){$/;"	f
+getCases	application/models/Case.php	/^    public static function getCases(){$/;"	f
+getCasesByGroupId	application/models/Case.php	/^    public static function getCasesByGroupId($groupId){$/;"	f
+getChildren	application/models/User.php	/^    public static function getChildren(){$/;"	f
+getChildrenOptions	application/models/User.php	/^    public static function getChildrenOptions(){$/;"	f
+getCityMap	application/library/Crm.php	/^    public static function getCityMap()$/;"	f
+getConfig	yaf.php	/^    public function getConfig() {}$/;"	f
+getController	yaf.php	/^    public function getController() {}$/;"	f
+getControllerName	yaf.php	/^    public function getControllerName() {}$/;"	f
+getCookie	yaf.php	/^    public function getCookie() {}$/;"	f
+getCurrentRoute	yaf.php	/^    public function getCurrentRoute() {}$/;"	f
+getDb	application/library/DB.php	/^    private static function getDb()$/;"	f
+getDispatcher	yaf.php	/^    public function getDispatcher() {}$/;"	f
+getEducation	application/models/User.php	/^    public static function getEducation(){$/;"	f
+getEducationOptions	application/models/User.php	/^    public static function getEducationOptions(){$/;"	f
+getEnv	yaf.php	/^    public function getEnv($name, $default = null) {}$/;"	f
+getException	yaf.php	/^    public function getException() {}$/;"	f
+getFiles	yaf.php	/^    public function getFiles() {}$/;"	f
+getGender	application/models/User.php	/^    public static function getGender(){$/;"	f
+getGroupOptions	application/actions/BaseAction.php	/^    public function getGroupOptions($groups){$/;"	f
+getHash	application/models/Pic.php	/^    public static function getHash($aid, $type)$/;"	f
+getHashs	application/models/Pic.php	/^    public static function getHashs($aid, $types)$/;"	f
+getHeader	yaf.php	/^    public function getHeader() {}$/;"	f
+getHouse	application/models/User.php	/^    public static function getHouse(){$/;"	f
+getHouseOptions	application/models/User.php	/^    public static function getHouseOptions(){$/;"	f
+getIncome	application/models/User.php	/^    public static function getIncome(){$/;"	f
+getIncomeOptions	application/models/User.php	/^    public static function getIncomeOptions(){$/;"	f
+getInfo	application/library/CurlTools.php	/^    public function getInfo()$/;"	f
+getInstance	yaf.php	/^    public static function getInstance() {}$/;"	f
+getInvokeArg	yaf.php	/^    final public function getInvokeArg($name) {}$/;"	f
+getInvokeArgs	yaf.php	/^    final public function getInvokeArgs() {}$/;"	f
+getLanguage	yaf.php	/^    public function getLanguage() {}$/;"	f
+getLastErrorMsg	yaf.php	/^    public function getLastErrorMsg() {}$/;"	f
+getLastErrorNo	yaf.php	/^    public function getLastErrorNo() {}$/;"	f
+getLibraryPath	yaf.php	/^    public function getLibraryPath($is_global = false) {}$/;"	f
+getLocalNamespace	yaf.php	/^    public function getLocalNamespace() {}$/;"	f
+getLoveType	application/models/User.php	/^    public static function getLoveType(){$/;"	f
+getLoveTypeOptions	application/models/User.php	/^    public static function getLoveTypeOptions(){$/;"	f
+getMarriage	application/models/User.php	/^    public static function getMarriage(){$/;"	f
+getMarriageOptions	application/models/User.php	/^    public static function getMarriageOptions(){$/;"	f
+getMethod	yaf.php	/^    public function getMethod() {}$/;"	f
+getModuleName	yaf.php	/^    final public function getModuleName() {}$/;"	f
+getModuleName	yaf.php	/^    public function getModuleName() {}$/;"	f
+getModules	yaf.php	/^    public function getModules() {}$/;"	f
+getOne	application/models/Pic.php	/^    public static function getOne($aid, $type){$/;"	f
+getPageSize	application/library/Html.php	/^    public static function getPageSize()$/;"	f
+getParam	yaf.php	/^    public function getParam($name, $default = null) {}$/;"	f
+getParams	yaf.php	/^    public function getParams() {}$/;"	f
+getPost	yaf.php	/^    public function getPost() {}$/;"	f
+getQuery	yaf.php	/^    public function getQuery() {}$/;"	f
+getRequest	yaf.php	/^    final public function getRequest() {}$/;"	f
+getRequest	yaf.php	/^    public function getRequest() {}$/;"	f
+getRequestParam	application/actions/BaseAction.php	/^    public function getRequestParam($name, $default = '')$/;"	f
+getRequestUri	yaf.php	/^    public function getRequestUri() {}$/;"	f
+getResponse	yaf.php	/^    final public function getResponse() {}$/;"	f
+getRoute	yaf.php	/^    public function getRoute($name) {}$/;"	f
+getRouter	yaf.php	/^    public function getRouter() {}$/;"	f
+getRoutes	yaf.php	/^    public function getRoutes() {}$/;"	f
+getScriptPath	yaf.php	/^    public function getScriptPath() {}$/;"	f
+getScriptPath	yaf.php	/^    public function getScriptPath();$/;"	f
+getServer	yaf.php	/^    public function getServer($name, $default = null) {}$/;"	f
+getShopBaseInfo	application/library/Crm.php	/^    public static function getShopBaseInfo()$/;"	f
+getShopBaseInfoByCityId	application/library/Crm.php	/^    public static function getShopBaseInfoByCityId($city_id)$/;"	f
+getShopBaseInfoById	application/library/Crm.php	/^    public static function getShopBaseInfoById($shop_id)$/;"	f
+getShopByGroupId	application/models/Shop.php	/^    public static function getShopByGroupId($groupId){$/;"	f
+getShopDetail	application/models/Shop.php	/^    public static function getShopDetail($id){$/;"	f
+getShopListData	application/models/Shop.php	/^    public static function getShopListData()$/;"	f
+getShops	application/models/Shop.php	/^    public static function getShops(){$/;"	f
+getSignature	application/library/Crm.php	/^    public static function getSignature($params, $secret)$/;"	f
+getUserDetail	application/models/User.php	/^    public static function getUserDetail($uid)$/;"	f
+getUserInfo	application/models/User.php	/^    public static function getUserInfo($id){$/;"	f
+getUserListDataByGender	application/models/User.php	/^    public static function getUserListDataByGender($gender)$/;"	f
+getUsers	application/models/User.php	/^    public static function getUsers(){$/;"	f
+getUsersByGender	application/models/User.php	/^    public static function getUsersByGender($gender){$/;"	f
+getView	yaf.php	/^    final public function getView() {}$/;"	f
+getViewpath	yaf.php	/^    final public function getViewpath() {}$/;"	f
+groupId	application/actions/back/act/act.php	/^            $groupId = DB::escape($_GET['groups']);$/;"	v
+groupId	application/actions/back/act/act.php	/^        $groupId = -1;$/;"	v
+groupId	application/actions/back/case/case.php	/^            $groupId = DB::escape($_GET['groups']);$/;"	v
+groupId	application/actions/back/shop/shop.php	/^            $groupId = DB::escape($_GET['groups']);$/;"	v
+groupId	application/actions/back/shop/shop.php	/^        $groupId = -1;$/;"	v
+groups	application/actions/back/act/act.php	/^        $groups = crm::getShopBaseInfo();$/;"	v
+groups	application/actions/back/case/case.php	/^        $groups = crm::getShopBaseInfo();$/;"	v
+handleLocationError	public/static/js/u/show_map.js	/^function handleLocationError(error) { $/;"	f
+has	yaf.php	/^    public function has($name) {}$/;"	f
+has	yaf.php	/^    public static function has($name) {}$/;"	f
+hash	application/controllers/F.php	/^        $hash = DB::escape(isset($_GET['n']) ? $_GET['n'] : '');$/;"	v
+hash	application/models/Pic.php	/^            $hash = $row['hash'];$/;"	v
+hash	application/models/Pic.php	/^        $hash = '';$/;"	v
+house	application/actions/BaseAction.php	/^        $house = UserModel::getHouse();$/;"	v
+house	application/models/User.php	/^    private static $house = array($/;"	v
+houseOptions	application/actions/back/user/member.php	/^        $houseOptions = UserModel::getHouseOptions();$/;"	v
+html	application/library/Html.php	/^        $html = '';$/;"	v
+i	application/library/Html.php	/^            $html .= $i == $page ? '<span class="current-page">' . $i . '<\/span>'$/;"	v
+id	application/actions/back/act/ajaxact.php	/^        $id = DB::escape($_GET['id']);$/;"	v
+id	application/actions/back/act/ajaxdeleteact.php	/^            $id = DB::escape($_GET['id']);$/;"	v
+id	application/actions/back/act/ajaxupdateact.php	/^        $id = DB::escape($_GET['id']);$/;"	v
+id	application/actions/back/case/ajaxcase.php	/^        $id = DB::escape($_GET['id']);$/;"	v
+id	application/actions/back/case/ajaxdeletecase.php	/^            $id = DB::escape($_GET['id']);$/;"	v
+id	application/actions/back/case/ajaxupdatecase.php	/^        $id = DB::escape ( $_GET ['id'] );$/;"	v
+id	application/actions/back/shop/ajaxdeleteshop.php	/^            $id = DB::escape($_GET['id']);$/;"	v
+id	application/actions/back/shop/ajaxshop.php	/^        $id = DB::escape($_GET['id']);$/;"	v
+id	application/actions/back/shop/ajaxupdateshop.php	/^        $id = DB::escape($_GET['id']);$/;"	v
+id	application/actions/back/user/ajaxdeleteuser.php	/^            $id = DB::escape($_GET['id']);$/;"	v
+id	application/actions/back/user/ajaxupdateuser.php	/^            $id = DB::escape($_GET['id']);$/;"	v
+id	application/actions/back/user/ajaxuser.php	/^            $id = DB::escape($_GET['id']);$/;"	v
+id	application/actions/u/queryClue.php	/^            $id    = (int)$_COOKIE['_mid_'];$/;"	v
+id	application/actions/u/saveClue.php	/^            $id    = (int)$_COOKIE['_mid_'];$/;"	v
+id	application/actions/u/viewMap.php	/^        $id    = (int)$_COOKIE['_mid_'];$/;"	v
+image_data	application/controllers/F.php	/^            $image_data = DB::get($sql);$/;"	v
+img_suffix	application/views/u/nav_footer.phtml	/^$img_suffix = '_select';$/;"	v
+import	yaf.php	/^    public static function import() {}$/;"	f
+income	application/actions/BaseAction.php	/^        $income = UserModel::getIncome();$/;"	v
+income	application/models/User.php	/^    private static $income = array($/;"	v
+incomeOptions	application/actions/back/user/member.php	/^        $incomeOptions = UserModel::getIncomeOptions();$/;"	v
+indexAction	application/actions/back/index.php	/^class indexAction extends BaseAction$/;"	c
+indexAction	application/actions/u/index.php	/^class indexAction extends BaseAction$/;"	c
+indexAction	application/controllers/Index.php	/^	public function indexAction($name = "Stranger") {$/;"	f
+info	application/library/Crm.php	/^        $info  = json_decode($json, true);$/;"	v
+info	application/library/Crm.php	/^        $info = array();$/;"	v
+info	application/library/CurlTools.php	/^    private $info = array();$/;"	v
+info	application/models/Log.php	/^    public static function info($input, $output)$/;"	f
+initCityData	application/actions/BaseAction.php	/^    private function initCityData()$/;"	f
+initMap	public/static/js/u/show_map.js	/^function initMap(point){$/;"	f
+initView	public/static/js/u/show_map.js	/^function initView(lng, lat, address){$/;"	f
+initView	yaf.php	/^    final public function initView(array $options) {}$/;"	f
+initView	yaf.php	/^    public function initView($templates_dir, array $options = null) {}$/;"	f
+insert	application/library/DB.php	/^    public static function insert($save_data, $table)$/;"	f
+insertSample	application/models/Sample.php	/^    public function insertSample($arrInfo) {$/;"	f
+isBinary	application/library/Util.php	/^    public static function  isBinary($str)$/;"	f
+isCli	yaf.php	/^    public function isCli() {}$/;"	f
+isDispatched	yaf.php	/^    public function isDispatched() {}$/;"	f
+isGet	yaf.php	/^    public function isGet() {}$/;"	f
+isHead	yaf.php	/^    public function isHead() {}$/;"	f
+isLocalName	yaf.php	/^    public function isLocalName() {}$/;"	f
+isOptions	yaf.php	/^    public function isOptions() {}$/;"	f
+isPost	yaf.php	/^    public function isPost() {}$/;"	f
+isPut	yaf.php	/^    public function isPut() {}$/;"	f
+isRetStr	application/library/CurlTools.php	/^    private function _parsmEncode($params, $isRetStr = true)$/;"	v
+isRouted	yaf.php	/^    public function isRouted() {}$/;"	f
+isXmlHttpRequest	yaf.php	/^    public function isXmlHttpRequest() {}$/;"	f
+is_global	yaf.php	/^    public function setLibraryPath($directory, $is_global = false) {}$/;"	v
+js	application/views/u/storedetail.phtml	/^$js =  <<<JS$/;"	v
+json	application/library/Crm.php	/^        $json = $ct->get($api);$/;"	v
+json	application/library/Crm.php	/^        $json = json_decode($json_str, true);$/;"	v
+json_str	application/library/Crm.php	/^        $json_str = $ct->get($api);$/;"	v
+k	application/actions/BaseAction.php	/^            foreach ($this->city_map as $k => $dt)$/;"	v
+k	application/actions/back/act/ajaxaddact.php	/^            foreach($_FILES as $k => $file){$/;"	v
+k	application/actions/back/act/ajaxaddact.php	/^        foreach($_POST as $k => $v){$/;"	v
+k	application/actions/back/act/ajaxupdateact.php	/^            foreach($_FILES as $k => $file){$/;"	v
+k	application/actions/back/act/ajaxupdateact.php	/^        foreach($_POST as $k => $v){$/;"	v
+k	application/actions/back/case/ajaxaddcase.php	/^            foreach($_FILES as $k => $file){$/;"	v
+k	application/actions/back/case/ajaxaddcase.php	/^        foreach($_POST as $k => $v){$/;"	v
+k	application/actions/back/case/ajaxupdatecase.php	/^            foreach ( $_FILES as $k => $file ) {$/;"	v
+k	application/actions/back/case/ajaxupdatecase.php	/^        foreach ( $_POST as $k => $v ) {$/;"	v
+k	application/actions/back/shop/ajaxaddshop.php	/^            foreach($_FILES as $k => $file){$/;"	v
+k	application/actions/back/shop/ajaxaddshop.php	/^        foreach($_POST as $k => $v){$/;"	v
+k	application/actions/back/shop/ajaxupdateshop.php	/^            foreach($_FILES as $k => $file){$/;"	v
+k	application/actions/back/shop/ajaxupdateshop.php	/^        foreach($_POST as $k => $v){$/;"	v
+k	application/actions/back/user/adduser.php	/^            foreach($_FILES as $k => $file){$/;"	v
+k	application/actions/back/user/adduser.php	/^        foreach($_POST as $k => $v){$/;"	v
+k	application/actions/back/user/ajaxupdateuser.php	/^                foreach($_FILES as $k => $file){$/;"	v
+k	application/actions/back/user/ajaxupdateuser.php	/^            foreach($_POST as $k => $v){$/;"	v
+k	application/library/BackTools.php	/^            foreach ($data as $k => $v){$/;"	v
+k	application/library/Crm.php	/^        foreach ($params as $k => $v)$/;"	v
+k	application/models/Shop.php	/^        foreach ($list_data as $k => $dt)$/;"	v
+k	application/models/User.php	/^        foreach ($list_data as $k => $dt)$/;"	v
+k	application/views/u/city.phtml	/^foreach ($city_map as $k => $dt)$/;"	v
+key	application/library/CurlTools.php	/^        \/\/        foreach ($uploadFile as $key => $file)$/;"	v
+key	application/library/CurlTools.php	/^        foreach ($params as $key => $value)$/;"	v
+key	yaf.php	/^    public function key() {}$/;"	f
+ladyDetailAction	application/actions/u/ladyDetail.php	/^class ladyDetailAction extends BaseAction$/;"	c
+language	yaf.php	/^    protected $language;$/;"	v
+lastInsertId	application/library/DB.php	/^    public static function lastInsertId()$/;"	f
+list_data	application/models/Shop.php	/^        $list_data = self::getShops();$/;"	v
+list_data	application/models/User.php	/^        $list_data = self::getUsersByGender($gender);$/;"	v
+loveType	application/actions/BaseAction.php	/^        $loveType = UserModel::getLoveType();$/;"	v
+loveTypeOptions	application/actions/back/user/member.php	/^        $loveTypeOptions = UserModel::getLoveTypeOptions();$/;"	v
+love_type	application/models/User.php	/^    private static $love_type = array($/;"	v
+map	application/library/Crm.php	/^        $map  = json_decode($json, true);$/;"	v
+map	application/library/Crm.php	/^        $map = array();$/;"	v
+map	yaf.php	/^    public function __construct($match, array $route, array $map = null, array $verify = null) {}$/;"	v
+map_init	public/static/js/u/show_map.js	/^function map_init(lng, lat) {$/;"	f
+marriage	application/actions/BaseAction.php	/^        $marriage = UserModel::getMarriage();$/;"	v
+marriage	application/models/User.php	/^    private static $marriage = array($/;"	v
+marriageOptions	application/actions/back/user/member.php	/^        $marriageOptions = UserModel::getMarriageOptions();$/;"	v
+match	yaf.php	/^    public function match($uri) {}$/;"	f
+memberAction	application/actions/back/user/member.php	/^class memberAction extends BaseAction$/;"	c
+method	yaf.php	/^    public $method;$/;"	v
+model	application/controllers/Index.php	/^		$model = new SampleModel();$/;"	v
+module	yaf.php	/^    protected $module;$/;"	v
+module	yaf.php	/^    public $module;$/;"	v
+n	application/library/CurlTools.php	/^        \/\/                $n = 0;$/;"	v
+next	yaf.php	/^    public function next() {}$/;"	f
+now	application/actions/back/act/ajaxaddact.php	/^        $now = date('Y-m-d H:i:s');$/;"	v
+now	application/actions/back/case/ajaxaddcase.php	/^        $now = date('Y-m-d H:i:s');$/;"	v
+now	application/actions/back/shop/ajaxaddshop.php	/^        $now = date('Y-m-d H:i:s');$/;"	v
+now	application/actions/back/user/adduser.php	/^        $now = date('Y-m-d H:i:s');$/;"	v
+objSamplePlugin	application/Bootstrap.php	/^		$objSamplePlugin = new SamplePlugin();$/;"	v
+offsetExists	yaf.php	/^    public function offsetExists($name) {}$/;"	f
+offsetGet	yaf.php	/^    public function offsetGet($name) {}$/;"	f
+offsetSet	yaf.php	/^    public function offsetSet($name, $value) {}$/;"	f
+offsetUnset	yaf.php	/^    public function offsetUnset($name) {}$/;"	f
+optionCreate	application/library/BackTools.php	/^    public static function optionCreate($data, $checked = false){$/;"	f
+optionGen	public/static/js/back/common.js	/^function optionGen(jsonData){$/;"	f
+optionStr	application/actions/BaseAction.php	/^        $optionStr = "<option value='-1'>请选择<\/option>";$/;"	v
+optionStr	application/actions/back/act/act.php	/^        $optionStr = $this->getGroupOptions($groups);$/;"	v
+optionStr	application/actions/back/case/case.php	/^        $optionStr = $this->getGroupOptions($groups);$/;"	v
+options	yaf.php	/^    public function __construct($tempalte_dir, array $options = null) {}$/;"	v
+options	yaf.php	/^    public function initView($templates_dir, array $options = null) {}$/;"	v
+pAction	application/controllers/F.php	/^    public function pAction($arg = null)$/;"	f
+page	application/library/Html.php	/^        $page       = (int)$page;$/;"	v
+page_count	application/library/Html.php	/^        $page_count = ceil($total \/ $page_size);$/;"	v
+page_name	application/library/Html.php	/^        $page_name = self::page_name;$/;"	v
+page_size	application/library/Html.php	/^            $page_size = HtmlModel::page_size;$/;"	v
+page_size	application/library/Html.php	/^        $page_size  = (int)$page_size;$/;"	v
+page_size	application/library/Html.php	/^        $page_size = isset($_COOKIE['page_size']) ? $_COOKIE['page_size'] + 0 : 0;$/;"	v
+parameters	application/actions/BaseAction.php	/^    public function display($tpl, array $parameters = NULL)$/;"	v
+parameters	application/library/Html.php	/^    public static function render($obj, $tpl, $parameters = null)$/;"	v
+parameters	yaf.php	/^    final protected function display($tpl, array $parameters = null) {}$/;"	v
+parameters	yaf.php	/^    final protected function render($tpl, array $parameters = null) {}$/;"	v
+params	application/library/CurlTools.php	/^    private function _request($method, $url, $params = array(), $uploadFile = array(), $referer = '')$/;"	v
+params	application/library/CurlTools.php	/^    public function get($url, $params = array(), $referer = '')$/;"	v
+params	application/library/CurlTools.php	/^    public function post($url, $params = array(), $uploadFile = array(), $referer = '')$/;"	v
+params	yaf.php	/^    protected $params;$/;"	v
+picArr	application/actions/back/act/ajaxact.php	/^        $picArr = PicModel::getHashs($id, $types);$/;"	v
+picArr	application/actions/back/case/ajaxcase.php	/^        $picArr = PicModel::getHashs($id, $types);$/;"	v
+picArr	application/actions/back/shop/ajaxshop.php	/^        $picArr = PicModel::getHashs($id, $types);$/;"	v
+picArr	application/actions/back/user/ajaxuser.php	/^            $picArr = PicModel::getHashs($id, $types);$/;"	v
+picData	application/actions/back/act/ajaxupdateact.php	/^                    $picData = PicModel::getOne ( $id, $type );$/;"	v
+picData	application/actions/back/case/ajaxupdatecase.php	/^                    $picData = PicModel::getOne ( $id, $type );$/;"	v
+picData	application/actions/back/shop/ajaxupdateshop.php	/^                    $picData = PicModel::getOne ( $id, $type );$/;"	v
+picData	application/actions/back/user/ajaxupdateuser.php	/^                        $picData = PicModel::getOne($id, $type);$/;"	v
+post	application/library/CurlTools.php	/^    public function post($url, $params = array(), $uploadFile = array(), $referer = '')$/;"	f
+postData	application/actions/back/user/adduser.php	/^        $postData = $fileData = $tmp = array();$/;"	v
+postData	application/actions/back/user/adduser.php	/^       \/\/ $postData = DB::escape($_POST);$/;"	v
+postData	application/library/CurlTools.php	/^        \/\/    $postData = $this->_parsmEncode($params, false);  \/\/设置POST字段值$/;"	v
+postDispatch	application/plugins/Sample.php	/^	public function postDispatch(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {$/;"	f
+postDispatch	yaf.php	/^    public function postDispatch(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {}$/;"	f
+preDispatch	application/plugins/Sample.php	/^	public function preDispatch(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {$/;"	f
+preDispatch	yaf.php	/^    public function preDispatch(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {}$/;"	f
+preResponse	yaf.php	/^    public function preResponse(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {}$/;"	f
+prefix	application/views/u/footer.phtml	/^        $prefix = strtolower(substr($script, 0, 7));$/;"	v
+prefix	application/views/u/header.phtml	/^        $prefix = strtolower(substr($href, 0, 7));$/;"	v
+prependBody	yaf.php	/^    public function prependBody() {}$/;"	f
+proxy_auth_type	application/library/CurlTools.php	/^        \/\/        $proxy_auth_type = $this->setopt['proxy_auth_type'] == 'BASIC' ? CURLAUTH_BASIC : CURLAUTH_NTLM;$/;"	v
+proxy_type	application/library/CurlTools.php	/^        \/\/    $proxy_type = $this->setopt['proxy_type'] == 'HTTP' ? CURLPROXY_HTTP : CURLPROXY_SOCKS5;$/;"	v
+query	application/library/DB.php	/^    public static function query($sql)$/;"	f
+queryClue	application/library/Crm.php	/^    public static function queryClue($condition)$/;"	f
+queryClueAction	application/actions/u/queryClue.php	/^class queryClueAction extends BaseAction$/;"	c
+re	application/actions/back/act/ajaxdeleteact.php	/^            $re = ActModel::deleteAct($data, $id);$/;"	v
+re	application/actions/back/act/ajaxupdateact.php	/^        $re = ActModel::updateAct($data, $id);$/;"	v
+re	application/actions/back/case/ajaxdeletecase.php	/^            $re = CaseModel::deleteCase($data, $id);$/;"	v
+re	application/actions/back/case/ajaxupdatecase.php	/^        $re = CaseModel::updateCase ( $data, $id );$/;"	v
+re	application/actions/back/shop/ajaxdeleteshop.php	/^            $re = ShopModel::deleteShop($data, $id);$/;"	v
+re	application/actions/back/shop/ajaxupdateshop.php	/^        $re = ShopModel::updateShop($data, $id);$/;"	v
+re	application/actions/back/user/ajaxdeleteuser.php	/^            $re = UserModel::deleteUser($data, $id);$/;"	v
+re	application/actions/back/user/ajaxupdateuser.php	/^            $re = UserModel::updateUser($data, $id);$/;"	v
+re	application/models/Pic.php	/^        $re = array();$/;"	v
+readonly	yaf.php	/^    public function readonly() {}$/;"	f
+redirect	yaf.php	/^    final public function redirect($url) {}$/;"	f
+registerLocalNamespace	yaf.php	/^    public function registerLocalNamespace() {}$/;"	f
+registerPlugin	yaf.php	/^    public function registerPlugin(Yaf_Plugin_Abstract $plugin) {}$/;"	f
+render	application/library/Html.php	/^    public static function render($obj, $tpl, $parameters = null)$/;"	f
+render	yaf.php	/^    final protected function render($tpl, array $parameters = null) {}$/;"	f
+render	yaf.php	/^    public function render($tpl, array $tpl_vars = null) {}$/;"	f
+render	yaf.php	/^    public function render($tpl, array $tpl_vars = null);$/;"	f
+req	application/library/Crm.php	/^        $req = array();$/;"	v
+res	application/actions/u/queryClue.php	/^        $res = array($/;"	v
+res	application/actions/u/saveClue.php	/^        $res = array($/;"	v
+res	application/library/DB.php	/^        $res = self::select($sql);$/;"	v
+res	application/models/Act.php	/^        $res = DB::select($sql);$/;"	v
+res	application/models/Case.php	/^        $res = DB::select($sql);$/;"	v
+res	application/models/Shop.php	/^        $res = DB::select($sql);$/;"	v
+res	application/models/User.php	/^        $res = DB::select($sql);$/;"	v
+response	application/actions/u/saveClue.php	/^            $response = Crm::saveClue($clue);$/;"	v
+response	yaf.php	/^    public function response() {}$/;"	f
+result	application/library/CurlTools.php	/^        $result = array();$/;"	v
+result	application/library/CurlTools.php	/^        $result = curl_exec($this->ch);$/;"	v
+returnResponse	yaf.php	/^    public function returnResponse($flag) {}$/;"	f
+rewind	yaf.php	/^    public function rewind() {}$/;"	f
+route	yaf.php	/^    public function route(Yaf_Request_Abstract $request) {}$/;"	f
+route	yaf.php	/^    public function route(Yaf_Request_Abstract $request);$/;"	f
+routed	yaf.php	/^    protected $routed;$/;"	v
+routerShutdown	application/plugins/Sample.php	/^	public function routerShutdown(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {$/;"	f
+routerShutdown	yaf.php	/^    public function routerShutdown(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {}$/;"	f
+routerStartup	application/plugins/Sample.php	/^	public function routerStartup(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {$/;"	f
+routerStartup	yaf.php	/^    public function routerStartup(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {}$/;"	f
+row	application/models/Pic.php	/^        $row = DB::get($sql);$/;"	v
+rows	application/actions/index/debug.php	/^        $rows = DB::getAll('SELECT * FROM user');$/;"	v
+rows	application/models/Pic.php	/^        $rows = DB::getAll($sql);$/;"	v
+run	application/actions/BaseAction.php	/^    abstract public function run($arg = null);$/;"	f
+run	application/actions/back/act/act.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/act/ajaxact.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/act/ajaxaddact.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/act/ajaxdeleteact.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/act/ajaxupdateact.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/case/ajaxaddcase.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/case/ajaxcase.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/case/ajaxdeletecase.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/case/ajaxupdatecase.php	/^    public function run($arg = null) {$/;"	f
+run	application/actions/back/case/case.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/crm/crmcity.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/crm/crmshop.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/index.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/shop/ajaxaddshop.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/shop/ajaxdeleteshop.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/shop/ajaxshop.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/shop/ajaxupdateshop.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/shop/shop.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/user/adduser.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/user/ajaxdeleteuser.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/user/ajaxupdateuser.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/user/ajaxuser.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/back/user/member.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/index/debug.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/u/gentleman.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/u/gentlemanDetail.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/u/index.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/u/ladyDetail.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/u/queryClue.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/u/saveClue.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/u/store.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/u/storeDetail.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/u/viewMap.php	/^    public function run($arg = null)$/;"	f
+run	application/actions/u/vip.php	/^    public function run($arg = null)$/;"	f
+run	yaf.php	/^    public function run() {}$/;"	f
+saveClue	application/library/Crm.php	/^    public static function saveClue($clue)$/;"	f
+saveClueAction	application/actions/u/saveClue.php	/^class saveClueAction extends BaseAction$/;"	c
+save_data	application/models/Log.php	/^        $save_data = array($/;"	v
+searchgender	application/actions/back/user/member.php	/^            $searchgender = DB::escape($_GET['searchgender']);$/;"	v
+searchgender	application/actions/back/user/member.php	/^        $searchgender = 1;$/;"	v
+section	yaf.php	/^    public function __construct($config_file, $section = null) {}$/;"	v
+select	application/library/DB.php	/^    public static function select($sql)$/;"	f
+selectSample	application/models/Sample.php	/^    public function selectSample() {$/;"	f
+set	application/library/DB.php	/^        $set = array();$/;"	v
+set	application/models/Pic.php	/^        $set = array();$/;"	v
+set	yaf.php	/^    public function set() {}$/;"	f
+set	yaf.php	/^    public static function set($name, $value) {}$/;"	f
+setActionName	yaf.php	/^    public function setActionName($action) {}$/;"	f
+setAllHeaders	yaf.php	/^    protected function setAllHeaders() {}$/;"	f
+setAppDirectory	yaf.php	/^    public function setAppDirectory($directory) {}$/;"	f
+setBaseUri	yaf.php	/^    public function setBaseUri($uri) {}$/;"	f
+setBody	yaf.php	/^    public function setBody() {}$/;"	f
+setControllerName	yaf.php	/^    public function setControllerName($controller) {}$/;"	f
+setDefaultAction	yaf.php	/^    public function setDefaultAction($action) {}$/;"	f
+setDefaultController	yaf.php	/^    public function setDefaultController($controller) {}$/;"	f
+setDefaultModule	yaf.php	/^    public function setDefaultModule($module) {}$/;"	f
+setDispatched	yaf.php	/^    public function setDispatched() {}$/;"	f
+setErrorHandler	yaf.php	/^    public function setErrorHandler(callable $callback, $error_types) {}$/;"	f
+setHeader	yaf.php	/^    public function setHeader() {}$/;"	f
+setLibraryPath	yaf.php	/^    public function setLibraryPath($directory, $is_global = false) {}$/;"	f
+setModuleName	yaf.php	/^    public function setModuleName($module) {}$/;"	f
+setParam	yaf.php	/^    public function setParam($name, $value = null) {}$/;"	f
+setRedirect	yaf.php	/^    public function setRedirect() {}$/;"	f
+setRequest	yaf.php	/^    public function setRequest(Yaf_Request_Abstract $request) {}$/;"	f
+setRequestUri	yaf.php	/^    public function setRequestUri($uri) {}$/;"	f
+setRouted	yaf.php	/^    public function setRouted($flag) {}$/;"	f
+setScriptPath	yaf.php	/^    public function setScriptPath($template_dir) {}$/;"	f
+setScriptPath	yaf.php	/^    public function setScriptPath($template_dir);$/;"	f
+setView	yaf.php	/^    public function setView(Yaf_View_Interface $view) {}$/;"	f
+setViewpath	yaf.php	/^    final public function setViewpath($view_directory) {}$/;"	f
+setopt	application/library/CurlTools.php	/^        $this->setopt = array_merge($this->setopt, $setopt);$/;"	v
+setopt	application/library/CurlTools.php	/^    private $setopt = array($/;"	v
+shopAction	application/actions/back/shop/shop.php	/^class shopAction extends BaseAction$/;"	c
+shopInfo	application/actions/back/shop/ajaxshop.php	/^        $shopInfo = ShopModel::getShopDetail($id);$/;"	v
+shop_pic	application/models/Shop.php	/^            $shop_pic = PicModel::getHash($data['id'], PicModel::PICSHOP);$/;"	v
+shop_pic	application/models/Shop.php	/^            $shop_pic = PicModel::getHash($dt['id'], PicModel::PICSHOP);$/;"	v
+shops	application/actions/back/shop/shop.php	/^            $shops= ShopModel::getShopByGroupId($groupId);$/;"	v
+shops	application/actions/back/shop/shop.php	/^            $shops= ShopModel::getShops();$/;"	v
+sid	application/actions/u/storeDetail.php	/^        $sid = $this->getRequestParam('sid', 0);$/;"	v
+sign	application/library/Crm.php	/^        $sign = Crm::getSignature($query, Crm::SECRET);$/;"	v
+small_pic	application/models/User.php	/^            $small_pic = PicModel::getHash($dt['id'], PicModel::PICUSERSMALL);$/;"	v
+small_pic	application/models/User.php	/^        $small_pic = PicModel::getHash($uid, PicModel::PICUSERSMALL);$/;"	v
+sp_size	application/library/Html.php	/^        $sp_size = $page_count - 2 * $fix_size;$/;"	v
+spr	application/library/CurlTools.php	/^            $spr = '&';$/;"	v
+spr	application/library/CurlTools.php	/^        $spr = '';$/;"	v
+sql	application/actions/u/queryClue.php	/^            $sql = sprintf('SELECT `cityCode` FROM `%s` WHERE id = "%d" LIMIT 1', $tabel, $id);$/;"	v
+sql	application/actions/u/saveClue.php	/^            $sql = sprintf('SELECT `cityCode` FROM `%s` WHERE id = "%d" LIMIT 1', $tabel, $id);$/;"	v
+sql	application/controllers/F.php	/^            $sql = sprintf('SELECT * FROM `%s` WHERE hash = "%s"', PicModel::TABLE_NAME, $hash);$/;"	v
+sql	application/library/DB.php	/^        $sql = sprintf('INSERT INTO `%s` SET %s', $table, implode(', ', $set));$/;"	v
+sql	application/library/DB.php	/^        $sql = sprintf('UPDATE `%s` SET %s WHERE id = %d', $table, implode(', ', $set), $id);$/;"	v
+sql	application/models/Act.php	/^        $sql = sprintf('SELECT * FROM `%s` WHERE `groupId` = "%d" ORDER BY id DESC LIMIT 1',$/;"	v
+sql	application/models/Act.php	/^        $sql = sprintf('SELECT * FROM `%s` WHERE deleted = 0', self::TABLE_NAME);$/;"	v
+sql	application/models/Act.php	/^        $sql = sprintf('SELECT * FROM `%s` WHERE groupId = %d AND deleted = 0', self::TABLE_NAME, $groupId);$/;"	v
+sql	application/models/Act.php	/^        $sql = sprintf('SELECT * FROM `%s` WHERE id = %s', self::TABLE_NAME, $id);$/;"	v
+sql	application/models/Act.php	/^        $sql = sprintf('SELECT count(id) as cnt FROM `%s` WHERE deleted = 0', self::TABLE_NAME);$/;"	v
+sql	application/models/Case.php	/^        $sql = sprintf('SELECT * FROM `%s` WHERE deleted = 0', self::TABLE_NAME);$/;"	v
+sql	application/models/Case.php	/^        $sql = sprintf('SELECT * FROM `%s` WHERE groupId = "%d" ORDER BY id DESC LIMIT 1',$/;"	v
+sql	application/models/Case.php	/^        $sql = sprintf('SELECT * FROM `%s` WHERE groupId = %d AND deleted = 0', self::TABLE_NAME, $groupId);$/;"	v
+sql	application/models/Case.php	/^        $sql = sprintf('SELECT * FROM `%s` WHERE id = %s', self::TABLE_NAME, $id);$/;"	v
+sql	application/models/Case.php	/^        $sql = sprintf('SELECT count(id) as cnt FROM `%s` WHERE deleted = 0', self::TABLE_NAME);$/;"	v
+sql	application/models/Log.php	/^        $sql = sprintf('INSERT INTO `%s` SET `request` = "%s", `response` = "%s", `create_time` = "%d"', $/;"	v
+sql	application/models/Pic.php	/^        $sql = 'SELECT id, `hash` FROM `%s` WHERE aid = "%d" AND `type` = "%d" ORDER BY id DESC LIMIT 1';$/;"	v
+sql	application/models/Pic.php	/^        $sql = 'SELECT id, type, hash FROM `%s` WHERE aid = "%d" AND type in %s ORDER BY id';$/;"	v
+sql	application/models/Pic.php	/^        $sql = sprintf($sql, self::TABLE_NAME, $aid, $type);$/;"	v
+sql	application/models/Pic.php	/^        $sql = sprintf($sql, self::TABLE_NAME, $aid, $typestr);$/;"	v
+sql	application/models/Pic.php	/^        $sql = sprintf('SELECT id FROM `%s` WHERE aid = %d AND type = %d', $table, $aid, $type);$/;"	v
+sql	application/models/Pic.php	/^        $sql = sprintf('UPDATE `%s` SET %s WHERE aid = %d AND type = %d', $table, implode(', ', $set), $aid, $type);$/;"	v
+sql	application/models/Shop.php	/^        $sql = sprintf('SELECT * FROM `%s` WHERE id = "%d"', self::TABLE_NAME, $id);$/;"	v
+sql	application/models/Shop.php	/^        $sql = sprintf('SELECT count(id) as cnt FROM `%s` WHERE deleted = 0', self::TABLE_NAME);$/;"	v
+sql	application/models/Shop.php	/^        $sql = sprintf('SELECT id, groupId, cityCode, shop_addr FROM `%s` WHERE deleted = 0', self::TABLE_NAME);$/;"	v
+sql	application/models/Shop.php	/^        $sql = sprintf('SELECT id, groupId, cityCode, shop_addr FROM `%s` WHERE groupId = %d AND deleted = 0', self::TABLE_NAME, $groupId);$/;"	v
+sql	application/models/User.php	/^        $sql = sprintf('SELECT * FROM `%s` WHERE id =  %d AND deleted = 0', self::TABLE_NAME, $id);$/;"	v
+sql	application/models/User.php	/^        $sql = sprintf('SELECT count(id) as cnt FROM `%s` WHERE deleted = 0', self::TABLE_NAME);$/;"	v
+sql	application/models/User.php	/^        $sql = sprintf('SELECT count(id) as cnt FROM `%s` WHERE gender = %d AND deleted = 0', self::TABLE_NAME, $gender);$/;"	v
+sql	application/models/User.php	/^        $sql = sprintf('SELECT id, name, height, age, gender, education, marriage, love_type, consultant_info_me, authentic_real_name, authentic_education, authentic_legacy FROM %s WHERE 1 AND deleted = 0', self::TABLE_NAME);$/;"	v
+sql	application/models/User.php	/^        $sql = sprintf('SELECT id, name, height, age, gender, education, marriage, love_type, consultant_info_me, authentic_real_name, authentic_education, authentic_legacy FROM `%s` WHERE deleted = 0', self::TABLE_NAME);$/;"	v
+start	application/library/Html.php	/^            $start = $page - $fix_size;$/;"	v
+start	application/library/Html.php	/^            $start = $page_count - 2 * $fix_size + 1;$/;"	v
+start	application/library/Html.php	/^        $start = 1;$/;"	v
+start	yaf.php	/^    public function start() {}$/;"	f
+step	public/static/js/lib/iscroll-lite.js	/^		function step () {$/;"	f
+storeAction	application/actions/u/store.php	/^class storeAction extends BaseAction$/;"	c
+storeDetailAction	application/actions/u/storeDetail.php	/^class storeDetailAction extends BaseAction$/;"	c
+store_base_info	application/actions/u/store.php	/^        $store_base_info = array();$/;"	v
+store_data	application/actions/u/queryClue.php	/^            $store_data = Crm::queryClue($clue);$/;"	v
+store_detail	application/actions/u/storeDetail.php	/^        $store_detail = ShopModel::getShopDetail($sid);$/;"	v
+store_detail	application/actions/u/viewMap.php	/^        $store_detail = ShopModel::getShopDetail($id);$/;"	v
+store_list_data	application/actions/u/store.php	/^        $store_list_data = ShopModel::getShopListData();$/;"	v
+str	application/actions/index/debug.php	/^        $str = $ctObj->get($url);$/;"	v
+str	application/actions/index/debug.php	/^        $str = '  <script>alert("Hi,");<\/script>';$/;"	v
+str	application/library/BackTools.php	/^        $str = '<option value="-1">请选择<\/option>';$/;"	v
+str	application/library/Crm.php	/^		$str = '';  \/\/待签名字符串$/;"	v
+success	public/static/js/back/act.js	/^	function success(){$/;"	f
+success	public/static/js/back/case.js	/^	function success(){$/;"	f
+success	public/static/js/back/member.js	/^	function success(){$/;"	f
+success	public/static/js/back/shop.js	/^	function success(){$/;"	f
+tabel	application/actions/u/queryClue.php	/^            $tabel = DB::escape($_COOKIE['_m_']);$/;"	v
+tabel	application/actions/u/saveClue.php	/^            $tabel = DB::escape($_COOKIE['_m_']);$/;"	v
+tabel	application/actions/u/viewMap.php	/^        $tabel = isset($_COOKIE['_m_']) ? DB::escape($_COOKIE['_m_']) : '';$/;"	v
+table	application/models/Act.php	/^        $table = self::TABLE_NAME;$/;"	v
+table	application/models/Case.php	/^        $table = self::TABLE_NAME;$/;"	v
+table	application/models/Pic.php	/^        $table = self::TABLE_NAME;$/;"	v
+table	application/models/Pic.php	/^       $table =  self::TABLE_NAME;$/;"	v
+table	application/models/Shop.php	/^        $table = self::TABLE_NAME;$/;"	v
+table	application/models/User.php	/^        $table = self::TABLE_NAME;$/;"	v
+throwException	yaf.php	/^    public function throwException($flag) {}$/;"	f
+toArray	yaf.php	/^    public function toArray() {}$/;"	f
+total	application/library/Html.php	/^        $total      = (int)$total;$/;"	v
+tpl_vars	yaf.php	/^    public function display($tpl, array $tpl_vars = null) {}$/;"	v
+tpl_vars	yaf.php	/^    public function display($tpl, array $tpl_vars = null);$/;"	v
+tpl_vars	yaf.php	/^    public function render($tpl, array $tpl_vars = null) {}$/;"	v
+tpl_vars	yaf.php	/^    public function render($tpl, array $tpl_vars = null);$/;"	v
+translatePoint	public/static/js/u/show_map.js	/^function translatePoint(position){$/;"	f
+type	application/actions/back/act/ajaxupdateact.php	/^                        $type = PicModel::PICACTONE;$/;"	v
+type	application/actions/back/act/ajaxupdateact.php	/^                        $type = PicModel::PICACTTHREE;$/;"	v
+type	application/actions/back/act/ajaxupdateact.php	/^                        $type = PicModel::PICACTTWO;$/;"	v
+type	application/actions/back/act/ajaxupdateact.php	/^        $type = '';$/;"	v
+type	application/actions/back/case/ajaxupdatecase.php	/^                        $type = PicModel::PICANLIONE;$/;"	v
+type	application/actions/back/case/ajaxupdatecase.php	/^                        $type = PicModel::PICANLITWO;$/;"	v
+type	application/actions/back/case/ajaxupdatecase.php	/^                        $type = PicModel::PICHONGNIANG;$/;"	v
+type	application/actions/back/case/ajaxupdatecase.php	/^        $type = '';$/;"	v
+type	application/actions/back/shop/ajaxupdateshop.php	/^                    $type = PicModel::PICSHOP;$/;"	v
+type	application/actions/back/shop/ajaxupdateshop.php	/^        $type = '';$/;"	v
+type	application/actions/back/user/ajaxupdateuser.php	/^                           $type = PicModel::PICUSERBIG;$/;"	v
+type	application/actions/back/user/ajaxupdateuser.php	/^                           $type = PicModel::PICUSERSMALL;$/;"	v
+type	application/actions/back/user/ajaxupdateuser.php	/^            $type = '';$/;"	v
+types	application/actions/back/act/ajaxact.php	/^        $types = array($/;"	v
+types	application/actions/back/case/ajaxcase.php	/^        $types = array($/;"	v
+types	application/actions/back/shop/ajaxshop.php	/^        $types = array($/;"	v
+types	application/actions/back/user/ajaxuser.php	/^            $types = array($/;"	v
+typestr	application/models/Pic.php	/^                $typestr = "('{$var}')";$/;"	v
+typestr	application/models/Pic.php	/^                $typestr = '("' . implode('","', $types) . '")';$/;"	v
+uid	application/actions/u/gentlemanDetail.php	/^        $uid = $this->getRequestParam('uid', 0);$/;"	v
+uid	application/actions/u/ladyDetail.php	/^        $uid = $this->getRequestParam('uid', 0);$/;"	v
+update	application/library/DB.php	/^    public static function update($save_data, $table, $id)$/;"	f
+update	application/models/Pic.php	/^    public static function update($data, $aid, $type){$/;"	f
+updateAct	application/models/Act.php	/^    public static function updateAct($data, $id){$/;"	f
+updateCase	application/models/Case.php	/^    public static function updateCase($data, $id){$/;"	f
+updateFormValues	public/static/js/back/common.js	/^function updateFormValues(obj, jsonData){$/;"	f
+updateShop	application/models/Shop.php	/^    public static function updateShop($data, $id){$/;"	f
+updateUser	application/models/User.php	/^    public static function updateUser($data, $id){$/;"	f
+uri	application/library/Html.php	/^        $uri   = isset($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : '';$/;"	v
+uri	yaf.php	/^    protected $uri;$/;"	v
+url	application/actions/index/debug.php	/^        $url = 'http:\/\/www.kuaidi100.com\/query?type=yuantong&postid=100033892580&id=1&valicode=&temp=0.7580415371339768';$/;"	v
+url	application/library/CurlTools.php	/^        \/\/    $url = $this->_parseUrl($url, $params);$/;"	v
+url	application/library/Html.php	/^        $url = '?v=v1.0&' . http_build_query($p_uri) . '&' . $page_name . '=';$/;"	v
+user	application/library/CurlTools.php	/^        \/\/        $user = "[{$this->setopt['proxy_auth_user']}]:[{$this->setopt['proxy_auth_pwd']}]";$/;"	v
+user_detail	application/actions/u/gentlemanDetail.php	/^        $user_detail = UserModel::getUserDetail($uid);$/;"	v
+user_detail	application/actions/u/ladyDetail.php	/^        $user_detail = UserModel::getUserDetail($uid);$/;"	v
+user_detail	application/models/User.php	/^        $user_detail = self::getUserInfo($uid);$/;"	v
+user_info	application/actions/u/gentleman.php	/^        $user_info = UserModel::getUserListDataByGender(($gender + 1) % 2);$/;"	v
+user_info	application/actions/u/index.php	/^        $user_info = UserModel::getUserListDataByGender(($gender + 1) %2);$/;"	v
+userinfo	application/actions/back/user/ajaxuser.php	/^            $userinfo = UserModel::getUserInfo($id);$/;"	v
+users	application/actions/back/user/member.php	/^            $users = UserModel::getUsers();$/;"	v
+users	application/actions/back/user/member.php	/^            $users = UserModel::getUsersByGender(DB::escape($_GET['searchgender']));$/;"	v
+v	application/actions/index/debug.php	/^        $v = $this->getRequestParam('abc', 'd-abc');$/;"	v
+valid	yaf.php	/^    public function valid() {}$/;"	f
+value	application/library/CurlTools.php	/^            $value = urlencode($value);$/;"	v
+value	application/library/DB.php	/^            $value = DB::escape($value);$/;"	v
+value	application/models/Pic.php	/^            $value = DB::escape($value);$/;"	v
+value	yaf.php	/^    public function assign($name, $value = null) {}$/;"	v
+value	yaf.php	/^    public function assign($name, $value = null);$/;"	v
+value	yaf.php	/^    public function setParam($name, $value = null) {}$/;"	v
+var	application/models/Pic.php	/^                $var = array_shift($types);$/;"	v
+verify	yaf.php	/^    public function __construct($match, array $route, array $verify = null) {}$/;"	v
+viewMapAction	application/actions/u/viewMap.php	/^class viewMapAction extends BaseAction$/;"	c
+vipAction	application/actions/u/vip.php	/^class vipAction extends BaseAction$/;"	c

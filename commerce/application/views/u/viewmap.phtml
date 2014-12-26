@@ -1,0 +1,47 @@
+<?php
+$ext_css = array(
+    'http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css',
+);
+Html::render($this, 'u/header.phtml', array('css' => $ext_css));
+?>
+    <body>
+        <div class="wrapper">
+<?php
+Html::render($this, 'u/service.phtml');
+?>
+            <div class="">
+                <!-- 查看地图开始 -->
+                <div class="dialogMsg">
+                     <div class="msg map">
+                        <div style="width: 100%;" id="map"></div>
+                     </div>
+                </div>
+                <!-- 查看地图结束 -->
+            </div>
+<?php
+Html::render($this, 'u/nav_footer.phtml', array('nav' => 'store'));
+?>            
+        </div>
+<?php
+Html::render($this, 'u/city.phtml', array('city' => array()));
+?>
+<script>
+var title = '<?php echo $base_detail[$store_detail['groupId']]['groupName'];?>';
+var addr = '<?php echo $store_detail['shop_addr']; ?>';
+var telephone = '<?php echo $store_detail['shop_telephone'] ;?>';
+</script>
+    </body>
+<?php
+$ext_js = array(
+    'http://api.map.baidu.com/api?v=2.0&ak=IDvNBsejl9oqMbPF316iKsXR',
+    'http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js',
+    'http://developer.baidu.com/map/jsdemo/demo/convertor.js',
+    'address.js',
+    'show_map.js',
+);
+
+$ext = array(
+    'js' => $ext_js,
+);
+Html::render($this, 'u/footer.phtml', $ext);
+?>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="user-scalable=0" />
+        <title>百合订阅号</title>
+        <link rel="stylesheet" href="/static/css/u/reset.css?v=<?php echo U_STATIC_VERSION; ?>">
+<?php
+if (isset($css) && is_array($css) && count($css) > 0)
+{
+    foreach ($css as $href)
+    {
+        $prefix = strtolower(substr($href, 0, 7));
+        echo 'http://' == $prefix 
+            ? sprintf('<link rel="stylesheet" href="%s">', $href)
+            : sprintf('<link rel="stylesheet" href="/static/css/u/%s?v=%s">', $href, U_STATIC_VERSION);
+    }
+}
+?>
+<script>
+var city_map = <?php echo json_encode($city_map); ?>;
+</script>
+    </head>

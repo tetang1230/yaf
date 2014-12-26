@@ -1,0 +1,22 @@
+#connectFrom .confirm{
+	-webkit-appearance: none; 
+	background: #ed6c00;
+	font-size: 45px;
+	margin-bottom: 118px;
+	height: 110px;
+}
+.mask .chooseStore h2{
+	color:#ed6c00;
+}
+.confirmStore{
+	background: #ed6c00;
+}
+.storeActived{
+	background: #ed6c00 !important;
+}
+.chooseStoreSucceed h2{
+	color: #ed6c00;
+}
+.chooseStoreSucceed span{
+	color: #ed6c00 !important;
+}

@@ -1,0 +1,17 @@
+<?php
+$current = ' style="color:#ed6c00;"';
+$img_suffix = '_select';
+?>
+<div class="nav_footerWrapper" id="fixed_footer">
+    <ul class="nav_footer">
+        <li class="nav_man">
+            <a href="/u/gentleman"><center><img src="/static/images/u/nav_man<?php echo 'gentleman' == $nav ? $img_suffix : ''; ?>.png" alt=""><span<?php echo 'gentleman' == $nav ? $current : ''; ?>>男士</span></center></a>
+        </li>
+        <li class="nav_women">
+            <a href="/u/index"><center><img src="/static/images/u/nav_women<?php echo 'lady' == $nav ? $img_suffix : ''; ?>.png" alt=""><span<?php echo 'lady' == $nav ? $current : ''; ?>>女士</span></center></a>
+        </li>
+        <li class="nav_store">
+            <a href="/u/store"><center><img src="/static/images/u/nav_store<?php echo 'store' == $nav ? $img_suffix : ''; ?>.png" alt=""><span<?php echo 'store' == $nav ? $current : ''; ?>>实体店</span></center></a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,65 @@
+<?php
+Html::render($this, 'u/header.phtml', array('css' => array('detailWoman.css')));
+?>
+    <body id="index">
+        <div class="wrapper">
+<?php
+Html::render($this, 'u/service.phtml');
+?>
+            <div class="content">
+                <!-- 实体店内容开始 -->
+                <div class="storeWrapper">
+                    <div class="storeInfo">
+                        <h2><?php echo $base_detail[$store_detail['groupId']]['groupName']; ?></h2>
+                        <p>客服热线：<?php echo $store_detail['shop_telephone']; ?></p>
+                        <p>地址：<?php echo $store_detail['shop_addr']; ?></p>
+                        <button class="dail left">
+                            <a class="vip_tel" href="tel:<?php echo $store_detail['shop_telephone']; ?>"><img src="/static/images/u/store_dail.jpg" alt=""><span>电话咨询</span></a>
+                        </button>
+                        <button class="map right" id="view_map" addr="<?php echo $store_detail['shop_addr']; ?>"><img src="/static/images/u/store_map.jpg" alt=""><span>地图查看</span></button>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="latestActivity">
+                        <h2>最新活动&middot;</h2>
+                        <img src="/f/p?n=<?php echo $store_detail['act_pic']; ?>" alt="">
+                    </div>
+                    <div class="storeCase">
+                        <h2>经典案例&middot;</h2>
+                        <div class="caseContent">
+                            <img class="caseImg" src="/f/p?n=<?php echo $store_detail['case_data']['case_pic']; ?>" alt="">
+                            <p class="caseTitle"><?php echo $store_detail['case_data']['title']; ?></p>
+                            <div class="left casePhoto">
+                                <img src="/f/p?n=<?php echo $store_detail['case_data']['hongliang_pic']; ?>" alt="">
+                                <p><?php echo $store_detail['case_data']['consultant_name']; ?></p>
+                            </div>
+                            <p class="left"><?php echo $store_detail['case_data']['content']; ?></p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <center><a href="/u/vip" class="tryVIP">体验VIP服务</a></center>
+                </div>
+                <!-- 实体店内容结束 -->
+            </div>
+<?php
+Html::render($this, 'u/nav_footer.phtml', array('nav' => 'store'));
+?>            
+        </div>
+<?php
+Html::render($this, 'u/city.phtml', array('city' => array()));
+?>
+    </body>
+<?php
+$js =  <<<JS
+$(document).ready(function(){
+    $('#view_map').click(function(){
+        var addr = $(this).attr('addr');
+        if (addr.length > 0)
+        {
+            window.location.href = '/u/viewMap?addr=' + addr;
+        }
+    });
+});
+JS;
+
+Html::render($this, 'u/footer.phtml', array('js_code' => array($js)));
+?>

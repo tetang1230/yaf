@@ -1,0 +1,29 @@
+    <script src="/static/js/lib/jquery.js"></script>
+    <script src="/static/js/lib/iscroll-lite.js"></script>
+    <script src="/static/js/lib/jquery.cookie-1.4.1.min.js"></script>
+    <script src="/static/js/u/common.js?v=<?php echo U_STATIC_VERSION; ?>"></script>
+<?php
+if (isset($js) && is_array($js) && count($js) > 0)
+{
+    foreach ($js as $script)
+    {
+        $prefix = strtolower(substr($script, 0, 7));
+        echo 'http://' == $prefix 
+            ? sprintf('<script src="%s"></script>', $script)
+            : sprintf('<script src="/static/js/u/%s?v=%s"></script>', $script, U_STATIC_VERSION);
+    }
+}
+
+if (isset($js_code) && is_array($js_code) && count($js_code))
+{
+    echo '<script>';
+
+    foreach ($js_code as $code)
+    {
+        echo $code;
+    }
+
+    echo '</script>';
+}
+?>
+</html>

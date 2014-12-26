@@ -1,0 +1,26 @@
+.description{
+	border: 2px solid #ebebeb;
+	border-top: 2px solid #248ddb;
+}
+.description h2{
+	color:#248ddb;
+}
+#connectFrom .confirm{
+	-webkit-appearance: none; 
+	background: #248ddb;
+}
+.mask .chooseStore h2{
+	color:#248ddb;
+}
+.confirmStore{
+	background: #248ddb;
+}
+.storeActived{
+	background: #248ddb !important;
+}
+.chooseStoreSucceed h2{
+	color: #248ddb;
+}
+.chooseStoreSucceed span{
+	color: #248ddb !important;
+}

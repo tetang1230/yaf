@@ -1,0 +1,318 @@
+<?php
+echo Yaf_View_Simple::render('back/header.phtml');
+?>
+
+<div class="mask">
+			<div class="maskAddSuccess">
+				<div>
+					<img class="left" src="/static/images/back/maskSuccess.png" alt="">
+					<p class="left">提交成功</p>
+				</div>
+				<div class="clear"></div>
+				<button class="closeMask">返回</button>
+			</div>
+			<div class="deleteConfirm">
+				<div class="deleteConfirmContent">
+					<img class="left" src="/static/images/back/deleteConfirm.png" alt="">
+					<p class="left">是否确定删除该会员信息？</p>
+				</div>
+				<div class="clear"></div>
+				<div class="buttons">
+					<button class="closeMask left" id="btn_deleteConfirm">确定</button>
+					<button class="closeMask left">返回</button>
+				</div>
+			</div>
+			<div class="maskContainer">
+				<div class="title">
+					<h3>添加会员</h3>
+					<a class="closeMask"><img src="/static/images/back/icon_close.png" alt=""></a>
+				</div>
+				
+				<ul class="tab">
+					<li class="current">基本资料</li>
+					<li>择偶要求</li>
+					<li>简介</li>
+				</ul>
+				<div class="maskContent">
+					<form method="post" class="basicInfo tabForm" onsubmit="return false" enctype="multipart/form-data">
+						<label style="float:left;">上传图片:</label>
+						<div class="basicInfoUpload left">
+							<div class="eachUpload left">
+								<center>
+									   <img id="imgShow1" name="imgShow1" class="btn_upload" src="/static/images/back/upload.png" width="118" height="118" alt="">
+									   <input type="file" id="small_img" name="small_img" style="display:none">
+									<p>小头像</p>
+								</center>
+							</div>
+							<div class="eachUpload left" style="margin-left:20px;">
+								<center>
+									<img id="imgShow2" name="imgShow2" class="btn_upload" src="/static/images/back/upload.png" width="118" height="118" alt="">
+									<input type="file" id="big_img" name="big_img" style="display:none">
+									<p>大头像</p>
+								</center>
+							</div>
+						</div>
+						<div class="clear"></div><br>
+						<label>认&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证：</label>
+						<!-- <input type="text" id="basicInfoAuth"> -->
+						<input type="checkbox" name="authentic_real_name" value="1" id="authentic_real_name"><label for="authentic_real_name">实名认证</label>
+						<input type="checkbox" name="authentic_education" value="1" id="authentic_education"><label for="authentic_education">学历认证</label>
+						<input type="checkbox" name="authentic_legacy" value="1" id="authentic_legacy"><label for="authentic_legacy">财产认证</label>
+						
+						<div>
+						      <label>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</label>
+					          <input type="radio" class="genderradio" name="gender" value="1"><label>男</label><input type="radio" class="genderradio" name="gender" value="0"><label>女</label>
+						</div>
+						<div class="clear"></div>
+						<div class="formContainer">
+							<div class="left" style="width:48%">
+
+								<label for="basicInfoName">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</label>
+								<input type="text" id="name" name="name" class="needAth">
+								<label for="basicInfoHeight">身&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高：</label>
+								<input type="text" id="height" name="height" class="needAth">
+								<label for="basicInfoMarriage">婚姻状况：</label>
+								<select name="marriage" id="marriage">
+                                    <?php echo $marriageOption; ?>
+								</select>
+								<label for="basicInfoCity">所在城市：</label>
+								<select name="cityCode" id="cityCode">
+									<?php echo $cityOptions; ?>
+								</select>
+								<label for="basicInfoJob">职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业：</label>
+								<input type="text" id="career" name="career" class="needAth">
+								<label for="basicInfoEdu">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历：</label>
+								<select name="education" id="education" class="needAth">
+                                    <?php echo $educationOption;?>
+								</select>
+							</div>
+							<div class="right" style="width:48%">
+								<label for="basicInfoAge">年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄：</label>
+								<input type="text" id="age" name="age" class="needAth">
+								<label for="basicInfoWeight">体&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重：</label>
+								<input type="text" id="weight" name="weight">
+								<label for="basicInfoLoveKind">恋爱类型：</label>
+								<select name="love_type" id="love_type">
+									<?php echo $lovetypeOption;?>
+								</select>
+								<label for="basicInfoStore">实&nbsp;&nbsp;体&nbsp;&nbsp;店：</label>
+								<select name="groupId" id="groupId">
+									<option value="-1">请选择</option>
+								</select>
+								<label for="basicInfoIncome">收&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;入：</label>
+								<select name="income" id="income" class="needAth">
+									<?php echo $incomeOption;?>
+								</select>
+								<label for="basicInfoHouse">住房情况：</label>
+								<select name="house" id="house">
+									<?php echo $houseOption;?>
+								</select>
+							</div>
+						</div>
+						<!-- 
+						<div class="button">
+							<input type="submit" value="确定" class="btn_submitMask left" id="btn_submitBasicInfo">
+							<button class="closeMask right">返回</button>
+						</div>
+						 -->
+					</form>
+					<form action="" class="mateNeeds tabForm">
+						<label>认&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证：</label>
+						<!-- <input type="text" id="basicInfoAuth"> -->
+						<input type="checkbox" name="mate_authentic_real_name" value="1" id="mate_authentic_real_name"><label for="mate_authentic_real_name">实名认证</label>
+						<input type="checkbox" name="mate_authentic_education" value="1" id="mate_authentic_education"><label for="mate_authentic_education">学历认证</label>
+						<input type="checkbox" name="mate_authentic_legacy" value="1" id="mate_authentic_legacy"><label for="mate_authentic_legacy">财产认证</label>
+						<div class="clear"></div>
+						<div class="formContainer">
+							<div class="left" style="width:48%">
+							    <!-- 
+								<label for="basicInfoName">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</label>
+								<input type="text" id="basicInfoName">
+							     -->
+								<label for="basicInfoHeight">身&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高：</label>
+								<input type="text" id="mate_height" name="mate_height">
+								<label for="basicInfoMarriage">婚姻状况：</label>
+								<select name="mate_marriage" id="mate_marriage">
+                                    <?php echo $marriageOption; ?>
+								</select>
+								<label for="basicInfoCity">所在城市：</label>
+					            <select name="mate_city" id="mate_city">
+									<?php echo $cityOptions; ?>
+								</select>
+								<label for="basicInfoJob">职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业：</label>
+								<input type="text" id="mate_career" name="mate_career">
+								<label for="basicInfoEdu">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历：</label>
+								<select name="mate_education" id="mate_education">
+									<?php echo $educationOption; ?>
+								</select>
+							</div>
+							<div class="right" style="width:48%">
+								<label for="basicInfoAge">年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄：</label>
+								<input type="text" id="mate_age" name="mate_age">
+								<label for="basicInfoWeight">体&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重：</label>
+								<input type="text" id="mate_weight" name="mate_weight">
+								<label for="basicInfoLoveKind">恋爱类型：</label>
+								<select name="mate_love_type" id="mate_love_type">
+									<?php echo $lovetypeOption; ?>
+								</select>
+								<label for="basicInfoStore">有无子女</label>
+								<select name="mate_children" id="mate_children">
+									<?php echo $childrenOption; ?>
+								</select>
+								<label for="basicInfoIncome">收&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;入：</label>
+								<select name="mate_income" id="mate_income">
+									<?php echo $incomeOption; ?>
+								</select>
+								
+								<div style="margin-left: -225px;">
+    								<label for="basicInfoHouse">住房情况：</label>
+    								<select name="mate_house" id="mate_house">
+    									<?php echo $houseOption; ?>
+    								</select>
+								</div>
+							</div>
+						</div>
+                        
+                        <!-- 
+						<div class="button">
+							<input type="submit" value="确定" class="btn_submitMask left" id="btn_submitmateNeeds">
+							<button class="closeMask right">返回</button>
+						</div>
+						 -->
+					</form>
+					<form action="" class="introduction tabForm">
+						<div class="formContent">
+							<label for="introductionInterest">兴趣爱好：</label>
+							<input type="text" id="hobby" name="hobby" class="needAth">
+							<label for="introductionSelfIntro">自我简介：</label>
+							<input type="text" id="self_intro" name="self_intro" class="needAth">
+							<label style="width:100px;" for="introductionInEye">顾问眼中的Ta：</label>
+							<input style="width:73%" type="text" id="consultant_info_me" name="consultant_info_me">
+							<label for="introductionArticleTittle">文章标题：</label>
+							<input type="text" id="introductionArticleTittle" name="profile_title" id="profile_title">
+							<label style="position:relative;top:-36px;">文章内容：</label>
+							<textarea name="profile_content" id="profile_content" name="profile_content"></textarea>
+						</div>
+						
+						<!-- 
+						<div class="button">
+							<input type="submit" value="确定" class="btn_submitMask left" id="btn_submitIntroduction">
+							<button class="closeMask right">返回</button>
+						</div>
+						 -->
+						 
+					</form>
+					
+					<div class="button" id="submit_div">
+					   <input type="submit" value="确定" class="btn_submitMask left" id="btn_submit">
+					   <button class="closeMask right">返回</button>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+        
+        <?php
+            echo Yaf_View_Simple::render('back/loginbar.phtml');
+        ?>
+		
+		
+		<div class="contentWrapper">
+            
+            <?php
+                echo Yaf_View_Simple::render('back/sider.phtml');
+            ?>
+            
+			<div class="mainContent left">
+				<div class="info">
+					<h2 class="contentTitle left">会员</h2>
+					<p class="number left">共计：362人</p>
+					<div class="clear"></div>
+				</div>
+				<form class="query">
+					<label for="sex" class="firstLabel">性别：</label>
+					<select name="searchgender" id="searchgender">
+						<option value="-1">全部</option>
+						<option value="1" <?php if($searchgender == 1) echo 'selected'?>>男</option>
+						<option value="0" <?php if($searchgender == 0) echo 'selected'?>>女</option>
+					</select>
+					<input type="submit" value="查询" class="btn_querySubmit">
+				</form>
+				<div class="editContainer right">
+					<a class="add left" id="add"><center>添加会员</center></a>
+					<a class="edit left" id="edit"><center>修改</center></a>
+					<a class="delete left" id="delete"><center>删除</center></a>
+				</div>
+				<table class="detail" cellspacing="0" cellpadding="10">
+					<thead>
+						<tr>
+							<td>选择</td>
+							<td>序号</td>
+							<td>名称</td>
+							<td>性别</td>
+							<td>婚姻状态</td>
+							<td>学历</td>
+							<td>认证</td>
+						</tr>
+					</thead>
+					<tbody id="eachuser">
+                    
+                    <?php 
+                            if(isset($users) && !empty($users)){
+                                    $cnt = 1;
+                                    foreach($users as $user){
+                    ?>
+						<tr id='user_<?php echo $user['id'];?>'>
+							<td><img src="/static/images/back/detaliSelect.jpg" alt=""></td>
+							<td><?php echo $cnt; ?></td>
+							<td><?php echo $user['name'];?></td>
+							<td><?php echo $gender[$user['gender']];?></td>
+							<td><?php if(isset($marriage[$user['marriage']])){ echo $marriage[$user['marriage']];}?></td>
+							<td><?php if(isset($education[$user['education']])){echo $education[$user['education']]; }?></td>
+							<td>
+							     <?php if(!empty($user['authentic_real_name'])){ echo '实名认证&nbsp;&nbsp;&nbsp;';}?>
+							     <?php if(!empty($user['authentic_education'])){ echo '学历认证&nbsp;&nbsp;&nbsp;';}?>
+							     <?php if(!empty($user['authentic_legacy'])){ echo '财产认证&nbsp;&nbsp;&nbsp;';}?>
+							</td>
+						</tr>
+					<?php 
+					                   $cnt++;
+                                    }
+                            }
+					?>
+					</tbody>
+				</table>
+				
+				<!-- 
+				<div class="pages">
+					<ul class="left">
+						<li><a>&lt;</a></li>
+						<li><a class="current">1</a></li>
+						<li><a>2</a></li>
+						<li><a>3</a></li>
+						<li><a>4</a></li>
+						<li><a>5</a></li>
+						<li class="dotdot">...</li>
+						<li><a>99</a></li>
+						<li><a>100</a></li>
+						<li><a>&gt;</a></li>
+					</ul>
+					<div class="right">
+						<span class="left">跳转到</span>
+						<form class="left">
+							<input type="text">
+							<a href="">go</a>
+						</form>
+					</div>
+					<div class="clear"></div>
+				</div>
+				 -->
+				 
+			</div>
+			<div class="clear"></div>
+		</div>
+
+<?php
+echo Yaf_View_Simple::render('back/footer.phtml', array('jsArr'=> array('member.js')));
+?>
+					

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>百合实体店-首页</title>
+		<link rel="stylesheet" href="/static/css/back/reset.css?v=<?php echo BACK; ?>">
+	   <?php 
+		if(isset($cssArr)){
+		    foreach($cssArr as $css){
+		        echo "<link rel='stylesheet' href='/static/css/back/$css?v=".BACK." '>\n";
+		    }
+		}
+		?>
+		<script src="/static/js/lib/jquery.js"></script>
+		<script src="/static/js/back/ajaxfileupload.js"></script>
+        <script src="/static/js/back/common.js"></script>
+        <script src="/static/js/back/uploadPreview.min.js"></script>
+		</head>
+	<body>

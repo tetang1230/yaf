@@ -1,0 +1,197 @@
+<?php
+echo Yaf_View_Simple::render('back/header.phtml', array('cssArr'=>array('sy.css')));
+?>
+    <div class="mask">
+        <div class="maskAddSuccess">
+                <div>
+                    <img class="left" src="/static/images/back/maskSuccess.png" alt="">
+                    <p class="left">提交成功</p>
+                </div>
+                <div class="clear"></div>
+                <button class="closeMask">返回</button>
+            </div>
+            <div class="deleteConfirm">
+                <div class="deleteConfirmContent">
+                    <img class="left" src="/static/images/back/deleteConfirm.png" alt="">
+                    <p class="left">是否确定删除该会员信息？</p>
+                </div>
+                <div class="clear"></div>
+                <div class="buttons">
+                    <button class="closeMask left" id="btn_deleteConfirm">确定</button>
+                    <button class="closeMask left">返回</button>
+                </div>
+            </div>
+            <div class="maskContainer">
+                <div class="title">
+                    <h3>添加成功案例</h3>
+                    <a class="closeMask"><img src="/static/images/back/icon_close.png" alt=""></a>
+                </div>
+                <div class="maskSuccess">
+                    
+                </div>
+                <div class="maskContent">
+                    <form action="" class="basicInfo tabForm">
+                        <div class="formContainer">
+                            <div class="left" style="width:48%">
+                                <label for="caseInfoMale">男&nbsp;&nbsp;会&nbsp;&nbsp;员：</label>
+                                <input type="text" id="male_user_name" name="male_user_name" style="margin-top:0">
+                                <label for="caseInfoFemale">女&nbsp;&nbsp;会&nbsp;&nbsp;员：</label>
+                                <input type="text" id="famale_user_name" name="famale_user_name" class="needAth">
+                                <label for="caseInfoConsultant">顾问名称：</label>
+                                <input type="text" id="consultant_name" name="consultant_name" class="needAth">
+                                <label for="caseInfoStore">实&nbsp;&nbsp;体&nbsp;&nbsp;店：</label>
+                                
+                                <select id="groupId" name="groupId">
+                                    <?php echo $groupOptions;?>
+                                </select>
+                            
+                            </div>
+                            <div class="right" style="width:48%">
+                            <div class="eachUpload_consultant eachUpload">
+                                <center>
+                                    <img id="imghongniang" class="btn_upload" src="/static/images/back/upload.png" alt="">
+                                    <input type="file" name="hongniang" id="hongniang" style="display:none">
+                                    <p>红娘头像</p>
+                                </center>
+                        </div>
+                        <div class="eachUpload_consultant eachUpload">
+                                <center>
+                                    <img id="imgone" class="btn_upload" src="/static/images/back/upload.png" alt="">
+                                    <input type="file" name="anlione" id="anlione" style="display:none">
+                                    <p>案例图片</p>
+                                </center>
+                        </div>
+                        <div class="eachUpload_consultant eachUpload eachUpload_consultantLast">
+                                <center>
+                                    <img id="imgtwo" class="btn_upload" src="/static/images/back/upload.png" alt="">
+                                    <input type="file" name="anlitwo" id="anlitwo" style="display:none">
+                                    <p>案例图片</p>
+                                </center>
+                        </div>  
+                            </div>
+                         
+                        </div>
+                       <label for="caseInfoTitle">标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;题：</label>
+                                <input type="text" id="caseInfoTitle" name="title">      
+                       <label for="caseInfoContent" style="position:relative;top:-60px;">内&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;容：</label>
+                        <textarea id="caseInfoContent" name="content"></textarea>
+                        <label for="caseInfoBlessing" style="position:relative;top:-60px;">顾问祝福：</label>
+                        <textarea id="caseInfoBlessing" name="bless"></textarea>
+                        <div class="button">
+                            <input type="submit" value="确定" class="btn_submitMask left" id="btn_submit">
+                            <button class="closeMask right">返回</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <?php
+            echo Yaf_View_Simple::render('back/loginbar.phtml');
+        ?>
+		
+		
+		<div class="contentWrapper">
+            
+            <?php
+                echo Yaf_View_Simple::render('back/sider.phtml');
+            ?>
+		    <div class="mainContent left">
+                <div class="info">
+                    <h2 class="contentTitle left">成功案例</h2>
+                    <p class="number left">共计：362</p>
+                    <div class="clear"></div>
+                </div>
+                <form class="query">
+                    <!--
+                    <label for="sex" class="firstLabel">省会：</label>
+                    <select name="sex" id="sex">
+                        <option value="male">男</option>
+                        <option value="female">女</option>
+                    </select>
+                    -->
+                    <label for="sex" class="firstLabel">城市：</label>
+    					<select name="cities" id="cities">
+    						<?php echo $cityOptions; ?>
+    					</select>
+                    <label for="sex" class="firstLabel">实体店：</label>
+                    <select name="groups" id="groups">
+                        <option value="-1">请选择</option>
+                    </select>
+                    <input type="submit" value="查询" class="btn_querySubmit">
+                </form>
+                <div class="editContainer right">
+                    <a class="add left" id="add"><center>添加案例</center></a>
+                    <a class="edit left" id="edit"><center>修改</center></a>
+                    <a class="delete left" id="delete"><center>删除</center></a>
+                </div>
+                <table class="detail" cellspacing="0" cellpadding="10">
+                    <thead>
+                        <tr>
+                            <td>选择</td>
+                            <td>序号</td>
+                            <td>实体店</td>
+                            <td>时间</td>
+                            <td>标题</td>
+                        </tr>
+                    </thead>
+                    <tbody id="eachuser">
+                        <!-- 单个信息开始 -->
+                        
+                         <?php 
+                            if(isset($cases) && !empty($cases)){                                                                             
+                                    $cnt = 1;
+                                    foreach($cases as $case){
+                         ?> 
+
+                        <tr id='shop_<?php echo $case['id'];?>'>
+                            <td><img src="/static/images/back/detaliSelect.jpg" alt=""></td>
+                            <td><?php echo $cnt;?></td>
+                            <td><?php echo $case['groupId'];?></td>
+                            <td><?php echo $case['create_time'];?></td>
+                            <td><?php echo $case['title'];?></td>
+                        </tr>
+                        <?php 
+                                       $cnt++;
+                                    }
+                            }
+                        ?>  
+					
+	
+					</tbody>
+				</table>	
+				
+				<!-- 
+				<div class="pages">
+					<ul class="left">
+						<li><a>&lt;</a></li>
+						<li><a class="current">1</a></li>
+						<li><a>2</a></li>
+						<li><a>3</a></li>
+						<li><a>4</a></li>
+						<li><a>5</a></li>
+						<li class="dotdot">...</li>
+						<li><a>99</a></li>
+						<li><a>100</a></li>
+						<li><a>&gt;</a></li>
+					</ul>
+					<div class="right">
+						<span class="left">跳转到</span>
+						<form class="left">
+							<input type="text">
+							<a href="">go</a>
+						</form>
+					</div>
+					<div class="clear"></div>
+				</div>
+				 -->
+				
+				
+			</div>
+			<div class="clear"></div>
+		</div>
+
+<?php
+echo Yaf_View_Simple::render('back/footer.phtml', array('jsArr'=> array('case.js')));
+?>
+					

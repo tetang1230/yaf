@@ -1,0 +1,187 @@
+<?php
+echo Yaf_View_Simple::render('back/header.phtml', array('cssArr'=>array('sy.css')));
+?>
+
+<div class="mask">
+    	<div class="maskAddSuccess">
+				<div>
+					<img class="left" src="/static/images/back/maskSuccess.png" alt="">
+					<p class="left">提交成功</p>
+				</div>
+				<div class="clear"></div>
+				<button class="closeMask">返回</button>
+			</div>
+			<div class="deleteConfirm">
+				<div class="deleteConfirmContent">
+					<img class="left" src="/static/images/back/deleteConfirm.png" alt="">
+					<p class="left">是否确定删除该会员信息？</p>
+				</div>
+				<div class="clear"></div>
+				<div class="buttons">
+					<button class="closeMask left" id="btn_deleteConfirm">确定</button>
+					<button class="closeMask left">返回</button>
+				</div>
+			</div>
+			<div class="maskContainer">
+				<div class="title">
+					<h3>添加实体店</h3>
+					<a class="closeMask"><img src="/static/images/back/icon_close.png" alt=""></a>
+				</div>
+				<div class="maskContent">
+					<form action="" class="basicInfo tabForm" enctype="multipart/form-data">
+						<div class="formContainer">
+							<div class="left" style="width:48%">
+							
+								<label for="storeInfoCity">所在城市：</label>
+								
+								<select name="cityCode" id="cityCode">
+								    <?php echo $cityOptions; ?>
+								</select>
+								
+								<label for="storeInfoName">店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</label>
+								<select name="groupId" id="groupId">
+            						<option value="-1">请选择</option>
+            					</select>
+            					
+								<label for="storeInfoAddress">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</label>
+								<input type="text" id="shop_addr" name="shop_addr" class="needAth">
+								<label for="storeInfoTelephone">服务电话：</label>
+								<input type="text" id="shop_telephone" name="shop_telephone" class="needAth">
+							</div>
+							<div class="right" style="width:48%">
+								<div class="eachUpload_store eachUpload">
+								<center>
+								    
+									   <img id="shop_img" class="btn_upload" src="/static/images/back/upload.png" alt="">
+
+									   <input type="file" id="upload_img" name="upload_img" style="display:none">
+									   
+									<p>实体店图片</p>
+								</center>
+							    </div>
+							</div>
+                        
+						</div>
+                        <label for="storeInfoIntroduc" style="position:relative;top:-60px;">简&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;介：</label>
+								<textarea id="storeInfoIntroduc" name="shop_profile"></textarea>
+						<div class="button">
+							<input type="submit" value="确定" class="btn_submitMask left" id="btn_submitMask">
+							<button class="closeMask right">返回</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+        
+        <?php
+            echo Yaf_View_Simple::render('back/loginbar.phtml');
+        ?>
+		
+		
+		<div class="contentWrapper">
+            
+            <?php
+                echo Yaf_View_Simple::render('back/sider.phtml');
+            ?>
+			
+			<div class="mainContent left">
+				<div class="info">
+					<h2 class="contentTitle left">实体店</h2>
+					<p class="number left">共计：362</p>
+					<div class="clear"></div>
+				</div>
+				<form class="query">
+				    
+				    <!-- 
+					   <label for="sex" class="firstLabel">省会：</label>
+					<select name="sex" id="sex">
+						<option value="male">男</option>
+						<option value="female">女</option>
+					</select>
+					-->
+					
+                    <label for="firstLabel" class="firstLabel">城市：</label>
+    					<select name="cities" id="cities">
+    						<?php echo $cityOptions; ?>
+    					</select>
+                    <label for="firstDian" class="firstDian">实体店：</label>
+					<select name="groups" id="groups">
+						<option value="-1">请选择</option>
+					</select>
+					<input type="submit" value="查询" class="btn_querySubmit">
+				</form>
+				<div class="editContainer right">
+					<a class="add left" id="add"><center>添加实体店</center></a>
+					<a class="edit left" id="edit"><center>修改</center></a>
+					<a class="delete left" id="delete"><center>删除</center></a>
+				</div>
+				<table class="detail" cellspacing="0" cellpadding="10">
+					<thead>
+						<tr>
+							<td>选择</td>
+							<td>序号</td>
+							<td>实体店</td>
+							<td>城市</td>
+							<td>地址</td>
+						</tr>
+					</thead>
+					<tbody id="eachuser">
+						<!-- 单个信息开始 -->
+						
+						 <?php 
+                            if(isset($shops) && !empty($shops)){
+                                    $cnt = 1;
+                                    foreach($shops as $shop){
+                        ?>
+						
+						<tr id='shop_<?php echo $shop['id'];?>'>
+							<td><img src="/static/images/back/detaliSelect.jpg" alt=""></td>
+							<td><?php echo $cnt; ?></td>
+							<td><?php echo $shop['groupId'];?></td>
+							<td><?php echo $shop['cityCode'];?></td>
+							<td><?php echo $shop['shop_addr'];?></td>
+						</tr>
+						
+						
+						<?php 
+					                   $cnt++;
+                                    }
+                            }
+                        ?>
+						
+					</tbody>
+				</table>	
+				
+				<!-- 
+				<div class="pages">
+					<ul class="left">
+						<li><a>&lt;</a></li>
+						<li><a class="current">1</a></li>
+						<li><a>2</a></li>
+						<li><a>3</a></li>
+						<li><a>4</a></li>
+						<li><a>5</a></li>
+						<li class="dotdot">...</li>
+						<li><a>99</a></li>
+						<li><a>100</a></li>
+						<li><a>&gt;</a></li>
+					</ul>
+					<div class="right">
+						<span class="left">跳转到</span>
+						<form class="left">
+							<input type="text">
+							<a href="">go</a>
+						</form>
+					</div>
+					<div class="clear"></div>
+				</div>
+				 -->
+				 
+			</div>
+			<div class="clear"></div>
+		</div>
+
+<?php
+echo Yaf_View_Simple::render('back/footer.phtml', array('jsArr'=> array('shop.js')));
+?>
+					

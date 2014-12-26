@@ -1,0 +1,45 @@
+<?php
+Html::render($this, 'u/header.phtml', array('css' => array('storeForm.css')));
+?>
+    <body id="index">
+        <div class="wrapper">
+<?php
+Html::render($this, 'u/service.phtml');
+?>
+            <div class="content">
+                <!-- vip内容开始 -->
+                <div class="info">
+                    <img src="/static/images/u/storeForm.jpg" alt="">
+                </div>
+                <div class="connect">
+                    <div class="tellMe">
+                        <img src="/static/images/u/storeFormConnect.png" alt="">
+                        <form action="" id="connectFrom">
+                            <label gender="1" class="btn_storeSex left storeFormSexActived" for="storeSex"><center><span>绅士</span></center></label>
+                            <input class="storeSex" id="storeSexMen" type="radio" name="sex" value="绅士">
+                            <label gender="0" class="btn_storeSex right" for="storeSexWomen"><center><span>佳丽</span></center></label>
+                            <input class="storeSex" id="storeSexWomen" type="radio" name="sex" value="佳丽">
+                            <div class="clear"></div>
+                            <!-- <label for="userName">Hi!我的名字</label> -->
+                            <input type="text" id="userName" name="userName" placeholder="Hi!我的名字" />
+                            <br><br><br>
+                            <!-- <label for="cellPhone">我的联系方式</label> -->
+                            <input type="text" id="mobile" placeholder="我的联系方式" name="mobile" />
+                            <button class="confirm" type="button">确认提交</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- vip内容结束 -->
+            </div>
+<?php
+Html::render($this, 'u/nav_footer.phtml', array('nav' => 'store'));
+?>            
+        </div>
+<?php
+Html::render($this, 'u/crm_store.phtml');
+Html::render($this, 'u/city.phtml', array('city' => array()));
+?>
+    </body>
+<?php
+Html::render($this, 'u/footer.phtml');
+?>

@@ -1,0 +1,22 @@
+<?php
+echo Yaf_View_Simple::render('back/header.phtml');
+?>
+<?php
+    echo Yaf_View_Simple::render('back/loginbar.phtml');
+?>
+	
+		<div class="contentWrapper">
+		
+		<?php
+            echo Yaf_View_Simple::render('back/sider.phtml');
+        ?>
+		
+            <div class="mainContent left">
+            				<p class="welcome"><span>欢迎进入百合实体店后台管理系统！</span></p>
+            				<img src="/static/images/back/welcome.jpg" alt="">
+            </div>
+        </div>
+    </body>
+<?php
+echo Yaf_View_Simple::render('back/footer.phtml');
+?>

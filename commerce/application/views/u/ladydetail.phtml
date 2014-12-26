@@ -1,0 +1,86 @@
+<?php
+Html::render($this, 'u/header.phtml', array('css' => array('detailWoman.css')));
+?>
+    <body id="index">
+        <div class="wrapper">
+<?php
+Html::render($this, 'u/service.phtml');
+?>
+            <div class="content">
+                <!--  详情开始 -->
+                <div class="info">
+                    <img src="/f/p?n=<?php echo $user_detail['big_pic']; ?>" alt="">
+                    <p class="info1">
+                        <span><?php echo $marriage[$user_detail['marriage']]; ?></span>
+                        &nbsp;&bull;&nbsp;
+                        <span><?php echo $lovetype[$user_detail['love_type']]; ?></span>
+                    </p>
+                    <p class="info2">
+                        <span><?php echo $user_detail['height']; ?>cm</span>
+                        <span><?php echo $user_detail['age']; ?>岁</span>
+                        <span><?php echo $education[$user_detail['education']]; ?></span>
+                        <span style="border:none;"><?php echo $user_detail['career']; ?></span>
+                    </p>
+                    <div class="littlePhoto">
+                        <img src="/f/p?n=<?php echo $user_detail['small_pic']; ?>" alt="">
+                    </div>
+                </div>
+                <div class="connect">
+                    <div class="nameAth">
+                        <span class="name left"><?php echo $user_detail['name']; ?></span>
+                        <ul class="ath right">
+<?php
+if (1 == $user_detail['authentic_real_name'])
+{
+?>
+                            <li class="left ath_name"><img src="/static/images/u/ath_name.png" alt="">实名认证</li>
+<?php
+}
+if (1 == $user_detail['authentic_education'])
+{
+?>
+                            <li class="left ath_learning"><img src="/static/images/u/ath_learning.png" alt="">学历认证</li>
+<?php
+}
+if (1 == $user_detail['authentic_legacy'])
+{
+?>
+                            <li class="left ath_money"><img src="/static/images/u/ath_money.png" alt="">财产认证</li>
+<?php
+}
+?>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <img class="icon_description" src="/static/images/u/icon_descriptionWoman.png" alt="">
+                        <center><h2><?php echo $user_detail['profile_title']; ?></h2></center>
+                            <p>
+                                <?php echo $user_detail['profile_content']; ?>
+                            </p>
+                    </div>
+                    <div class="tellMe">
+                        <img src="/static/images/u/womanDetailConnect.png" alt="">
+                        <form action="" id="connectFrom">
+                            <label for="userName">Hi!我的名字</label>
+                            <input type="text" id="userName" name="userName" />
+                            <br><br><br>
+                            <label for="mobile">我的联系方式</label>
+                            <input type="text" id="mobile" name="mobile" />
+                            <button class="confirm" type="button">我来啦</button>
+                        </form>
+                    </div>
+                </div>
+                <!--  详情结束 -->
+            </div>
+<?php
+Html::render($this, 'u/nav_footer.phtml', array('nav' => 'lady'));
+?>            
+        </div>
+<?php
+Html::render($this, 'u/crm_store.phtml');
+Html::render($this, 'u/city.phtml', array('city' => array()));
+?>
+    </body>
+<?php
+Html::render($this, 'u/footer.phtml');
+?>

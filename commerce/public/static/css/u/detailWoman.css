@@ -1,0 +1,29 @@
+.description{
+	border: 2px solid #ebebeb;
+	border-top: 2px solid #e65d52;
+}
+.description .icon_description{
+	top:-32px !important;
+}
+.description h2{
+	color:#e65d52;
+}
+#connectFrom .confirm{
+	-webkit-appearance: none; 
+	background: #e65d52;
+}
+.mask .chooseStore h2{
+	color:#e65d52;
+}
+.confirmStore{
+	background: #e65d52;
+}
+.storeActived{
+	background: #e65d52 !important;
+}
+.chooseStoreSucceed h2{
+	color: #e65d52;
+}
+.chooseStoreSucceed span{
+	color: #e65d52 !important;
+}

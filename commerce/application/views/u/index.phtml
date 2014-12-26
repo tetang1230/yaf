@@ -1,0 +1,80 @@
+<?php
+Html::render($this, 'u/header.phtml');
+?>
+    <body id="index">
+        <div class="wrapper">
+<?php
+Html::render($this, 'u/service.phtml');
+?>
+            <div class="content">
+                <!-- 女士列表页内容开始 -->
+                <div class="list_manWrapper">
+<?php
+if (is_array($user_info) && count($user_info))
+{
+    foreach ($user_info as $info)
+    {
+?>
+                    <div class="eachmanWrapper">
+                        <a href="/u/ladydetail?uid=<?php echo $info['id']; ?>">
+                            <img src="/f/p?n=<?php echo $info['small_pic'] ;?>" alt="" class="left each_head">
+                            <div class="right eachman_content">
+                                <div class="row1">
+                                    <span class="name"><?php echo $info['name']; ?></span>
+<?php
+    if (1 == $info['authentic_real_name'])
+    {
+?>
+                                    <img src="/static/images/u/ath_name.png" alt="">
+<?php
+    }
+    if (1 == $info['authentic_education'])
+    {
+?>
+                                    <img src="/static/images/u/ath_learning.png" alt="">
+<?php
+    }
+    if (1 == $info['authentic_legacy'])
+    {
+?>
+                                    <img src="/static/images/u/ath_money.png" alt="">
+<?php
+    }
+?>
+                                </div>
+                                <div class="row2">
+                                    <span class="height"><?php echo $info['height']; ?>cm</span>
+                                    <span class="age "><?php echo $info['age']; ?>岁</span>
+                                    <span class="maritalStatus "><?php echo $marriage[$info['marriage']];  ?></span>
+                                    <span class="loveType "><?php echo $lovetype[$info['love_type']]; ?></span>
+                                </div>
+                                <div class="row3">
+                                    <p>顾问眼中的她：<?php echo $info['consultant_info_me']; ?></p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="clear"></div>
+                        <div class="line_eachman"></div>
+                    </div>
+<?php
+    }
+}
+else
+{
+    Html::render($this, 'u/no_result.phtml');
+}
+?>
+                </div>
+                <!-- 女士列表页内容结束 -->
+            </div>
+<?php
+Html::render($this, 'u/nav_footer.phtml', array('nav' => 'lady'));
+?>            
+        </div>
+<?php
+Html::render($this, 'u/city.phtml', array('city' => array()));
+?>
+    </body>
+<?php
+Html::render($this, 'u/footer.phtml');
+?>

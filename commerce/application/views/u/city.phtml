@@ -1,0 +1,20 @@
+<div class="citySelect" id="citySelect">
+    <div>
+        <ul><li><a class="select_city" href="###" code="0">全国</a></li></ul>
+        <!-- 
+        <p>定位城市</p>
+        <ul class="nowCity"><li><a class="select_city" id="auto_location" href="###" code="">北京</a></li></ul>
+        -->
+        <p>热门城市</p>
+        <ul class="allCity">
+<?php
+foreach ($city_map as $k => $dt)
+{
+?>
+            <li><a class="select_city" href="###" code="<?php echo $dt['cityCode']; ?>"><?php echo $dt['cityName']; ?></a></li>
+<?php
+}
+?>
+        </ul>
+    </div>
+</div>
