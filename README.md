@@ -2,6 +2,7 @@ yaf
 ===
 
 yaf总结
+以下是nginx site配置文件
 
 ```conf
 server {
