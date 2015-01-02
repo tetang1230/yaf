@@ -9,8 +9,8 @@ class DB
 
     private static function getDb()
     {
-        //if (null == self::$_db)
-        //{
+        if (null == self::$_db)
+        {
             //TMD 明明是数据库单例模式,到了13层的NB环境什么都不好用了,
             //curl 不好用,单例也不好用
             //how stupid
@@ -23,7 +23,7 @@ class DB
             $db->query('SET NAMES UTF8');
 
             self::$_db = $db;
-        //}
+        }
 
         return self::$_db;
     }
