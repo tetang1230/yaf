@@ -1,6 +1,29 @@
 yaf
 ===
 
+1. 数据库,工程目录相关配置在conf/application.ini
+2. 初始化相关配置在application/Bootstrap.php
+
+另外例子中将图片存放到数据库表中了(需求比较特殊),一般情况不骗不建议放到数据库中
+关键代码如下：
+
+$fileData['bin'] = file_get_contents($file['tmp_name']);//获取图片二进制内容
+入库时候要用addslashes处理后再入库
+
+入库图片需要展示的时候,可以专门写一个action处理
+参考application/controllers/F.php
+
+            $sql = sprintf('SELECT * FROM `%s` WHERE hash = "%s"', PicModel::TABLE_NAME, $hash);
+            $image_data = DB::get($sql);
+            if (is_array($image_data) && count($image_data))
+            {   
+                header('Content-Type: ' . $image_data['mime']);
+                //echo htmlspecialchars_decode($image_data['bin'], ENT_QUOTES);
+                //echo stripcslashes($image_data['bin']);
+                echo $image_data['bin'];
+                exit;
+            } 
+
 yaf总结
 以下是nginx site配置文件
 
