@@ -105,7 +105,9 @@ $fileData['bin'] = file_get_contents($file['tmp_name']);//获取图片二进制�
 
 入库图片需要展示的时候,可以专门写一个action处理
 参考application/controllers/F.php
-
+		
+		```php
+		
             $sql = sprintf('SELECT * FROM `%s` WHERE hash = "%s"', PicModel::TABLE_NAME, $hash);
             $image_data = DB::get($sql);
             if (is_array($image_data) && count($image_data))
@@ -116,6 +118,9 @@ $fileData['bin'] = file_get_contents($file['tmp_name']);//获取图片二进制�
                 echo $image_data['bin'];
                 exit;
             } 
+            
+            ```
+            
  
 
 	
