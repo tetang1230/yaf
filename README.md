@@ -51,7 +51,20 @@ yaf
 	```
 	当然也可以将action直接书写到controller文件中,建议用上面的写法,如果controller中action比较少,可直接写在controller中
 	
-* action文件名要小写,文件中类名以'name' + 'Action'的形式,name首字母可大写,可小写,建议首字母大写
+* action文件名要小写,文件中类名以'name' + 'Action'的形式,name首字母可大写,可小写,建议首字母大写。
+action中如果没有指定渲染的view页面,会默认寻找'name'.phtml。如/back/user/member.php，会自动去寻找views/back/member.phtml.如果想改变默认渲染的位置,可以用如下代码：
+	
+	```php
+	$this->getView()->display('user/member.html');//表示去寻找views/user/member.phtml,并渲染
+	```
+	
+	有的时候不需要渲染静态页面,比如只返回json数据,可以通过如下代码来禁止view
+	
+	```php
+	Yaf_Dispatcher::getInstance()->disableView();
+	```
+
+
 * 需要对异常进行获取,并做相应处理(显示,或者记录日志)时,应做如下配置
  	
  	```php
