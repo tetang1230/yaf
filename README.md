@@ -95,6 +95,48 @@ action中如果没有指定渲染的view页面,会默认寻找'name'.phtml。如
                         ?>
 ```
 
+view中如何include一个html页面(比如header,footer这些公共资源,所有页面都引入即可)
+
+```php
+//shop.phtml
+//比如在shop.phtml中引入一个头文件,并将cssArr这个变量assign到back/header.phtml中
+<?php
+echo Yaf_View_Simple::render('back/header.phtml', array('cssArr'=>array('sy.css')));
+?>
+
+```
+
+```html
+
+// back/header.phtml
+// 被引入的头文件中可以通过传进来的cssArr变量,来引入一些某些页面独有的css,比如上面shop.phtml需要引入sy.css,这个写法很妙
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>百合实体店-首页</title>
+		<link rel="stylesheet" href="/static/css/back/reset.css?v=<?php echo BACK; ?>">
+	   <?php 
+		if(isset($cssArr)){
+		    foreach($cssArr as $css){
+		        echo "<link rel='stylesheet' href='/static/css/back/$css?v=".BACK." '>\n";
+		    }
+		}
+		?>
+		<script src="/static/js/lib/jquery.js"></script>
+		<script src="/static/js/back/ajaxfileupload.js"></script>
+	        <script src="/static/js/back/common.js"></script>
+	        <script src="/static/js/back/uploadPreview.min.js"></script>
+		</head>
+
+```
+
+
+
+```php
+
+
 * 需要对异常进行获取,并做相应处理(显示,或者记录日志)时,应做如下配置
  	
  	```php
