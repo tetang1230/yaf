@@ -95,16 +95,24 @@ server {
         break;
     }
     # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+
+    location ~ \.php$ {
+        fastcgi_pass   127.0.0.1:9000;
+        fastcgi_index  index.php;
+        fastcgi_param BAIHE_ENV test;
+        fastcgi_param  SCRIPT_FILENAME   $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
 	
-	location ~ / {
-        rewrite "^(.*)$" /index.php break;
+    location ~ / {
+        rewrite "^(.*)$" /index.php break; #开启rewrite,所有非php请求地址,全重写到index.php
         fastcgi_pass 127.0.0.1:9000;
 		fastcgi_index index.php;
         fastcgi_param BAIHE_ENV test;
 		fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include fastcgi_params;
     
-	}
+    }
 
     location ~ /public/ {
         rewrite "^/public/(.*)$" /public/$1 break;
