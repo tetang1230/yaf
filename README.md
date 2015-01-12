@@ -58,7 +58,7 @@ action中如果没有指定渲染的view页面,会默认寻找'name'.phtml。如
 	$this->getView()->display('user/member.html');//表示去寻找views/user/member.phtml,并渲染
 	```
 	
-	有的时候不需要渲染静态页面,比如只返回json数据,可以通过如下代码来禁止view
+	有的时候不需要渲染静态页面,比如只返回json数据,可以通过如下代码来禁止渲染view页面
 	
 	```php
 	Yaf_Dispatcher::getInstance()->disableView();
