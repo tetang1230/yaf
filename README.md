@@ -64,6 +64,11 @@ action中如果没有指定渲染的view页面,会默认寻找'name'.phtml。如
 	Yaf_Dispatcher::getInstance()->disableView();
 	```
 
+	如下代码是赋值操作,以备模板中使用
+	```php
+	$this->getView()->assign($key, $value);
+	```
+
 
 * 需要对异常进行获取,并做相应处理(显示,或者记录日志)时,应做如下配置
  	
