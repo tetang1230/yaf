@@ -24,6 +24,7 @@ $fileData['bin'] = file_get_contents($file['tmp_name']);//获取图片二进制�
                 exit;
             } 
  3. 需要对异常进行获取,并做相应处理(显示,或者记录日志)时,应做如下配置
+ 	```
 	1)
 	define("APP_PATH",  __DIR__);  
 	$app = new Yaf_Application(APP_PATH . "/conf/application.ini");  
@@ -48,7 +49,7 @@ $fileData['bin'] = file_get_contents($file['tmp_name']);//获取图片二进制�
 	        }
 	    }
 	}
-
+	```
 yaf总结
 以下是nginx site配置文件
 
