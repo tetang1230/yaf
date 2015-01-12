@@ -23,6 +23,31 @@ $fileData['bin'] = file_get_contents($file['tmp_name']);//获取图片二进制�
                 echo $image_data['bin'];
                 exit;
             } 
+ 3. 需要对异常进行获取,并做相应处理(显示,或者记录日志)时,应做如下配置
+	1)
+	define("APP_PATH",  __DIR__);  
+	$app = new Yaf_Application(APP_PATH . "/conf/application.ini");  
+	$app->getDispatcher()->catchException(true); //添加一行这样的代码
+	$app->bootstrap()->run();
+	2)并添加一个Error controller,进行日志处理
+	class ErrorController extends Yaf_Controller_Abstract {
+	    public function errorAction($exception) {
+	        Yaf_Dispatcher::getInstance()->disableView();
+	        /* error occurs */
+	        switch ($exception->getCode()) {
+	            case YAF_ERR_NOTFOUND_MODULE:
+	            case YAF_ERR_NOTFOUND_CONTROLLER:
+	            case YAF_ERR_NOTFOUND_ACTION:
+	            case YAF_ERR_NOTFOUND_VIEW:
+	                echo 404, ":", $exception->getMessage();
+	                break;
+	            default :
+	                $message = $exception->getMessage();
+	                echo 0, ":", $exception->getMessage();
+	                break;
+	        }
+	    }
+	}
 
 yaf总结
 以下是nginx site配置文件
