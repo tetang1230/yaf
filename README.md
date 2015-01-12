@@ -1,8 +1,8 @@
 yaf
 ===
 
-1. 数据库,工程目录相关配置在conf/application.ini
-2. 初始化相关配置在application/Bootstrap.php
+* 数据库,工程目录相关配置在conf/application.ini
+* 初始化相关配置在application/Bootstrap.php
 
 另外例子中将图片存放到数据库表中了(需求比较特殊),一般情况不骗不建议放到数据库中
 关键代码如下：
@@ -24,7 +24,7 @@ $fileData['bin'] = file_get_contents($file['tmp_name']);//获取图片二进制�
                 exit;
             } 
  
-3. 需要对异常进行获取,并做相应处理(显示,或者记录日志)时,应做如下配置
+* 需要对异常进行获取,并做相应处理(显示,或者记录日志)时,应做如下配置
  	
  	```php
 
