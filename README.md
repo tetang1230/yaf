@@ -68,7 +68,32 @@ action中如果没有指定渲染的view页面,会默认寻找'name'.phtml。如
 	```php
 	$this->getView()->assign($key, $value);
 	```
-
+* view中一些用法
+	
+	action中assign过来一个shops数组变量，在view中可以像下面这样使用
+	
+```php
+			<?php 
+                            if(isset($shops) && !empty($shops)){
+                                    $cnt = 1;
+                                    foreach($shops as $shop){
+                        ?>
+						
+						<tr id='shop_<?php echo $shop['id'];?>'>
+							<td><img src="/static/images/back/detaliSelect.jpg" alt=""></td>
+							<td><?php echo $cnt; ?></td>
+							<td><?php echo $shop['groupId'];?></td>
+							<td><?php echo $shop['cityCode'];?></td>
+							<td><?php echo $shop['shop_addr'];?></td>
+						</tr>
+						
+						
+						<?php 
+					                   $cnt++;
+                                    }
+                            }
+                        ?>
+```
 
 * 需要对异常进行获取,并做相应处理(显示,或者记录日志)时,应做如下配置
  	
