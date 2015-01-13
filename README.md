@@ -132,9 +132,12 @@ echo Yaf_View_Simple::render('back/header.phtml', array('cssArr'=>array('sy.css'
 
 ```
 
-
+* 项目目录下library目录下的php文件的类, 都会被自动载入,调用的时候直接使用即可,注意下类的命名方式
+文件夹_文件夹_文件夹,例如：apVer5d6d0_User_User
+代表library/apVer5d6d0/user/user.php文件中有个类叫apVer5d6d0_User_User
 
 ```php
+
 
 
 * 需要对异常进行获取,并做相应处理(显示,或者记录日志)时,应做如下配置
