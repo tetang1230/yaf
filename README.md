@@ -171,7 +171,9 @@ echo Yaf_View_Simple::render('back/header.phtml', array('cssArr'=>array('sy.css'
 	        }
 	    }
 	}
+	
 	```
+	
 另外例子中将图片存放到数据库表中了(需求比较特殊),一般情况不骗不建议放到数据库中
 关键代码如下：
 
