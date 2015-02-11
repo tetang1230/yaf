@@ -136,7 +136,6 @@ echo Yaf_View_Simple::render('back/header.phtml', array('cssArr'=>array('sy.css'
 文件夹_文件夹_文件夹,例如：apVer5d6d0_User_User
 代表library/apVer5d6d0/User/User.php文件中有个类叫apVer5d6d0_User_User
 
-```php
 
 
 
