@@ -3,6 +3,8 @@ yaf
 
 * 数据库,工程目录相关配置在conf/application.ini
 * 初始化相关配置在application/Bootstrap.php
+	1 所有在Bootstrap类中, 以_init开头的方法, 都会被Yaf调用	
+
 * controller中的文件名首字母要`大写`,如Back.php。文件中类名以'name' + 'Controller'的形式, name首字母可大写,也可小写如BackController, backController都可以。建议用首字母大写。
 	controller中可以批量指定action文件的位置如下：
 	```php
