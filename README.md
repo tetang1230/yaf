@@ -1,11 +1,40 @@
 yaf
 ===
 
-* 数据库,工程目录相关配置在conf/application.ini
-* 初始化相关配置在application/Bootstrap.php
-	所有在Bootstrap类中, 以_init开头的方法, 都会被Yaf调用	
+ 1. 数据库,工程目录相关配置在conf/application.ini
+	 
+	 通过如下方法可以得到配置文件application.ini的内容
+	 >Yaf_Application::app()->getConfig()->toArray();
 
-* controller中的文件名首字母要`大写`,如Back.php。文件中类名以'name' + 'Controller'的形式, name首字母可大写,也可小写如BackController, backController都可以。建议用首字母大写。
+     如果配置文件中是这样写的
+
+	>logger.writers.0.name='Baihe\Log\StreamWriter'
+logger.writers.0.options.filePath='/tmp/bhapps.log'
+logger.writers.0.options.filters.1.name='Baihe\Log\StrposFilter'
+logger.writers.0.options.filters.1.options.needle='curlPostGet'
+logger.writers.0.options.filters.1.options.priority=0
+logger.writers.0.options.formatter.name='Baihe\Log\FormatterPhpVar'
+logger.writers.0.options.formatter.options=''
+
+	那么获取logger可以这样获取
+
+	```
+	$arr = Yaf_Application::app()->getConfig()->logger->toArray();
+	print_r($arr);exit;
+	```
+
+	Yaf_Registry, 对象注册表(或称对象仓库)是一个用于在整个应用空间(application space)内存储对象和值的容器. 通过把对象存储在其中,我们可以在整个项目的任何地方使用同一个对象.这种机制相当于一种全局存储. 我们可以通过Yaf_Registry类的静态方法来使用对象注册表. 另外,由于该类是一个数组对象,你可以使用数组形式来访问其中的类方法
+	
+	> Yaf_Registry::set('testconfig', $arr); //设置一个全局变量
+        print_r(Yaf_Registry::get('testconfig')); //取得一个全局变量
+
+	 
+	 
+ 2. 初始化相关配置在application/Bootstrap.php
+
+    所有在Bootstrap类中, 以_init开头的方法, 都会被Yaf调用	
+
+ 3. controller中的文件名首字母要`大写`,如Back.php。文件中类名以'name' + 'Controller'的形式, name首字母可大写,也可小写如BackController, backController都可以。建议用首字母大写。
 	controller中可以批量指定action文件的位置如下：
 	```php
 	
@@ -53,7 +82,7 @@ yaf
 	```
 	当然也可以将action直接书写到controller文件中,建议用上面的写法,如果controller中action比较少,可直接写在controller中
 	
-* action文件名要小写,文件中类名以'name' + 'Action'的形式,name首字母可大写,可小写,建议首字母大写。
+4 action文件名要小写,文件中类名以'name' + 'Action'的形式,name首字母可大写,可小写,建议首字母大写。
 action中如果没有指定渲染的view页面,会默认寻找'name'.phtml。如/back/user/member.php，会自动去寻找views/back/member.phtml.如果想改变默认渲染的位置,可以用如下代码：
 	
 	```php
@@ -70,7 +99,7 @@ action中如果没有指定渲染的view页面,会默认寻找'name'.phtml。如
 	```php
 	$this->getView()->assign($key, $value);
 	```
-* view中一些用法
+5 view中一些用法
 	
 	action中assign过来一个shops数组变量，在view中可以像下面这样使用
 	
@@ -134,14 +163,14 @@ echo Yaf_View_Simple::render('back/header.phtml', array('cssArr'=>array('sy.css'
 
 ```
 
-* 项目目录下library目录下的php文件的类, 都会被自动载入,调用的时候直接使用即可,注意下类的命名方式
+6 项目目录下library目录下的php文件的类, 都会被自动载入,调用的时候直接使用即可,注意下类的命名方式
 文件夹_文件夹_文件夹,例如：apVer5d6d0_User_User
 代表library/apVer5d6d0/User/User.php文件中有个类叫apVer5d6d0_User_User
 
 
 
 
-* 需要对异常进行获取,并做相应处理(显示,或者记录日志)时,应做如下配置
+7 需要对异常进行获取,并做相应处理(显示,或者记录日志)时,应做如下配置
  	
  	```php
 
