@@ -179,7 +179,7 @@ echo Yaf_View_Simple::render('back/header.phtml', array('cssArr'=>array('sy.css'
 
 7 需要对异常进行获取,并做相应处理(显示,或者记录日志)时,应做如下配置
  	
- 	```php
+ ```php
 
 	1) 对入口文件index.php做如下配置
 	
@@ -210,7 +210,7 @@ echo Yaf_View_Simple::render('back/header.phtml', array('cssArr'=>array('sy.css'
 	    }
 	}
 	
-	```
+```
 
 8 plugin用法
 
