@@ -86,18 +86,25 @@ logger.writers.0.options.formatter.options=''
 action中如果没有指定渲染的view页面,会默认寻找'name'.phtml。如/back/user/member.php，会自动去寻找views/back/member.phtml.如果想改变默认渲染的位置,可以用如下代码：
 	
 	```php
+	
 	$this->getView()->display('user/member.html');//表示去寻找views/user/member.phtml,并渲染
+	
 	```
 	
 	有的时候不需要渲染静态页面,比如只返回json数据,可以通过如下代码来禁止渲染view页面
 	
 	```php
+	
 	Yaf_Dispatcher::getInstance()->disableView();
+	
 	```
 
 	如下代码是赋值操作,以备模板中使用
+	
 	```php
+	
 	$this->getView()->assign($key, $value);
+	
 	```
 5 view中一些用法
 	
