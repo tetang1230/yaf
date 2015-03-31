@@ -85,27 +85,27 @@ logger.writers.0.options.formatter.options=''
 4 action文件名要小写,文件中类名以'name' + 'Action'的形式,name首字母可大写,可小写,建议首字母大写。
 action中如果没有指定渲染的view页面,会默认寻找'name'.phtml。如/back/user/member.php，会自动去寻找views/back/member.phtml.如果想改变默认渲染的位置,可以用如下代码：
 	
-	```php
+```php
 	
 	$this->getView()->display('user/member.html');//表示去寻找views/user/member.phtml,并渲染
 	
-	```
+```
 	
 	有的时候不需要渲染静态页面,比如只返回json数据,可以通过如下代码来禁止渲染view页面
 	
-	```php
+```php
 	
 	Yaf_Dispatcher::getInstance()->disableView();
 	
-	```
+```
 
 	如下代码是赋值操作,以备模板中使用
 	
-	```php
+```php
 	
 	$this->getView()->assign($key, $value);
 	
-	```
+```
 5 view中一些用法
 	
 	action中assign过来一个shops数组变量，在view中可以像下面这样使用
