@@ -253,7 +253,19 @@ class SamplePlugin extends Yaf_Plugin_Abstract {
 
 	
 ```
-	
+
+9 通过php.ini中配置环境,自定义自动加载
+
+[yaf]                                                                                                               
+extension=yaf.so
+yaf.use_spl_autoload = "On"
+yaf.environ="test"
+;在application.ini中会自动读取[test:yaf]
+;块中的配置文件的东西
+;这个功能很好用,你可以在application中,提前写好[test:yaf]和[product:yaf]的配置
+;test环境中自动读取test的配置块内容,product会自动读取线上的配置块内容
+;当然测试环境上你要yaf.environ="test"
+;默认的yaf.environ就是product环境
 	
 	
 
