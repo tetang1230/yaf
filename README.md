@@ -148,6 +148,7 @@ echo Yaf_View_Simple::render('back/header.phtml', array('cssArr'=>array('sy.css'
 	define("APP_PATH",  __DIR__);  
 	$app = new Yaf_Application(APP_PATH . "/conf/application.ini");  
 	$app->getDispatcher()->catchException(true); //添加一行这样的代码
+	//上面这行等同于在application.ini中添加application.dispatcher.catchException = TRUE
 	$app->bootstrap()->run();
 	
 	2)并添加一个Error controller,进行日志处理
