@@ -204,6 +204,52 @@ echo Yaf_View_Simple::render('back/header.phtml', array('cssArr'=>array('sy.css'
 	}
 	
 	```
+
+8 plugin用法
+
+	在application中建立plugins文件夹,然后里面建立一个文件,比如Sample.php代码如下
+
+```php
+class SamplePlugin extends Yaf_Plugin_Abstract {
+
+    public function routerStartup(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {
+    }
+
+    public function routerShutdown(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {
+        //print_r($response);exit;
+        echo 'routerShutdown <br />';
+    }
+
+    public function dispatchLoopStartup(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {
+       
+        echo 'dispatchLoopStartup <br />';
+    }
+
+    public function preDispatch(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {
+        //print_r()
+        //print_r($request->getRequestUri());
+        $arr = Yaf_Application::app()->getConfig()->logger->toArray();
+        print_r($arr);exit;
+        //Yaf_Registry::set('testconfig', $arr);
+        //print_r(Yaf_Registry::get('testconfig'));
+        echo 'preDispatch <br />';
+    }
+
+    public function postDispatch(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {
+        //var_dump($request);exit;
+        echo 'postDispatch <br />';
+    }
+
+    public function dispatchLoopShutdown(Yaf_Request_Abstract $request, Yaf_Response_Abstract $response) {
+    }
+}
+
+	
+```
+	
+	
+	
+
 	
 另外例子中将图片存放到数据库表中了(需求比较特殊),一般情况不骗不建议放到数据库中
 关键代码如下：
