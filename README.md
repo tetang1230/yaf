@@ -256,6 +256,7 @@ class SamplePlugin extends Yaf_Plugin_Abstract {
 
 9 通过php.ini中配置环境,自定义自动加载
 
+```conf
 [yaf]                                                                                                               
 extension=yaf.so
 yaf.use_spl_autoload = "On"
@@ -266,9 +267,38 @@ yaf.environ="test"
 ;test环境中自动读取test的配置块内容,product会自动读取线上的配置块内容
 ;当然测试环境上你要yaf.environ="test"
 ;默认的yaf.environ就是product环境
+```	
 	
-	
+10 通过registerLocalNameSpace注册本地类名前缀
 
+```php
+
+class Bootstrap extends Yaf_Bootstrap_Abstract {
+    public function _initLoader(Yaf_Dispatcher $dispatcher) {
+        /* 注册本地类名前缀, 这部分类名将会在本地类库查找 */
+        Yaf_Loader::getInstance()->registerLocalNameSpace(
+            array(
+                 'Comm',
+                 'Tool',
+                 'Dr',
+                 'Ds',
+                 'Dw',
+                 'Do',
+                 'Cache',
+                 'Page',
+                 'Pl',
+                 'Plc',
+                 'V36',
+                 'Data',
+                 'Zymo',
+                 'Rightmod',
+                 'Exception',
+                 'Pls',
+                 'Model'
+            )); 
+    }
+}
+```
 	
 另外例子中将图片存放到数据库表中了(需求比较特殊),一般情况不骗不建议放到数据库中
 关键代码如下：
