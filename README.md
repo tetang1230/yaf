@@ -303,6 +303,19 @@ class Bootstrap extends Yaf_Bootstrap_Abstract {
 
 ![library目录结构](https://github.com/tetang1230/yaf/blob/master/pics/lib_tree.png)
 
+下方是示例文件
+
+```php
+
+class Comm_Argchecker_String{
+    
+    public static function testStr($string){
+ 	//your code;
+    }
+}
+```
+调用时直接Comm_Argchecker_String::testStr();
+
 	
 另外例子中将图片存放到数据库表中了(需求比较特殊),一般情况不骗不建议放到数据库中
 关键代码如下：
