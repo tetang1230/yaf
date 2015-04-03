@@ -301,7 +301,7 @@ class Bootstrap extends Yaf_Bootstrap_Abstract {
 ```
 文件目录结构如下
 
-![https://github.com/tetang1230/yaf/blob/master/pics/lib_tree.png]
+![library目录结构](https://github.com/tetang1230/yaf/blob/master/pics/lib_tree.png)
 
 	
 另外例子中将图片存放到数据库表中了(需求比较特殊),一般情况不骗不建议放到数据库中
