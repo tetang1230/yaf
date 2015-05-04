@@ -271,7 +271,7 @@ yaf.environ="test"
 
  下面是一个自动加载的例子
  
- ```
+ ```php
   1) 在www/index.php(项目的入口文件)中,代码如下
      	
      	//定义一个常量,以后要用到
@@ -370,7 +370,7 @@ yaf.environ="test"
 	        //脚本启动时间
 	        define('NOW', isset($_SERVER['REQUEST_TIME']) ? $_SERVER['REQUEST_TIME'] : time());
 		//模式(1.开发、2.测内、6.测外、7.线上)
-	        define('DEVELOP_LEVEL', isset($_SERVER['BHPHP_DEVELOP_LEVEL']) ? $_SERVER['BHPHP_DEVELOP_LEVEL'] : 7); 
+	        define('DEVELOP_LEVEL', isset($_SERVER['BDPHP_DEVELOP_LEVEL']) ? $_SERVER['BDPHP_DEVELOP_LEVEL'] : 7); 
 	
 		//载入配置文件
 	        $arrConfig = Yaf_Application::app()->getConfig();
@@ -380,7 +380,7 @@ yaf.environ="test"
 	
 		//php全局类库路径
 	        if (empty($arrConfig->phpGlobalLibraryDirectory)) {
-	            define('PHP_GLOBAL_LIBRARY_DIRECTORY', realpath(APPLICATION_ROOT.'/..').'/BHPhpGlobalLibrary_publish');
+	            define('PHP_GLOBAL_LIBRARY_DIRECTORY', realpath(APPLICATION_ROOT.'/..').'/BDPhpGlobalLibrary_publish');
 	        } else {
 	            define('PHP_GLOBAL_LIBRARY_DIRECTORY', $arrConfig->phpGlobalLibraryDirectory);
 	        }   
@@ -390,12 +390,27 @@ yaf.environ="test"
 	
 		//配置cache
 	        define('APPLICATION_USE_CACHE', $arrConfig->usecache);
-	        BH\Cache\MemCached::getInstance()->init($arrConfig->memcache->toArray());
+	        BD\Cache\MemCached::getInstance()->init($arrConfig->memcache->toArray());
 	        
 	        
-	        BH\Service\UserProfile\UserProfile::$useV2 = true;
-	        BH\Service\BHRegister\BHRegister::$useV2 = true;
-	        BH\Service\UserInfoModify\UserInfoModify::$useV2 = true;
+	        BD\Service\UserProfile\UserProfile::$useV2 = true;
+	        
+	        //以上面这个类的的调用举例
+	        //在/home/work/bd/bdPhpGlobalLibrary_publish中会有个BD/Service/UserProfile/UserProfile.php文件,并且在这个文件中,有个类叫UserProfile.
+	        //文件内容类如下
+	        /*
+	         *
+	         namespace BD\Service\UserProfile;
+	         
+	         class UserProfile{
+	         	public static $useV2 = false;
+	         	
+	         	//各种方法......
+	         }
+	         */
+	        
+	        BD\Service\BDRegister\BDRegister::$useV2 = true;
+	        BD\Service\UserInfoModify\UserInfoModify::$useV2 = true;
 	    }
 	
 	    public function _initLogger()
@@ -414,7 +429,7 @@ yaf.environ="test"
 	        }
 	
 	        if (!empty($writerConfig)) {
-	            BH\Log\Logger::setLogManager(new BH\Log\LogManager(array('writers' => $writerConfig)));
+	            BD\Log\Logger::setLogManager(new BD\Log\LogManager(array('writers' => $writerConfig)));
 	            unset($writerConfig);
 	        }
 	    }
@@ -435,16 +450,16 @@ yaf.environ="test"
 	application.library.directory = APPLICATION_ROOT"/library/"
 	
 	;可以访问的接口版本,只用于手机端服务器
-	bhApps.availableApVer.0='5.6.0'
-	bhApps.availableApVer.1='5.6.2'
-	bhApps.availableApVer.2='5.6.3'
+	bdApps.availableApVer.0='5.6.0'
+	bdApps.availableApVer.1='5.6.2'
+	bdApps.availableApVer.2='5.6.3'
 	
 	;可以访问的接口,只用于手机端服务器
-	bhApps.availableController.0='register'
-	bhApps.availableController.1='user'
-	bhApps.availableController.2='search'
-	bhApps.availableController.3='payment'
-	bhApps.availableController.4='bd'
+	bdApps.availableController.0='register'
+	bdApps.availableController.1='user'
+	bdApps.availableController.2='search'
+	bdApps.availableController.3='payment'
+	bdApps.availableController.4='bd'
 	
 	;product section inherit from yaf section
 	[product:yaf]
@@ -452,7 +467,7 @@ yaf.environ="test"
 	phpGlobalLibraryDirectory='/home/work/bd/bdPhpGlobalLibrary_publish'
 	
 	usecache=true
-	cachePreKey='bhApps_'
+	cachePreKey='bdApps_'
 	memcache.0.0 = 'memcached.service.bd'
 	memcache.0.1 = 30002
 	memcache.0.2 = 100 
