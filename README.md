@@ -8,12 +8,12 @@ yaf
 
      如果配置文件中是这样写的
 
-	>logger.writers.0.name='Baihe\Log\StreamWriter'
-logger.writers.0.options.filePath='/tmp/bhapps.log'
-logger.writers.0.options.filters.1.name='Baihe\Log\StrposFilter'
+	>logger.writers.0.name='Bd\Log\StreamWriter'
+logger.writers.0.options.filePath='/tmp/bdapps.log'
+logger.writers.0.options.filters.1.name='Bd\Log\StrposFilter'
 logger.writers.0.options.filters.1.options.needle='curlPostGet'
 logger.writers.0.options.filters.1.options.priority=0
-logger.writers.0.options.formatter.name='Baihe\Log\FormatterPhpVar'
+logger.writers.0.options.formatter.name='Bd\Log\FormatterPhpVar'
 logger.writers.0.options.formatter.options=''
 
 	那么获取logger可以这样获取
@@ -268,6 +268,241 @@ yaf.environ="test"
 ;当然测试环境上你要yaf.environ="test"
 ;默认的yaf.environ就是product环境
 ```	
+
+ 下面是一个自动加载的例子
+ 
+ ```
+  1) 在www/index.php(项目的入口文件)中,代码如下
+     	
+     	//定义一个常量,以后要用到
+     	define('APPLICATION_ROOT', substr(dirname(__FILE__), 0, -16));
+	$app = new Yaf_Application(APPLICATION_ROOT.'/application/conf/application.ini');
+	$app->bootstrap()->run();
+  
+  2) 在和application同级的目录中添加上自定义加载的代码yafCustomLoader.php,代码如下
+  	
+	/**
+	 * 自定义文件加载器，完成在特定文件夹内加载文.
+	 */
+	class yafCustomLoader
+	{
+	    const NS_SEPARATOR     = '\\';
+	    const PREFIX_SEPARATOR = '_';
+	
+	    public static function register()
+	    {   
+	        spl_autoload_register(array(__CLASS__, 'autoload'));
+	    }   
+	
+	    public static function autoload($class)
+	    {   
+	        $classLoaded = false;
+	        //加载Model类,自动加载model类
+	        if (substr($class, -5, 5) == 'Model') {
+	            $filePath = sprintf('%s/%s.php', APPLICATION_ROOT.'/models', substr($class, 0, -5));
+	            if (file_exists($filePath)) {
+	                include $filePath;
+	                $classLoaded = true;
+	            }   
+	        }   
+	        if (!$classLoaded && PHP_GLOBAL_LIBRARY_DIRECTORY) {
+	            $filePath = self::transformClassNameToFilename($class, PHP_GLOBAL_LIBRARY_DIRECTORY);
+	            if (file_exists($filePath)) {
+	                include $filePath;
+	                $classLoaded = true;
+	            }   
+	        }   
+	                                                                                                                                             
+	        return true;
+	    } 
+	   
+	    /**
+	     * Transform the class name to a filename.
+	     *
+	     * @param string $class
+	     * @param string $directory
+	     *
+	     * @return string or array
+	     */
+	     
+	    protected static function transformClassNameToFilename($class, $directory)
+	    {
+	        // $class may contain a namespace portion, in  which case we need
+	        // to preserve any underscores in that portion.
+	        // 对于用namespace的文件,如何自定义加载
+	        
+	        $matches = array();
+	        preg_match('/(?P<namespace>.+\\\)?(?P<class>[^\\\]+$)/', $class, $matches);
+	        //使用正则命名子组将namespace和class分别放到$matches数组中
+	        
+	
+	        $class     = (isset($matches['class'])) ? $matches['class'] : '';
+	        $namespace = (isset($matches['namespace'])) ? $matches['namespace'] : '';
+	        $class = str_replace(self::PREFIX_SEPARATOR, DIRECTORY_SEPARATOR, $class);
+	        $namespace = str_replace(self::NS_SEPARATOR, DIRECTORY_SEPARATOR, $namespace);
+	        $returnVal = '';
+	        if (is_array($directory)) {
+	            $returnVal = array();
+	            foreach ($directory as $path) {
+	                $path = $path.DIRECTORY_SEPARATOR;
+	                $returnVal[] = $path.$namespace.$class.'.php';
+	            }
+	        } else {
+	            $path = $directory.DIRECTORY_SEPARATOR;
+	            $returnVal = $path.$namespace.$class.'.php';
+	        }
+	
+	        return $returnVal;
+	    }
+	}
+  3) 在application/Bootstrap.php中添加写初始化的代码,如下
+     
+	class Bootstrap extends Yaf_Bootstrap_Abstract
+	{
+	    public function _initRegCustomerLoader()
+	    {   
+	        include APPLICATION_ROOT.'/yafCustomLoader.php';
+	        yafCustomLoader::register();
+	    }   
+	
+	    public function _initConfig()
+	    {   
+	        //脚本启动时间
+	        define('NOW', isset($_SERVER['REQUEST_TIME']) ? $_SERVER['REQUEST_TIME'] : time());
+		//模式(1.开发、2.测内、6.测外、7.线上)
+	        define('DEVELOP_LEVEL', isset($_SERVER['BHPHP_DEVELOP_LEVEL']) ? $_SERVER['BHPHP_DEVELOP_LEVEL'] : 7); 
+	
+		//载入配置文件
+	        $arrConfig = Yaf_Application::app()->getConfig();
+	
+	        define('TRACEID', $arrConfig->traceID);
+	        define('SYSTEMID', $arrConfig->systemID);
+	
+		//php全局类库路径
+	        if (empty($arrConfig->phpGlobalLibraryDirectory)) {
+	            define('PHP_GLOBAL_LIBRARY_DIRECTORY', realpath(APPLICATION_ROOT.'/..').'/BHPhpGlobalLibrary_publish');
+	        } else {
+	            define('PHP_GLOBAL_LIBRARY_DIRECTORY', $arrConfig->phpGlobalLibraryDirectory);
+	        }   
+	
+		//保存配置文件
+	        Yaf_Registry::set('config', $arrConfig);
+	
+		//配置cache
+	        define('APPLICATION_USE_CACHE', $arrConfig->usecache);
+	        BH\Cache\MemCached::getInstance()->init($arrConfig->memcache->toArray());
+	        
+	        
+	        BH\Service\UserProfile\UserProfile::$useV2 = true;
+	        BH\Service\BHRegister\BHRegister::$useV2 = true;
+	        BH\Service\UserInfoModify\UserInfoModify::$useV2 = true;
+	    }
+	
+	    public function _initLogger()
+	    {
+	        $LogManager = null;
+	        $writerConfig = array();
+	
+	        if (Yaf_Registry::get('config')->logger->writeLog) {
+	            $writerConfig = array_merge($writerConfig, Yaf_Registry::get('config')->logger->writers->toArray());
+	        }
+	
+	        $SearchConfig = Yaf_Registry::get('SearchConfig');
+	        if (isset($SearchConfig['logger']) && $SearchConfig['logger']['writeLog']) {
+	            $writerConfig = array_merge($writerConfig, $SearchConfig['logger']['writers']);
+	            unset($SearchConfig);
+	        }
+	
+	        if (!empty($writerConfig)) {
+	            BH\Log\Logger::setLogManager(new BH\Log\LogManager(array('writers' => $writerConfig)));
+	            unset($writerConfig);
+	        }
+	    }
+	
+	    public function getConfig($iniFileName)
+	    {
+	        return new Yaf_Config_ini(APPLICATION_ROOT.'/application/conf/'.$iniFileName);
+	    }
+	}                                                                                                            
+ 4) application/conf/application.ini的配置示例代码如下
+ 
+
+	[yaf]                                                                                                                                        
+	;APPLICATION_PATH is the constant defined in index.php
+	;通用配置不需修改
+	application.dispatcher.catchException = false
+	application.directory = APPLICATION_ROOT"/application/"
+	application.library.directory = APPLICATION_ROOT"/library/"
+	
+	;可以访问的接口版本,只用于手机端服务器
+	bhApps.availableApVer.0='5.6.0'
+	bhApps.availableApVer.1='5.6.2'
+	bhApps.availableApVer.2='5.6.3'
+	
+	;可以访问的接口,只用于手机端服务器
+	bhApps.availableController.0='register'
+	bhApps.availableController.1='user'
+	bhApps.availableController.2='search'
+	bhApps.availableController.3='payment'
+	bhApps.availableController.4='bd'
+	
+	;product section inherit from yaf section
+	[product:yaf]
+	
+	phpGlobalLibraryDirectory='/home/work/bd/bdPhpGlobalLibrary_publish'
+	
+	usecache=true
+	cachePreKey='bhApps_'
+	memcache.0.0 = 'memcached.service.bd'
+	memcache.0.1 = 30002
+	memcache.0.2 = 100 
+	
+	;日志文件配置
+	;logger config
+	logger.writeLog=false
+	logger.writers.0.name='Bd\Log\StreamWriter'
+	logger.writers.0.options.filePath='/tmp/bdapps.log'
+	
+	logger.writers.0.options.filters.1.name='Bd\Log\StrposFilter'
+	logger.writers.0.options.filters.1.options.needle='curlPostGet
+	logger.writers.0.options.filters.1.options.priority=0
+	
+	logger.writers.0.options.formatter.name='Bd\Log\FormatterPhpVar'
+	logger.writers.0.options.formatter.options=''
+	
+	[test:yaf]
+	
+	//指定类库路径
+	traceID=1
+	systemID=2
+	phpGlobalLibraryDirectory='/home/work/bd/bdPhpGlobalLibrary_develop'
+	
+	;全局cache配置
+	usecache=true
+	;memcache.0.0 = '192.168.0.216'
+	;memcache.0.1 = 11211
+	;memcache.0.2 = 100
+	memcache.0.0 = '192.168.22.14'
+	memcache.0.1 = 11211
+	memcache.0.2 = 100
+	
+	
+	;日志文件配置
+	;logger config
+	logger.writeLog=true
+	logger.writers.0.name='Bd\Log\StreamWriter'
+	logger.writers.0.options.filePath='/tmp/plus.log'
+	
+	logger.writers.0.options.filters.1.name='Bd\Log\StrposFilter'
+	logger.writers.0.options.filters.1.options.needle='curlPostGet'
+	logger.writers.0.options.filters.1.options.priority=0
+	
+	logger.writers.0.options.formatter.name='Bd\Log\FormatterPhpVar'
+	;logger.writers.0.options.formatter.name='Bd\Log\FormatterBase'
+	logger.writers.0.options.formatter.options=''                                                                                                
+  
+
+
 	
 10 通过registerLocalNameSpace注册本地类名前缀
 
@@ -352,7 +587,7 @@ server {
     listen 80;
     server_name commerce.com;
     charset utf-8;
-    root /home/chester/baihe/commerce/trunk/public;
+    root /home/chester/bd/commerce/trunk/public;
     #最后面的main是和主配置的一样的,这样就能使用主配置的格式了
     access_log logs/commerce.log main;
     location / {
@@ -385,7 +620,7 @@ server {
     location ~ \.php$ {
         fastcgi_pass   127.0.0.1:9000;
         fastcgi_index  index.php;
-        fastcgi_param BAIHE_ENV test;
+        fastcgi_param BD_ENV test;
         fastcgi_param  SCRIPT_FILENAME   $document_root$fastcgi_script_name;
         include        fastcgi_params;
     }
@@ -393,9 +628,9 @@ server {
     location ~ / {
         rewrite "^(.*)$" /index.php break; #开启rewrite,所有非php请求地址,全重写到index.php
         fastcgi_pass 127.0.0.1:9000;
-		fastcgi_index index.php;
-        fastcgi_param BAIHE_ENV test;
-		fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+	fastcgi_index index.php;
+        fastcgi_param BD_ENV test;
+	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include fastcgi_params;
     
     }
