@@ -79,7 +79,7 @@ abstract class BaseAction extends Yaf_Action_Abstract
         $current_controller = strtolower($this->getRequest()->getControllerName());
 
         $city_map = Crm::getCityMap();
-        $this->city_map = $city_map;
+        $this->city_map = $city_map ? $city_map : [];
         $this->assign('city_map', $city_map);
         
 
